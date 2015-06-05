@@ -6,7 +6,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <interface.h>
 
 // Socket talks to server
 void *context = zmq_ctx_new ();
@@ -15,8 +14,8 @@ void *requester = zmq_socket (context, ZMQ_REQ);
 // Global variables & function
 int size;
 int major, minor, patch;
-extern char *data_to_client;
-//extern void text_from_DB(void);
+//extern char *data_to_client;
+void readFromDatabase(void);
 
 //  Receive ZeroMQ string from socket and convert into C string
 //  Chops string at 255 chars, if it's longer
@@ -72,7 +71,7 @@ int main (int argc, char* argv[])
 	
 	//begin connecting
 	printf ("Connecting to hello world server…\n");
-	//text_from_DB();
+	readFromDatabase();
 	zmq_connect (requester, tcp_addr);
 	for (request_nbr = 0; request_nbr != 10; request_nbr++) {
 		

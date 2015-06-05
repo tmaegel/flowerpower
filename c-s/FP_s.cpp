@@ -8,7 +8,6 @@
 #include <unistd.h>
 #include <string.h>
 #include <assert.h>
-#include <interface.h>
 
 // Socket talks to clients
 void *context = zmq_ctx_new ();
@@ -17,8 +16,8 @@ void *responder = zmq_socket (context, ZMQ_REP);
 // Global variables & functions
 int size;
 int major, minor, patch;
-extern char *data_to_db;
-//extern void text_from_S(void);
+//extern char *data_to_db;
+void writeToDatabase(void);
 
 //  Receive ZeroMQ string from socket and convert into C string
 //  Chops string at 255 chars, if it's longer
@@ -77,7 +76,7 @@ int main (int argc, char* argv[])
 	while (1) {
 		strcpy(data_to_db, s_recv(responder));
 		printf ("Received:%s\n", data_to_db);
-		//text_from_S();
+		writeToDatabase();
 		
 		sleep (1); // Do some 'work'
 		zmq_send (responder, "World", 255, 0);
