@@ -12,18 +12,17 @@
 
 #define HOST "localhost"
 #define USER "root"
-#define PASSWORD "root"
+#define PASSWORD "TrOoNoIt#90+"
 #define DATABASE "data"
 
 MYSQL *db;
-
-extern char *data_to_db;					/** data to database */
-extern char *data_to_client;				/** data to client */
+MYSQL_RES *result;
+MYSQL_ROW row;
 
 unsigned int error;
 
 /**
- * check for errors
+ * @brief check for errors
  */
 void checkError(void) {
 	if(mysql_errno(db) != 0) {
@@ -33,7 +32,7 @@ void checkError(void) {
 }
 
 /**
- * replace a string with an other string
+ * @brief replace a string with an other string
  */
 char *strReplace(char *search, char *replace, char *subject) {
 	char *p, *old_subject, *new_subject;
@@ -60,7 +59,7 @@ char *strReplace(char *search, char *replace, char *subject) {
 }     
 
 /**
- * show helping text
+ * @brief show helping text
  */
 void showHelp() {
 	printf("\nProgrammaufruf: database [OPT_1] [STRING_1] ...\n"\
@@ -73,7 +72,8 @@ void showHelp() {
 }
 
 /**
- * create table
+ * @brief create table
+ * @param char* table name
  */
 void createTable(char *table) {
 	char search[] = "<table>";
@@ -87,6 +87,9 @@ void createTable(char *table) {
 	printf("create table '%s'\n", table);
 }
 
+/**
+ * @brief init database
+ */
 void initDB(/*char *database, char *table*/) {
 	// init and reserve memory	
 	db = mysql_init(NULL);
@@ -109,16 +112,35 @@ void initDB(/*char *database, char *table*/) {
 }
 
 /**
- * select items
+ * @brief select items
+ * @param char* pointer to string
+ * @return int number of read data 
  */
-void readToDatabase() {
-	// INSERT INTO table_name VALUES (value1, value2, ...)
+int readFromDatabase(char *data) {
+	int num_fields, i;
+
+	mysql_query(db, "SELECT * FROM table_data");
+	result = mysql_store_result(db);
+
+	num_fields = mysql_num_fields(result);
+
+	while ((row = mysql_fetch_row(result))) {
+		for(i = 0; i < num_fields; i++) {
+			printf("%s ", row[i] ? row[i] : "NULL");
+		}
+		printf("\n");
+	}
+
+	mysql_free_result(result);
+	mysql_close(db);
 }
 
 /**
- * insert items
+ * @brief insert items
+ * @param char* pointer to data
+ * @return int number of written data
  */
-void writeToDatabase(struct data *struct_data) {	
+void writeToDatabase(char *data) {	
 
 	// INSERT INTO table_name VALUES (value1, value2, ...)
 
@@ -129,7 +151,10 @@ void writeToDatabase(struct data *struct_data) {
 }
 
 /**
- * check for options
+ * @brief check for options
+ * @param char* argument
+ * @param char* option
+ * @return int exists option, true or false
  */
 int getOption(char *arg, char *opt) {
 	if(arg[0] == '-' && arg[1] == opt[0]) {
@@ -139,11 +164,12 @@ int getOption(char *arg, char *opt) {
 }
 
 /**
- * init db script
+ * @brief init db script
  */
 int init() {
 	
-	
+	char data[256];
+
 	// int database = -1, table = -1;				/**< parameter index for arguments */
 
 	//if(argc > 1) {
@@ -184,6 +210,9 @@ int init() {
 	// init database
 	initDB(/*argv[database] , argv[table]*/);
 
+
+	readFromDatabase(data);
+
 	// close connection
 	mysql_close(db);
 
@@ -192,8 +221,8 @@ int init() {
 
 int main()  {
 
-	
-	printf("%s\n", data_to_db);	
+
+	init();	
 
 	return 0;
 }
