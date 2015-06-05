@@ -1,0 +1,28 @@
+cmake_minimum_required(VERSION 2.6)
+#set(CMAKE_C_COMPILER /opt/Xilinx/SDK/2014.3/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc-4.8.3)
+set(CMAKE_C_COMPILER /usr/bin/gcc-4.8)
+set(CMAKE_CXX_COMPILER ${CMAKE_C_COMPILER})
+
+project(FP)
+include(src/zeromq.cmake)
+
+
+#include_directories(${ZYNQ_THEEND_SOURCE_DIR}/home/mberghof/work/install_zmq_arm)
+#link_directories(${ZYNQ_THEEND_BINARY_DIR}/home/mberghof/work/install_zmq_arm)
+include_directories(${ZYNQ_THEEND_SOURCE_DIR}/home/moe/workspace/install_zmq)
+link_directories(${ZYNQ_THEEND_BINARY_DIR}/home/moe/workspace/install_zmq)
+
+#include_directories(/home/mberghof/work/install_zmq_arm/include)
+include_directories(/home/moe/workspace/install_zmq/include)
+add_executable(FP_s FP_s.cpp FP_S_to_DB.cpp) 
+target_link_libraries(FP_s zeromq pthread stdc++)
+add_executable(FP_c FP_c.cpp FP_DB_to_C.cpp)
+target_link_libraries(FP_c zeromq pthread stdc++)
+add_executable(FP_2c FP_2c.cpp)
+target_link_libraries(FP_2c zeromq pthread stdc++)
+
+#add_executable(gpio_driver gpio_driver.cpp)
+#target_link_libraries(gpio_driver zeromq pthread stdc++)
+
+set(CMAKE_LD1_FLAGS "-g -Wall")
+
