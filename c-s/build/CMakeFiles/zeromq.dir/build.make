@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/moe/workspace/FP
+CMAKE_SOURCE_DIR = /home/moe/workspace/fp_github/flowerpower/c-s
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/moe/workspace/FP/build
+CMAKE_BINARY_DIR = /home/moe/workspace/fp_github/flowerpower/c-s/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/zeromq.dir/depend.make
@@ -51,7 +51,7 @@ include CMakeFiles/zeromq.dir/flags.make
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/address.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/address.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/address.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/address.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/address.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/address.cpp
 
@@ -74,7 +74,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/address.cpp.o.provides
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/clock.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/clock.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/clock.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/clock.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/clock.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/clock.cpp
 
@@ -97,7 +97,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/clock.cpp.o.provides.b
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ctx.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ctx.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/ctx.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ctx.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ctx.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/ctx.cpp
 
@@ -120,7 +120,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ctx.cpp.o.provides.bui
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/dealer.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/dealer.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/dealer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/dealer.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/dealer.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/dealer.cpp
 
@@ -143,7 +143,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/dealer.cpp.o.provides.
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/devpoll.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/devpoll.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/devpoll.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/devpoll.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/devpoll.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/devpoll.cpp
 
@@ -166,7 +166,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/devpoll.cpp.o.provides
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/dist.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/dist.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/dist.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/dist.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/dist.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/dist.cpp
 
@@ -189,7 +189,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/dist.cpp.o.provides.bu
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/epoll.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/epoll.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/epoll.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/epoll.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/epoll.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/epoll.cpp
 
@@ -212,7 +212,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/epoll.cpp.o.provides.b
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/err.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/err.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/err.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/err.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/err.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/err.cpp
 
@@ -235,7 +235,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/err.cpp.o.provides.bui
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/fq.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/fq.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/fq.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/fq.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/fq.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/fq.cpp
 
@@ -258,7 +258,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/fq.cpp.o.provides.buil
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/io_object.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/io_object.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/io_object.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/io_object.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/io_object.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/io_object.cpp
 
@@ -281,7 +281,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/io_object.cpp.o.provid
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/io_thread.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/io_thread.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/io_thread.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/io_thread.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/io_thread.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/io_thread.cpp
 
@@ -304,7 +304,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/io_thread.cpp.o.provid
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ip.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ip.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/ip.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ip.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ip.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/ip.cpp
 
@@ -327,7 +327,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ip.cpp.o.provides.buil
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_address.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_address.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/ipc_address.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_address.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_address.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/ipc_address.cpp
 
@@ -350,7 +350,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_address.cpp.o.prov
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.cpp
 
@@ -373,7 +373,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.cpp.o.pr
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_listener.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_listener.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/ipc_listener.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_listener.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_listener.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/ipc_listener.cpp
 
@@ -396,7 +396,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_listener.cpp.o.pro
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/kqueue.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/kqueue.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/kqueue.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/kqueue.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/kqueue.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/kqueue.cpp
 
@@ -419,7 +419,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/kqueue.cpp.o.provides.
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/lb.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/lb.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/lb.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/lb.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/lb.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/lb.cpp
 
@@ -442,7 +442,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/lb.cpp.o.provides.buil
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mailbox.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mailbox.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/mailbox.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mailbox.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mailbox.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/mailbox.cpp
 
@@ -465,7 +465,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mailbox.cpp.o.provides
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mechanism.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mechanism.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/mechanism.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mechanism.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mechanism.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/mechanism.cpp
 
@@ -488,7 +488,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mechanism.cpp.o.provid
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/msg.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/msg.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/msg.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/msg.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/msg.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/msg.cpp
 
@@ -511,7 +511,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/msg.cpp.o.provides.bui
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mtrie.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mtrie.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/mtrie.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mtrie.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mtrie.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/mtrie.cpp
 
@@ -534,7 +534,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mtrie.cpp.o.provides.b
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/null_mechanism.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/null_mechanism.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/null_mechanism.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/null_mechanism.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/null_mechanism.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/null_mechanism.cpp
 
@@ -557,7 +557,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/null_mechanism.cpp.o.p
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/object.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/object.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/object.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/object.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/object.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/object.cpp
 
@@ -580,7 +580,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/object.cpp.o.provides.
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/options.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/options.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/options.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/options.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/options.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/options.cpp
 
@@ -603,7 +603,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/options.cpp.o.provides
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/own.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/own.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/own.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/own.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/own.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/own.cpp
 
@@ -626,7 +626,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/own.cpp.o.provides.bui
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pair.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pair.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/pair.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pair.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pair.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/pair.cpp
 
@@ -649,7 +649,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pair.cpp.o.provides.bu
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.cpp
 
@@ -672,7 +672,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.cpp.o.pro
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_sender.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_sender.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/pgm_sender.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_sender.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_sender.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/pgm_sender.cpp
 
@@ -695,7 +695,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_sender.cpp.o.provi
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_socket.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_socket.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/pgm_socket.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_29)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_socket.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_socket.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/pgm_socket.cpp
 
@@ -718,7 +718,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_socket.cpp.o.provi
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pipe.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pipe.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/pipe.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pipe.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pipe.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/pipe.cpp
 
@@ -741,7 +741,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pipe.cpp.o.provides.bu
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_31)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.cpp
 
@@ -764,7 +764,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.cpp.o.
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/poll.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/poll.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/poll.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_32)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/poll.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/poll.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/poll.cpp
 
@@ -787,7 +787,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/poll.cpp.o.provides.bu
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/poller_base.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/poller_base.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/poller_base.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_33)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/poller_base.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/poller_base.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/poller_base.cpp
 
@@ -810,7 +810,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/poller_base.cpp.o.prov
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/proxy.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/proxy.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/proxy.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_34)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/proxy.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/proxy.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/proxy.cpp
 
@@ -833,7 +833,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/proxy.cpp.o.provides.b
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pub.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pub.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/pub.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_35)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pub.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pub.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/pub.cpp
 
@@ -856,7 +856,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pub.cpp.o.provides.bui
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pull.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pull.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/pull.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_36)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pull.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pull.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/pull.cpp
 
@@ -879,7 +879,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pull.cpp.o.provides.bu
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/push.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/push.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/push.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_37)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/push.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/push.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/push.cpp
 
@@ -902,7 +902,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/push.cpp.o.provides.bu
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/random.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/random.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/random.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_38)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/random.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/random.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/random.cpp
 
@@ -925,7 +925,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/random.cpp.o.provides.
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/raw_decoder.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/raw_decoder.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/raw_decoder.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_39)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/raw_decoder.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/raw_decoder.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/raw_decoder.cpp
 
@@ -948,7 +948,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/raw_decoder.cpp.o.prov
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/raw_encoder.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/raw_encoder.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/raw_encoder.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_40)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/raw_encoder.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/raw_encoder.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/raw_encoder.cpp
 
@@ -971,7 +971,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/raw_encoder.cpp.o.prov
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/reaper.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/reaper.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/reaper.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_41)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/reaper.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/reaper.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/reaper.cpp
 
@@ -994,7 +994,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/reaper.cpp.o.provides.
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/rep.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/rep.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/rep.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_42)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/rep.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/rep.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/rep.cpp
 
@@ -1017,7 +1017,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/rep.cpp.o.provides.bui
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/req.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/req.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/req.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_43)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/req.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/req.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/req.cpp
 
@@ -1040,7 +1040,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/req.cpp.o.provides.bui
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/router.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/router.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/router.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_44)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_44)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/router.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/router.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/router.cpp
 
@@ -1063,7 +1063,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/router.cpp.o.provides.
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/select.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/select.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/select.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_45)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_45)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/select.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/select.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/select.cpp
 
@@ -1086,7 +1086,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/select.cpp.o.provides.
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/session_base.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/session_base.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/session_base.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_46)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_46)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/session_base.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/session_base.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/session_base.cpp
 
@@ -1109,7 +1109,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/session_base.cpp.o.pro
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/signaler.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/signaler.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/signaler.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_47)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_47)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/signaler.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/signaler.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/signaler.cpp
 
@@ -1132,7 +1132,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/signaler.cpp.o.provide
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/socket_base.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/socket_base.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/socket_base.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_48)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_48)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/socket_base.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/socket_base.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/socket_base.cpp
 
@@ -1155,7 +1155,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/socket_base.cpp.o.prov
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/stream.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/stream.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/stream.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_49)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_49)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/stream.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/stream.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/stream.cpp
 
@@ -1178,7 +1178,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/stream.cpp.o.provides.
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/stream_engine.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/stream_engine.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/stream_engine.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_50)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_50)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/stream_engine.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/stream_engine.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/stream_engine.cpp
 
@@ -1201,7 +1201,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/stream_engine.cpp.o.pr
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/sub.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/sub.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/sub.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_51)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_51)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/sub.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/sub.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/sub.cpp
 
@@ -1224,7 +1224,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/sub.cpp.o.provides.bui
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/tcp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_52)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_52)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/tcp.cpp
 
@@ -1247,7 +1247,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp.cpp.o.provides.bui
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_address.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_address.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/tcp_address.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_53)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_53)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_address.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_address.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/tcp_address.cpp
 
@@ -1270,7 +1270,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_address.cpp.o.prov
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_54)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_54)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.cpp
 
@@ -1293,7 +1293,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.cpp.o.pr
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_listener.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_listener.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/tcp_listener.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_55)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_55)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_listener.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_listener.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/tcp_listener.cpp
 
@@ -1316,7 +1316,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_listener.cpp.o.pro
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/thread.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/thread.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/thread.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_56)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_56)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/thread.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/thread.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/thread.cpp
 
@@ -1339,7 +1339,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/thread.cpp.o.provides.
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/trie.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/trie.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/trie.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_57)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_57)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/trie.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/trie.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/trie.cpp
 
@@ -1362,7 +1362,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/trie.cpp.o.provides.bu
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v1_decoder.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v1_decoder.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/v1_decoder.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_58)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_58)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v1_decoder.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v1_decoder.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/v1_decoder.cpp
 
@@ -1385,7 +1385,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v1_decoder.cpp.o.provi
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v1_encoder.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v1_encoder.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/v1_encoder.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_59)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_59)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v1_encoder.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v1_encoder.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/v1_encoder.cpp
 
@@ -1408,7 +1408,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v1_encoder.cpp.o.provi
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v2_decoder.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v2_decoder.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/v2_decoder.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_60)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_60)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v2_decoder.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v2_decoder.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/v2_decoder.cpp
 
@@ -1431,7 +1431,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v2_decoder.cpp.o.provi
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v2_encoder.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v2_encoder.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/v2_encoder.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_61)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_61)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v2_encoder.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v2_encoder.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/v2_encoder.cpp
 
@@ -1454,7 +1454,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v2_encoder.cpp.o.provi
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/xpub.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/xpub.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/xpub.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_62)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_62)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/xpub.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/xpub.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/xpub.cpp
 
@@ -1477,7 +1477,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/xpub.cpp.o.provides.bu
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/xsub.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/xsub.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/xsub.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_63)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_63)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/xsub.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/xsub.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/xsub.cpp
 
@@ -1500,7 +1500,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/xsub.cpp.o.provides.bu
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/zmq.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/zmq.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/zmq.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_64)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_64)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/zmq.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/zmq.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/zmq.cpp
 
@@ -1523,7 +1523,7 @@ CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/zmq.cpp.o.provides.bui
 
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/zmq_utils.cpp.o: CMakeFiles/zeromq.dir/flags.make
 CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/zmq_utils.cpp.o: /home/moe/workspace/zeromq-4.0.5/src/zmq_utils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/FP/build/CMakeFiles $(CMAKE_PROGRESS_65)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_65)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/zmq_utils.cpp.o"
 	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/zmq_utils.cpp.o -c /home/moe/workspace/zeromq-4.0.5/src/zmq_utils.cpp
 
@@ -1762,6 +1762,6 @@ CMakeFiles/zeromq.dir/clean:
 .PHONY : CMakeFiles/zeromq.dir/clean
 
 CMakeFiles/zeromq.dir/depend:
-	cd /home/moe/workspace/FP/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/moe/workspace/FP /home/moe/workspace/FP /home/moe/workspace/FP/build /home/moe/workspace/FP/build /home/moe/workspace/FP/build/CMakeFiles/zeromq.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/moe/workspace/fp_github/flowerpower/c-s/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/moe/workspace/fp_github/flowerpower/c-s /home/moe/workspace/fp_github/flowerpower/c-s /home/moe/workspace/fp_github/flowerpower/c-s/build /home/moe/workspace/fp_github/flowerpower/c-s/build /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles/zeromq.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/zeromq.dir/depend
 

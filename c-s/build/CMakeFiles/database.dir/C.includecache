@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/moe/workspace/fp_github/flowerpower/c-s/database.c
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+mysql/mysql.h
+-
+mysql/mysqld_error.h
+-
+mysql/errmsg.h
+-
+

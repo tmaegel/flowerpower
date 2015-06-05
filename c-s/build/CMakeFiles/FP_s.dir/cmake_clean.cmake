@@ -1,6 +1,5 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/FP_s.dir/FP_s.cpp.o"
-  "CMakeFiles/FP_s.dir/FP_S_to_DB.cpp.o"
   "FP_s.pdb"
   "FP_s"
 )

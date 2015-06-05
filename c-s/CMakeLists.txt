@@ -5,6 +5,7 @@ set(CMAKE_CXX_COMPILER ${CMAKE_C_COMPILER})
 
 project(FP)
 include(src/zeromq.cmake)
+include_directories(include)
 
 
 #include_directories(${ZYNQ_THEEND_SOURCE_DIR}/home/mberghof/work/install_zmq_arm)
@@ -14,12 +15,14 @@ link_directories(${ZYNQ_THEEND_BINARY_DIR}/home/moe/workspace/install_zmq)
 
 #include_directories(/home/mberghof/work/install_zmq_arm/include)
 include_directories(/home/moe/workspace/install_zmq/include)
-add_executable(FP_s FP_s.cpp FP_S_to_DB.cpp) 
+add_executable(FP_s FP_s.cpp) 
 target_link_libraries(FP_s zeromq pthread stdc++)
-add_executable(FP_c FP_c.cpp FP_DB_to_C.cpp)
+add_executable(FP_c FP_c.cpp)
 target_link_libraries(FP_c zeromq pthread stdc++)
 add_executable(FP_2c FP_2c.cpp)
 target_link_libraries(FP_2c zeromq pthread stdc++)
+add_executable(database database.cpp)
+target_link_libraries(database zeromq pthread stdc++)
 
 #add_executable(gpio_driver gpio_driver.cpp)
 #target_link_libraries(gpio_driver zeromq pthread stdc++)

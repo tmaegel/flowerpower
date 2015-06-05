@@ -3,9 +3,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <mysql.h>
-#include <mysqld_error.h>
-#include <errmsg.h>
+#include <mysql/mysql.h>
+#include <mysql/mysqld_error.h>
+#include <mysql/errmsg.h>
 
 #define TRUE 1
 #define FALSE 0

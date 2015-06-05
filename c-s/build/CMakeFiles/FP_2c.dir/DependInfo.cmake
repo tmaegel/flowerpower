@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/moe/workspace/FP/FP_2c.cpp" "/home/moe/workspace/FP/build/CMakeFiles/FP_2c.dir/FP_2c.cpp.o"
+  "/home/moe/workspace/fp_github/flowerpower/c-s/FP_2c.cpp" "/home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles/FP_2c.dir/FP_2c.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,11 +16,12 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/moe/workspace/FP/build/CMakeFiles/zeromq.dir/DependInfo.cmake"
+  "/home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles/zeromq.dir/DependInfo.cmake"
   )
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "../include"
   "/home/moe/workspace/install_zmq"
   "/home/moe/workspace/install_zmq/include"
   "../src/home/mberghof/work/install_zmq_arm/include"
