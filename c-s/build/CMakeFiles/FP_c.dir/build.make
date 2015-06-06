@@ -72,14 +72,39 @@ CMakeFiles/FP_c.dir/FP_c.cpp.o.provides: CMakeFiles/FP_c.dir/FP_c.cpp.o.requires
 
 CMakeFiles/FP_c.dir/FP_c.cpp.o.provides.build: CMakeFiles/FP_c.dir/FP_c.cpp.o
 
+CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.o: CMakeFiles/FP_c.dir/flags.make
+CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.o: /home/moe/workspace/fp_github/flowerpower/db/database.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.o"
+	/usr/bin/gcc-4.8  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.o   -c /home/moe/workspace/fp_github/flowerpower/db/database.c
+
+CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.i"
+	/usr/bin/gcc-4.8  $(C_DEFINES) $(C_FLAGS) -E /home/moe/workspace/fp_github/flowerpower/db/database.c > CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.i
+
+CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.s"
+	/usr/bin/gcc-4.8  $(C_DEFINES) $(C_FLAGS) -S /home/moe/workspace/fp_github/flowerpower/db/database.c -o CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.s
+
+CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.o.requires:
+.PHONY : CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.o.requires
+
+CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.o.provides: CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.o.requires
+	$(MAKE) -f CMakeFiles/FP_c.dir/build.make CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.o.provides.build
+.PHONY : CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.o.provides
+
+CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.o.provides.build: CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.o
+
 # Object files for target FP_c
 FP_c_OBJECTS = \
-"CMakeFiles/FP_c.dir/FP_c.cpp.o"
+"CMakeFiles/FP_c.dir/FP_c.cpp.o" \
+"CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.o"
 
 # External object files for target FP_c
 FP_c_EXTERNAL_OBJECTS =
 
 FP_c: CMakeFiles/FP_c.dir/FP_c.cpp.o
+FP_c: CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.o
 FP_c: CMakeFiles/FP_c.dir/build.make
 FP_c: libzeromq.a
 FP_c: CMakeFiles/FP_c.dir/link.txt
@@ -91,6 +116,7 @@ CMakeFiles/FP_c.dir/build: FP_c
 .PHONY : CMakeFiles/FP_c.dir/build
 
 CMakeFiles/FP_c.dir/requires: CMakeFiles/FP_c.dir/FP_c.cpp.o.requires
+CMakeFiles/FP_c.dir/requires: CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.o.requires
 .PHONY : CMakeFiles/FP_c.dir/requires
 
 CMakeFiles/FP_c.dir/clean:

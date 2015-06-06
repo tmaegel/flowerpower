@@ -21,7 +21,6 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "../include"
   "/home/moe/workspace/install_zmq"
   "/home/moe/workspace/install_zmq/include"
   "../src/home/mberghof/work/install_zmq_arm/include"

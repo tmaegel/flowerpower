@@ -138,19 +138,6 @@ FP_s/fast:
 .PHONY : FP_s/fast
 
 #=============================================================================
-# Target rules for targets named database
-
-# Build rule for target.
-database: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 database
-.PHONY : database
-
-# fast build rule for target.
-database/fast:
-	$(MAKE) -f CMakeFiles/database.dir/build.make CMakeFiles/database.dir/build
-.PHONY : database/fast
-
-#=============================================================================
 # Target rules for targets named zeromq
 
 # Build rule for target.
@@ -235,29 +222,29 @@ FP_s.cpp.s:
 	$(MAKE) -f CMakeFiles/FP_s.dir/build.make CMakeFiles/FP_s.dir/FP_s.cpp.s
 .PHONY : FP_s.cpp.s
 
-database.o: database.cpp.o
-.PHONY : database.o
+home/moe/workspace/fp_github/flowerpower/db/database.o: home/moe/workspace/fp_github/flowerpower/db/database.c.o
+.PHONY : home/moe/workspace/fp_github/flowerpower/db/database.o
 
 # target to build an object file
-database.cpp.o:
-	$(MAKE) -f CMakeFiles/database.dir/build.make CMakeFiles/database.dir/database.cpp.o
-.PHONY : database.cpp.o
+home/moe/workspace/fp_github/flowerpower/db/database.c.o:
+	$(MAKE) -f CMakeFiles/FP_c.dir/build.make CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.o
+.PHONY : home/moe/workspace/fp_github/flowerpower/db/database.c.o
 
-database.i: database.cpp.i
-.PHONY : database.i
+home/moe/workspace/fp_github/flowerpower/db/database.i: home/moe/workspace/fp_github/flowerpower/db/database.c.i
+.PHONY : home/moe/workspace/fp_github/flowerpower/db/database.i
 
 # target to preprocess a source file
-database.cpp.i:
-	$(MAKE) -f CMakeFiles/database.dir/build.make CMakeFiles/database.dir/database.cpp.i
-.PHONY : database.cpp.i
+home/moe/workspace/fp_github/flowerpower/db/database.c.i:
+	$(MAKE) -f CMakeFiles/FP_c.dir/build.make CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.i
+.PHONY : home/moe/workspace/fp_github/flowerpower/db/database.c.i
 
-database.s: database.cpp.s
-.PHONY : database.s
+home/moe/workspace/fp_github/flowerpower/db/database.s: home/moe/workspace/fp_github/flowerpower/db/database.c.s
+.PHONY : home/moe/workspace/fp_github/flowerpower/db/database.s
 
 # target to generate assembly for a file
-database.cpp.s:
-	$(MAKE) -f CMakeFiles/database.dir/build.make CMakeFiles/database.dir/database.cpp.s
-.PHONY : database.cpp.s
+home/moe/workspace/fp_github/flowerpower/db/database.c.s:
+	$(MAKE) -f CMakeFiles/FP_c.dir/build.make CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.s
+.PHONY : home/moe/workspace/fp_github/flowerpower/db/database.c.s
 
 home/moe/workspace/zeromq-4.0.5/src/address.o: home/moe/workspace/zeromq-4.0.5/src/address.cpp.o
 .PHONY : home/moe/workspace/zeromq-4.0.5/src/address.o
@@ -1828,7 +1815,6 @@ help:
 	@echo "... FP_2c"
 	@echo "... FP_c"
 	@echo "... FP_s"
-	@echo "... database"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... zeromq"
@@ -1841,9 +1827,9 @@ help:
 	@echo "... FP_s.o"
 	@echo "... FP_s.i"
 	@echo "... FP_s.s"
-	@echo "... database.o"
-	@echo "... database.i"
-	@echo "... database.s"
+	@echo "... home/moe/workspace/fp_github/flowerpower/db/database.o"
+	@echo "... home/moe/workspace/fp_github/flowerpower/db/database.i"
+	@echo "... home/moe/workspace/fp_github/flowerpower/db/database.s"
 	@echo "... home/moe/workspace/zeromq-4.0.5/src/address.o"
 	@echo "... home/moe/workspace/zeromq-4.0.5/src/address.i"
 	@echo "... home/moe/workspace/zeromq-4.0.5/src/address.s"
