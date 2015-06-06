@@ -16,7 +16,7 @@ void *responder = zmq_socket (context, ZMQ_REP);
 // Global variables & functions
 int size;
 int major, minor, patch;
-//extern char *data_to_db;
+extern char *data_to_db;
 void writeToDatabase(void);
 
 //  Receive ZeroMQ string from socket and convert into C string
