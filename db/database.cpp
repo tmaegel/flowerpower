@@ -133,6 +133,11 @@ int readFromDatabase(char *data) {
 
 	mysql_free_result(result);
 	mysql_close(db);
+
+	/**
+	 * @todo other return value
+	 */
+	return 0;
 }
 
 /**

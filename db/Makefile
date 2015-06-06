@@ -1,6 +1,6 @@
 CC = gcc
 TARGET = database
-SRC = $(TARGET).c
+SRC = $(TARGET).ccp
 OUT = $(TARGET).o
 prog: $(SRC)
 	$(CC) -c -I/usr/include/mysql $(SRC)
