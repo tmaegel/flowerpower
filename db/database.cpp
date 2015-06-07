@@ -22,6 +22,19 @@ MYSQL_ROW row;
 unsigned int error;
 
 /**
+ * @brief check for options
+ * @param char* argument
+ * @param char* option
+ * @return int exists option, true or false
+ */
+int getOption(char *arg, char *opt) {
+	if(arg[0] == '-' && arg[1] == opt[0]) {
+		return TRUE;
+	}
+	return FALSE;
+}
+
+/**
  * @brief check for errors
  */
 void checkError(void) {
@@ -30,33 +43,6 @@ void checkError(void) {
 		exit(EXIT_FAILURE);
 	}
 }
-
-/**
- * @brief replace a string with an other string
- */
-char *strReplace(char *search, char *replace, char *subject) {
-	char *p, *old_subject, *new_subject;
-	int final_size = strlen(replace) - strlen(search) + strlen(subject);
-	
-	// reserve memory
-	new_subject = malloc(final_size);
-	// set it to blank
-	strcpy(new_subject, "");
-	// start position
-	old_subject = subject;
-	// search position
-	p = strstr(subject, search);
-	// copy text from orginal subject until search position
-	strncpy(new_subject + strlen(new_subject), old_subject, p - old_subject);
-	// append the repacement text
-	strcpy(new_subject + strlen(new_subject), replace);
-	// set start position after search text
-	old_subject = p + strlen(search);
-	// append the end of the orginial subject
-	strcpy(new_subject + strlen(new_subject), old_subject);
-
-	return new_subject;
-}     
 
 /**
  * @brief show helping text
@@ -72,19 +58,29 @@ void showHelp() {
 }
 
 /**
+ * @brief create database
+ * @param char* database name
+ */
+void createDatabase(char *database) {
+	char query[128];
+	snprintf(query, sizeof(query), "CREATE DATABASE IF NOT EXISTS %s", database);
+
+	mysql_query(db, query);
+	checkError();
+	printf("create database '%s' success\n", database);
+}
+
+/**
  * @brief create table
  * @param char* table name
  */
 void createTable(char *table) {
-	char search[] = "<table>";
-	char query[] = "CREATE TABLE IF NOT EXISTS <table> (id INT AUTO_INCREMENT PRIMARY KEY, hw_id INT, temp FLOAT, brightness FLOAT, humanity FLOAT, datetime DATETIME)";
-	char *sql_query;
-	sql_query = strReplace(search, table, query);
+	char query[256];
+	snprintf(query, sizeof(query), "CREATE TABLE IF NOT EXISTS %s (id INT AUTO_INCREMENT PRIMARY KEY, hw_id INT, temp FLOAT, brightness FLOAT, humanity FLOAT, datetime DATETIME)", table);
 
-	printf("execute query:\n%s\n", sql_query);
-	mysql_query(db, sql_query);
+	mysql_query(db, query);
 	checkError();
-	printf("create table '%s'\n", table);
+	printf("create table '%s' success\n", table);
 }
 
 /**
@@ -94,18 +90,19 @@ void initDB(/*char *database, char *table*/) {
 	// init and reserve memory	
 	db = mysql_init(NULL);
 	checkError();	
-	printf("initialize database \n");
+	printf("initialize...\n");
 
 	// database connect
-	mysql_real_connect(db, HOST, USER, PASSWORD, DATABASE, 0, NULL, 0);
+	mysql_real_connect(db, HOST, USER, PASSWORD, NULL, 0, NULL, 0);
 	checkError();
-	printf("connect to database \n");
+	printf("connect  success\n");
 
-	// interaction with db
+	createDatabase(DATABASE);	
 
 	// selectt db
 	mysql_select_db(db, DATABASE);
 	checkError();
+	printf("select success\n");
 
 	// create table
 	createTable("table_data");
@@ -146,26 +143,13 @@ int readFromDatabase(char *data) {
  * @return int number of written data
  */
 void writeToDatabase(char *data) {	
-
 	// INSERT INTO table_name VALUES (value1, value2, ...)
+	/* char query[256];
+	snprintf(query, sizeof(query), "CREATE TABLE IF NOT EXISTS %s (id INT AUTO_INCREMENT PRIMARY KEY, hw_id INT, temp FLOAT, brightness FLOAT, humanity FLOAT, datetime DATETIME)", table);
 
-	/* printf("execute query:\n%s\n", query);
 	mysql_query(db, query);
 	checkError();
-	printf("insert item\n"); */
-}
-
-/**
- * @brief check for options
- * @param char* argument
- * @param char* option
- * @return int exists option, true or false
- */
-int getOption(char *arg, char *opt) {
-	if(arg[0] == '-' && arg[1] == opt[0]) {
-		return TRUE;
-	}
-	return FALSE;
+	printf("create table '%s' success\n", table); */
 }
 
 /**
@@ -214,7 +198,6 @@ int init() {
 
 	// init database
 	initDB(/*argv[database] , argv[table]*/);
-
 
 	readFromDatabase(data);
 
