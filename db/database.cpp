@@ -146,6 +146,8 @@ void writeToDatabase(char *data) {
 	// INSERT INTO table_name VALUES (value1, value2, ...)
 	/* char query[256];
 	snprintf(query, sizeof(query), "CREATE TABLE IF NOT EXISTS %s (id INT AUTO_INCREMENT PRIMARY KEY, hw_id INT, temp FLOAT, brightness FLOAT, humanity FLOAT, datetime DATETIME)", table);
+	
+	mysql_query(conn, "INSERT INTO writers VALUES('Leo Tolstoy')");
 
 	mysql_query(db, query);
 	checkError();
