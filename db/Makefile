@@ -1,5 +1,5 @@
 CC = gcc
-TARGET = database
+TARGET = main
 SRC = $(TARGET).cpp
 OUT = $(TARGET).o
 prog: $(SRC)

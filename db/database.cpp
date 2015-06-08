@@ -1,5 +1,3 @@
-// #include "interface.h"
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -27,7 +25,7 @@ unsigned int error;
  * @param char* option
  * @return int exists option, true or false
  */
-int getOption(char *arg, char *opt) {
+int getOption(const char *arg, const char *opt) {
 	if(arg[0] == '-' && arg[1] == opt[0]) {
 		return TRUE;
 	}
@@ -55,57 +53,6 @@ void showHelp() {
 	"\t-t\t\tinit table\n\n");
 	
 	exit(EXIT_FAILURE);
-}
-
-/**
- * @brief create database
- * @param char* database name
- */
-void createDatabase(char *database) {
-	char query[128];
-	snprintf(query, sizeof(query), "CREATE DATABASE IF NOT EXISTS %s", database);
-
-	mysql_query(db, query);
-	checkError();
-	printf("create database '%s' success\n", database);
-}
-
-/**
- * @brief create table
- * @param char* table name
- */
-void createTable(char *table) {
-	char query[256];
-	snprintf(query, sizeof(query), "CREATE TABLE IF NOT EXISTS %s (id INT AUTO_INCREMENT PRIMARY KEY, hw_id INT, temp FLOAT, brightness FLOAT, humanity FLOAT, datetime DATETIME)", table);
-
-	mysql_query(db, query);
-	checkError();
-	printf("create table '%s' success\n", table);
-}
-
-/**
- * @brief init database
- */
-void initDB(/*char *database, char *table*/) {
-	// init and reserve memory	
-	db = mysql_init(NULL);
-	checkError();	
-	printf("initialize...\n");
-
-	// database connect
-	mysql_real_connect(db, HOST, USER, PASSWORD, NULL, 0, NULL, 0);
-	checkError();
-	printf("connect  success\n");
-
-	createDatabase(DATABASE);	
-
-	// selectt db
-	mysql_select_db(db, DATABASE);
-	checkError();
-	printf("select success\n");
-
-	// create table
-	createTable("table_data");
 }
 
 /**
@@ -155,51 +102,58 @@ void writeToDatabase(char *data) {
 }
 
 /**
- * @brief init db script
+ * @brief create database
+ * @param char* database name
  */
-int init() {
-	
-	char data[256];
+void createDatabase(const char *database) {
+	char query[128];
+	snprintf(query, sizeof(query), "CREATE DATABASE IF NOT EXISTS %s", database);
 
-	// int database = -1, table = -1;				/**< parameter index for arguments */
+	mysql_query(db, query);
+	checkError();
+	printf("create database '%s' success\n", database);
+}
 
-	//if(argc > 1) {
-	//	int argi;								/**< parameter index */
-	//	int argument = FALSE;					/**< next parameter must be an argument */
-	/*	for(argi = 0; argi < argc; argi++) {
-			if(argument == FALSE) {
-				if(getOption(argv[argi], "d") == TRUE) {
-					argument = TRUE;
-				} else if(getOption(argv[argi], "t") == TRUE) {
-					argument = TRUE;
-				} else if(getOption(argv[argi], "h") == TRUE) {
-					showHelp();
-				}
-			} else {
-				argument = FALSE;
-				if(getOption(argv[argi-1], "d") == TRUE) {
-					database = argi;
-				} else if(getOption(argv[argi-1], "t") == TRUE) {
-					table = argi;
-				} else {
-					printf("wrong argument\n");
-					exit(EXIT_FAILURE);
-				}
-			}
-		}
-	} else {
-		showHelp();
-	}
-	
-	if(database != -1 && table != -1) {
-		db_init(argv[database], argv[table]);
-	} else {
-		printf("wrong input\n");
-		exit(EXIT_FAILURE);
-	}*/
+/**
+ * @brief create table
+ * @param char* table name
+ */
+void createTable(const char *table) {
+	char query[256];
+	snprintf(query, sizeof(query), "CREATE TABLE IF NOT EXISTS %s (id INT AUTO_INCREMENT PRIMARY KEY, hw_id INT, temp FLOAT, brightness FLOAT, humanity FLOAT, datetime DATETIME)", table);
 
-	// init database
-	initDB(/*argv[database] , argv[table]*/);
+	mysql_query(db, query);
+	checkError();
+	printf("create table '%s' success\n", table);
+}
+
+/**
+ * @brief init database
+ * @param char* database name
+ * @param char* table name
+ */
+int init(const char *database, const char *table) {	
+	char data[256];							/**< pointer to data  */
+		
+	// init and reserve memory	
+	db = mysql_init(NULL);
+	checkError();	
+	printf("initialize...\n");
+
+	// database connect
+	mysql_real_connect(db, HOST, USER, PASSWORD, NULL, 0, NULL, 0);
+	checkError();
+	printf("connect  success\n");
+
+	createDatabase(DATABASE);	
+
+	// selectt db
+	mysql_select_db(db, DATABASE);
+	checkError();
+	printf("select success\n");
+
+	// create table
+	createTable("table_data");
 
 	readFromDatabase(data);
 
@@ -208,11 +162,3 @@ int init() {
 
 	return EXIT_SUCCESS;
 }
-
-/*int main()  {
-
-
-	init();	
-
-	return 0;
-}*/
