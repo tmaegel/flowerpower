@@ -87,6 +87,7 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "zeromq_generated"
   "/home/moe/workspace/install_zmq"
   "/home/moe/workspace/install_zmq/include"
+  "/usr/include/mysql"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

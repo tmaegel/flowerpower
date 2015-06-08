@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 2.6)
 #set(CMAKE_C_COMPILER /opt/Xilinx/SDK/2014.3/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc-4.8.3)
 set(CMAKE_C_COMPILER /usr/bin/gcc-4.8)
 set(CMAKE_CXX_COMPILER ${CMAKE_C_COMPILER})
+#SET(GCC_COVERAGE_COMPILE_FLAGS "-lm")
 
 project(FP)
 include(src/zeromq.cmake)
@@ -14,10 +15,14 @@ link_directories(${ZYNQ_THEEND_BINARY_DIR}/home/moe/workspace/install_zmq)
 
 #include_directories(/home/mberghof/work/install_zmq_arm/include)
 include_directories(/home/moe/workspace/install_zmq/include)
+include_directories(/usr/include/mysql/)
+#add_definitions(${GCC_COVERAGE_COMPILE_FLAGS})
+
 add_executable(FP_s FP_s.cpp) 
 target_link_libraries(FP_s zeromq pthread stdc++)
 add_executable(FP_c FP_c.cpp /home/moe/workspace/fp_github/flowerpower/db/database.cpp)
-target_link_libraries(FP_c zeromq pthread stdc++)
+target_link_libraries(FP_c /usr/lib/x86_64-linux-gnu/libm.so /usr/lib/x86_64-linux-gnu/libmysqlclient.a
+ zeromq pthread stdc++)
 add_executable(FP_2c FP_2c.cpp)
 target_link_libraries(FP_2c zeromq pthread stdc++)
 #add_executable(database database.cpp)
