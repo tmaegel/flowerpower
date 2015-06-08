@@ -1,1 +1,1 @@
-/usr/bin/gcc-4.8       CMakeFiles/FP_c.dir/FP_c.cpp.o CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.c.o  -o FP_c  -L/home/moe/workspace/install_zmq -rdynamic libzeromq.a -lpthread -lstdc++ -Wl,-rpath,/home/moe/workspace/install_zmq 
+/usr/bin/gcc-4.8       CMakeFiles/FP_c.dir/FP_c.cpp.o CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.o  -o FP_c  -L/home/moe/workspace/install_zmq -rdynamic -lm -Wl,-Bstatic -lmysqlclient libzeromq.a -Wl,-Bdynamic -lpthread -lstdc++ -Wl,-rpath,/home/moe/workspace/install_zmq 

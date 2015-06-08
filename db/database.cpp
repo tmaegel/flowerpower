@@ -207,10 +207,10 @@ int init() {
 	return EXIT_SUCCESS;
 }
 
-int main()  {
+/*int main()  {
 
 
 	init();	
 
 	return 0;
-}
+}*/
