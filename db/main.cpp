@@ -38,10 +38,24 @@ int main()  {
 		exit(EXIT_FAILURE);
 	}*/
 
-	/**
-	 * @todo tmp parameters
-	 */
-	init("Param1", "Param2");	
+	const char *database = "db_data";
+	const char *table = "table_data";
 
+	struct measurement data[100];
+
+	init(database, table);
+
+	int num = readFromDatabase(table, data);
+
+	/**< check for data */
+	int dataLength = sizeof(data) / sizeof(data[0]);
+	for(int i = 0; i < dataLength; i++) {
+		printf("%d %f %f %f %s\n", data[i].hw_id, data[i].temperature, data[i].humidity, data[i].brightness, data[i].timestamp);
+	}
+
+	printf("Anzahl der Elemente: %d\n", num);
+
+	closeDatabase();
+	
 	return EXIT_SUCCESS;
 }

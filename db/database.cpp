@@ -1,21 +1,29 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdbool.h>
 #include <string.h>
 #include <mysql/mysql.h>
 #include <mysql/mysqld_error.h>
 #include <mysql/errmsg.h>
 
-#define TRUE 1
-#define FALSE 0
+#include <time.h>
 
 #define HOST "localhost"
 #define USER "root"
 #define PASSWORD "TrOoNoIt#90+"
-#define DATABASE "data"
 
 MYSQL *db;
 MYSQL_RES *result;
 MYSQL_ROW row;
+
+/**< struct to manage the measurements */
+struct measurement {
+	int hw_id;
+	double temperature;
+	double humidity;
+	double brightness;
+	char timestamp[20];		/**< char ausreichend, da timestamp in Datenbank als Zeichenkette an SQL übergeben wird */
+};
 
 unsigned int error;
 
@@ -27,9 +35,9 @@ unsigned int error;
  */
 int getOption(const char *arg, const char *opt) {
 	if(arg[0] == '-' && arg[1] == opt[0]) {
-		return TRUE;
+		return true;
 	}
-	return FALSE;
+	return false;
 }
 
 /**
@@ -60,45 +68,50 @@ void showHelp() {
  * @param char* pointer to string
  * @return int number of read data 
  */
-int readFromDatabase(char *data) {
-	int num_fields, i;
+int readFromDatabase(const char *table, struct measurement *data) {
+	char query[256];
+	int num_fields, num = 0;
 
-	mysql_query(db, "SELECT * FROM table_data");
+	snprintf(query, sizeof(query), "SELECT * FROM %s", table);
+	
+	mysql_query(db, query);
 	result = mysql_store_result(db);
 
 	num_fields = mysql_num_fields(result);
 
 	while ((row = mysql_fetch_row(result))) {
-		for(i = 0; i < num_fields; i++) {
+		/* for(int i = 0; i < num_fields; i++) {
 			printf("%s ", row[i] ? row[i] : "NULL");
-		}
-		printf("\n");
+		} */
+		// printf("\n");
+
+		/**< row[0] ignored, its index */
+		data[num].hw_id = atoi(row[1]);
+		data[num].temperature = atof(row[2]);
+		data[num].humidity = atof(row[3]);
+		data[num].brightness= atof(row[4]);
+		strcpy(data[num].timestamp, row[5]);
+		
+		num++;
 	}
 
 	mysql_free_result(result);
-	mysql_close(db);
 
-	/**
-	 * @todo other return value
-	 */
-	return 0;
+	return num;
 }
 
 /**
  * @brief insert items
  * @param char* pointer to data
- * @return int number of written data
+ * @todo return int for number of written data
  */
-void writeToDatabase(char *data) {	
-	// INSERT INTO table_name VALUES (value1, value2, ...)
-	/* char query[256];
-	snprintf(query, sizeof(query), "CREATE TABLE IF NOT EXISTS %s (id INT AUTO_INCREMENT PRIMARY KEY, hw_id INT, temp FLOAT, brightness FLOAT, humanity FLOAT, datetime DATETIME)", table);
+void writeToDatabase(const char *table, struct measurement *data) {	
+	char query[256];
 	
-	mysql_query(conn, "INSERT INTO writers VALUES('Leo Tolstoy')");
+	snprintf(query, sizeof(query), "INSERT INTO %s VALUES (NULL, %d, %f, %f, %f, '%s')", table, data->hw_id, data->temperature, data->brightness, data->humidity, data->timestamp);
 
+	printf("%s\n", query);
 	mysql_query(db, query);
-	checkError();
-	printf("create table '%s' success\n", table); */
 }
 
 /**
@@ -120,7 +133,7 @@ void createDatabase(const char *database) {
  */
 void createTable(const char *table) {
 	char query[256];
-	snprintf(query, sizeof(query), "CREATE TABLE IF NOT EXISTS %s (id INT AUTO_INCREMENT PRIMARY KEY, hw_id INT, temp FLOAT, brightness FLOAT, humanity FLOAT, datetime DATETIME)", table);
+	snprintf(query, sizeof(query), "CREATE TABLE IF NOT EXISTS %s (id INT AUTO_INCREMENT PRIMARY KEY, hw_id INT, temp FLOAT, brightness FLOAT, humidity FLOAT, datetime DATETIME)", table);
 
 	mysql_query(db, query);
 	checkError();
@@ -128,11 +141,41 @@ void createTable(const char *table) {
 }
 
 /**
+ * @brief Insert simulation data
+ */
+void insertSimData(const char *table, int num = 100) {
+	time_t t1, t2;
+	struct measurement data;
+	struct tm* tm_info;
+	char str_time[26];
+
+	time(&t1);
+	srand(time(NULL));
+	
+	for(int i = 0; i < num; i++) {
+		/**< add 10 minutes */
+		t2 = t1 + i * 600;
+		tm_info = localtime(&t2);
+
+		strftime(str_time, 26, "%Y:%m:%d %H:%M:%S", tm_info);
+		
+		data.hw_id = 1;
+		data.temperature = rand() % 30;
+		data.brightness = rand() % 150;
+		data.humidity = rand() % 80;	
+		strcpy(data.timestamp, str_time);
+
+		writeToDatabase(table, &data);
+	}
+}
+
+/**
  * @brief init database
  * @param char* database name
  * @param char* table name
+ * @param bool simulate date
  */
-int init(const char *database, const char *table) {	
+void init(const char *database, const char *table, bool simulate = false) {	
 	char data[256];							/**< pointer to data  */
 		
 	// init and reserve memory	
@@ -145,20 +188,24 @@ int init(const char *database, const char *table) {
 	checkError();
 	printf("connect  success\n");
 
-	createDatabase(DATABASE);	
+	createDatabase(database);	
 
 	// selectt db
-	mysql_select_db(db, DATABASE);
+	mysql_select_db(db, database);
 	checkError();
 	printf("select success\n");
 
 	// create table
-	createTable("table_data");
+	createTable(table);
 
-	readFromDatabase(data);
+	if(simulate) {
+		insertSimData(table);
+	}
+}
 
-	// close connection
+/**
+ * @brief close database
+ */
+void closeDatabase() {
 	mysql_close(db);
-
-	return EXIT_SUCCESS;
 }
