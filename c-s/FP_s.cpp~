@@ -75,7 +75,7 @@ int main (int argc, char* argv[])
 
 	while (1) {
 		//strcpy(data_to_db, s_recv(responder));
-		printf ("Received:%s\n", s_recv(responder));
+		//printf ("Received:%s\n", data_to_db);
 		//writeToDatabase();
 		
 		sleep (1); // Do some 'work'

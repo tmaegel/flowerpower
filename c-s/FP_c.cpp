@@ -6,15 +6,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+ 
 
 // Socket talks to server
 void *context = zmq_ctx_new ();
 void *requester = zmq_socket (context, ZMQ_REQ);
 
 // Global variables & function
-int size;
+int size, set;
 int major, minor, patch;
 char *data_to_client = (char*)malloc(32 * sizeof(char));
+int request_nbr;
 
 //extern int readFromDatabase(char[]);
 //extern int init();
@@ -32,18 +34,46 @@ static char *s_recv (void *requester) {
                 return strdup (buffer);
 }
 
+char send_client(char *data_to_client){
 
-int main (int argc, char* argv[])
+
+	//data_to_client = "Hey";	
+
+	//for (request_nbr = 0; request_nbr != 10; request_nbr++) {
+		
+		printf ("Sending: %s... %d…\n", data_to_client, request_nbr);
+		zmq_send (requester, data_to_client, 255, 0);
+		printf ("Received:%s\n", s_recv(requester));
+	//}
+	
+	return 0;
+
+}
+
+int close_client(){
+
+	zmq_close (requester);
+	zmq_ctx_destroy (context);
+
+	//delete allocated mem
+	//delete [] param_port;
+	//delete [] param_ip;
+	//delete [] tcp_addr;
+	
+	return 0;
+}
+
+int init_client (int argc, char* argv[])
 {	
-	int request_nbr;
 	
 
 	//scan parameter
 	if (1 == argc || 2 == argc) {
-        	printf("port ip\n");
-	        return 1;
+        	printf("No clientparameter, please type port ip\n");
+		exit(0);	        
    	}
 	
+
 	char *param_port = (char*)malloc(strlen(argv[1]));
 	char *param_ip = (char*)malloc(strlen(argv[2]));
 	char *tcp_addr = (char*)malloc(26 * sizeof(char));
@@ -73,25 +103,15 @@ int main (int argc, char* argv[])
 	
 	//begin connecting
 	printf ("Connecting to hello world server…\n");
-	//init();
-	//if(0 == ((char*)readFromDatabase(char[])))
-	//{
-		data_to_client = "Hey";
-	//}
-	zmq_connect (requester, tcp_addr);
-	for (request_nbr = 0; request_nbr != 10; request_nbr++) {
-		
-		printf ("Sending: %s... %d…\n", data_to_client, request_nbr);
-		zmq_send (requester, data_to_client, 255, 0);
-		printf ("Received:%s\n", s_recv(requester));
-	}
-	zmq_close (requester);
-	zmq_ctx_destroy (context);
-
-	//delete allocated mem
-	delete [] param_port;
-	delete [] param_ip;
-	delete [] tcp_addr;
 	
+
+	zmq_connect (requester, tcp_addr);
+	
+
 	return 0;
 }
+
+
+
+
+

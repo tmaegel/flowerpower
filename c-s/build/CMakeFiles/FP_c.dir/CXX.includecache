@@ -6,17 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/moe/workspace/fp_github/flowerpower/db/database.cpp
-stdlib.h
--
-stdio.h
--
-string.h
--
-mysql/mysql.h
--
-mysql/mysqld_error.h
--
-mysql/errmsg.h
--
-
