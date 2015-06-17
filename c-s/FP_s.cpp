@@ -16,8 +16,8 @@ void *responder = zmq_socket (context, ZMQ_REP);
 // Global variables & functions
 int size;
 int major, minor, patch;
-//extern char *data_to_db;
-//void writeToDatabase(void);
+char *data_to_db;
+
 
 //  Receive ZeroMQ string from socket and convert into C string
 //  Chops string at 255 chars, if it's longer
@@ -32,13 +32,36 @@ static char *s_recv (void *responder) {
     		return strdup (buffer);
 }
 
+char *send_db(){
+
+
+	//while (1) {
+		//strcpy(data_to_db, s_recv(responder));
+		printf ("Received:%s\n", s_recv(responder));
+		
+		sleep (1); // Do some 'work'
+		zmq_send (responder, "World", 255, 0);
+	//}
 	
-int main (int argc, char* argv[])
+	return s_recv(responder);
+}
+
+
+int close_server(){
+
+	//delete allocated mem	
+	//free(param_port);
+       // free(param_ip);
+       // free(tcp_addr);
+	return 0;
+}
+
+int init_server (int argc, char* argv[])
 {
 	//scan parameter
         if (1 == argc || 2 == argc) {
-                printf("port ip\n");
-                return 1;
+                printf("No server parameter, please type port ip\n");
+                exit(0);
         }
         
         char *param_port = (char*)malloc(strlen(argv[1]));
@@ -73,19 +96,6 @@ int main (int argc, char* argv[])
 	assert (rc == 0);
 	
 
-	while (1) {
-		//strcpy(data_to_db, s_recv(responder));
-		printf ("Received:%s\n", s_recv(responder));
-		//writeToDatabase();
-		
-		sleep (1); // Do some 'work'
-		zmq_send (responder, "World", 255, 0);
-	}
-
-	//delete allocated mem	
-	free(param_port);
-        free(param_ip);
-        free(tcp_addr);
 
 	return 0;
 

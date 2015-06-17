@@ -88,73 +88,73 @@ clean: CMakeFiles/FP_2c.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/FP_s.dir
+# Target rules for target CMakeFiles/main_c.dir
 
 # All Build rule for target.
-CMakeFiles/FP_s.dir/all: CMakeFiles/zeromq.dir/all
-	$(MAKE) -f CMakeFiles/FP_s.dir/build.make CMakeFiles/FP_s.dir/depend
-	$(MAKE) -f CMakeFiles/FP_s.dir/build.make CMakeFiles/FP_s.dir/build
+CMakeFiles/main_c.dir/all: CMakeFiles/zeromq.dir/all
+	$(MAKE) -f CMakeFiles/main_c.dir/build.make CMakeFiles/main_c.dir/depend
+	$(MAKE) -f CMakeFiles/main_c.dir/build.make CMakeFiles/main_c.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles  2
-	@echo "Built target FP_s"
-.PHONY : CMakeFiles/FP_s.dir/all
+	@echo "Built target main_c"
+.PHONY : CMakeFiles/main_c.dir/all
 
 # Include target in all.
-all: CMakeFiles/FP_s.dir/all
+all: CMakeFiles/main_c.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/FP_s.dir/rule: cmake_check_build_system
+CMakeFiles/main_c.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles 66
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/FP_s.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles 0
-.PHONY : CMakeFiles/FP_s.dir/rule
+.PHONY : CMakeFiles/main_c.dir/rule
 
 # Convenience name for target.
-FP_s: CMakeFiles/FP_s.dir/rule
-.PHONY : FP_s
+main_c: CMakeFiles/main_c.dir/rule
+.PHONY : main_c
 
 # clean rule for target.
-CMakeFiles/FP_s.dir/clean:
-	$(MAKE) -f CMakeFiles/FP_s.dir/build.make CMakeFiles/FP_s.dir/clean
-.PHONY : CMakeFiles/FP_s.dir/clean
+CMakeFiles/main_c.dir/clean:
+	$(MAKE) -f CMakeFiles/main_c.dir/build.make CMakeFiles/main_c.dir/clean
+.PHONY : CMakeFiles/main_c.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/FP_s.dir/clean
+clean: CMakeFiles/main_c.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/main.dir
+# Target rules for target CMakeFiles/main_s.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all: CMakeFiles/zeromq.dir/all
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+CMakeFiles/main_s.dir/all: CMakeFiles/zeromq.dir/all
+	$(MAKE) -f CMakeFiles/main_s.dir/build.make CMakeFiles/main_s.dir/depend
+	$(MAKE) -f CMakeFiles/main_s.dir/build.make CMakeFiles/main_s.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles  3
-	@echo "Built target main"
-.PHONY : CMakeFiles/main.dir/all
+	@echo "Built target main_s"
+.PHONY : CMakeFiles/main_s.dir/all
 
 # Include target in all.
-all: CMakeFiles/main.dir/all
+all: CMakeFiles/main_s.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
+CMakeFiles/main_s.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles 66
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main_s.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
+.PHONY : CMakeFiles/main_s.dir/rule
 
 # Convenience name for target.
-main: CMakeFiles/main.dir/rule
-.PHONY : main
+main_s: CMakeFiles/main_s.dir/rule
+.PHONY : main_s
 
 # clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
+CMakeFiles/main_s.dir/clean:
+	$(MAKE) -f CMakeFiles/main_s.dir/build.make CMakeFiles/main_s.dir/clean
+.PHONY : CMakeFiles/main_s.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/main_s.dir/clean
 .PHONY : clean
 
 #=============================================================================
