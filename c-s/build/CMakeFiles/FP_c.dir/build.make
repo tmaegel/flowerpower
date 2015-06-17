@@ -106,7 +106,7 @@ FP_c_EXTERNAL_OBJECTS =
 FP_c: CMakeFiles/FP_c.dir/FP_c.cpp.o
 FP_c: CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.o
 FP_c: CMakeFiles/FP_c.dir/build.make
-FP_c: /usr/lib/x86_64-linux-gnu/libm.so
+FP_c: /lib/x86_64-linux-gnu/libm.so.6
 FP_c: /usr/lib/x86_64-linux-gnu/libmysqlclient.a
 FP_c: libzeromq.a
 FP_c: CMakeFiles/FP_c.dir/link.txt
