@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include "database.cpp"
 #include "/home/moe/workspace/fp_github/flowerpower/c-s/FP_c.cpp"
+//#include "/home/moe/workspace/fp_github/flowerpower/data/controller.cpp"
 
 int main(int argc, char* argv[])  {
 	// int database = -1, table = -1;				/**< parameter index for arguments */
@@ -44,45 +45,14 @@ int main(int argc, char* argv[])  {
 	const char *database = "db_data";
 	const char *table = "table_data";
 	
-
-	struct measurement data[100];
-	
-		
 	
 	init_client(argc, argv);
 
 	init(database, table);
+	
+	send_client(table);
 
-	int num = readFromDatabase(table, data);
-
-	/**< conversion to string and send */
-	int dataLength = sizeof(data) / sizeof(data[0]);
-	char *hw_id = (char*)malloc(10);
-	char *temperature = (char*)malloc(256);
-	char *humidity = (char*)malloc(256);
-	char *brightness = (char*)malloc(256);
-	char *timestamp = (char*)malloc(256);
-
-	for(int i = 0; i < dataLength; i++) {
-
-		printf("%d %f %f %f %s\n", data[i].hw_id, data[i].temperature, data[i].humidity, data[i].brightness, data[i].timestamp);
-
-		sprintf(hw_id,"%d", data[i].hw_id);
-		sprintf(temperature,"%f", data[i].temperature);
-		sprintf(humidity,"%f", data[i].humidity);
-		sprintf(brightness,"%f", data[i].brightness);
-		sprintf(timestamp,"%s", data[i].timestamp);
-		send_client(hw_id);
-		send_client(temperature);
-		send_client(humidity);
-		send_client(brightness);
-		send_client(timestamp);
-			
-	}
-
-
-
-	printf("Anzahl der Elemente: %d\n", num);
+	//printf("Anzahl der Elemente: %d\n", num);
 
 	close_client();
 
