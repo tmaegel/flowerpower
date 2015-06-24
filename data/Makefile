@@ -6,4 +6,5 @@ TARGET = controller
 SRC = $(TARGET).cpp
 OUT = $(TARGET).o
 prog: $(SRC)
-	$(CC) -o $(TARGET) $(SRC) $(CFLAGS) $(LDFLAGS) $(RPI)
+	# $(CC) -o $(TARGET) $(SRC) $(CFLAGS) $(LDFLAGS) $(RPI)
+	$(CC) -c $(SRC) $(CFLAGS) $(LDFLAGS) $(RPI)

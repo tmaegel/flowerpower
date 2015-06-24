@@ -10,13 +10,11 @@
 #include <wiringPi.h>
 #include <wiringSerial.h>
  
-// #include "../db/database.cpp"
-
 char device[]= "/dev/ttyACM0";
 
 int fd;
 unsigned long baud = 115200;
-unsigned long time=0;
+unsigned long time = 0;
 
 int init_ctl(void);
 void loop(void);
