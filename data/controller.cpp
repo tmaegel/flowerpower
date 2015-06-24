@@ -1,4 +1,4 @@
-#ifdef RaspberryPi 
+//#ifdef RaspberryPi 
  
 #include <stdio.h> //for printf
 #include <stdint.h> //uint8_t definitions
@@ -124,4 +124,4 @@ int init_ctl() {
 	return 0;
 }
  
-#endif
+//#endif

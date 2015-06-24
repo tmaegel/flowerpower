@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "database.cpp"
 #include "/home/moe/workspace/fp_github/flowerpower/c-s/FP_c.cpp"
-//#include "/home/moe/workspace/fp_github/flowerpower/data/controller.cpp"
+#include "/home/moe/workspace/fp_github/flowerpower/data/controller.cpp"
 
 int main(int argc, char* argv[])  {
 	// int database = -1, table = -1;				/**< parameter index for arguments */
@@ -50,6 +50,8 @@ int main(int argc, char* argv[])  {
 
 	init(database, table);
 	
+	init_ctl();
+
 	send_client(table);
 
 	//printf("Anzahl der Elemente: %d\n", num);

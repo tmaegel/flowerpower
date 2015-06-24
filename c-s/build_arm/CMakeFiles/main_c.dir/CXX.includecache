@@ -32,6 +32,24 @@ stdlib.h
 unistd.h
 -
 
+/home/moe/workspace/fp_github/flowerpower/data/controller.cpp
+stdio.h
+-
+stdint.h
+-
+stdlib.h
+-
+string.h
+-
+errno.h
+-
+stdbool.h
+-
+wiringPi.h
+-
+wiringSerial.h
+-
+
 /home/moe/workspace/fp_github/flowerpower/db/database.cpp
 stdlib.h
 -
@@ -56,5 +74,7 @@ stdio.h
 database.cpp
 /home/moe/workspace/fp_github/flowerpower/db/database.cpp
 /home/moe/workspace/fp_github/flowerpower/c-s/FP_c.cpp
+-
+/home/moe/workspace/fp_github/flowerpower/data/controller.cpp
 -
 
