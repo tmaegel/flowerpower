@@ -8,6 +8,8 @@
 
 #include <time.h>
 
+#include "../struct.h"
+
 #define HOST "localhost"
 #define USER "root"
 #define PASSWORD "TrOoNoIt#90+"
@@ -15,15 +17,6 @@
 MYSQL *db;
 MYSQL_RES *result;
 MYSQL_ROW row;
-
-/**< struct to manage the measurements */
-struct measurement {
-	int hw_id;
-	double temperature;
-	double humidity;
-	double brightness;
-	char timestamp[20];		/**< char ausreichend, da timestamp in Datenbank als Zeichenkette an SQL übergeben wird */
-};
 
 unsigned int error;
 

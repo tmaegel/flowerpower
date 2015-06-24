@@ -112,30 +112,30 @@ FP_2c/fast:
 .PHONY : FP_2c/fast
 
 #=============================================================================
-# Target rules for targets named FP_c
+# Target rules for targets named main_c
 
 # Build rule for target.
-FP_c: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 FP_c
-.PHONY : FP_c
+main_c: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main_c
+.PHONY : main_c
 
 # fast build rule for target.
-FP_c/fast:
-	$(MAKE) -f CMakeFiles/FP_c.dir/build.make CMakeFiles/FP_c.dir/build
-.PHONY : FP_c/fast
+main_c/fast:
+	$(MAKE) -f CMakeFiles/main_c.dir/build.make CMakeFiles/main_c.dir/build
+.PHONY : main_c/fast
 
 #=============================================================================
-# Target rules for targets named FP_s
+# Target rules for targets named main_s
 
 # Build rule for target.
-FP_s: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 FP_s
-.PHONY : FP_s
+main_s: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main_s
+.PHONY : main_s
 
 # fast build rule for target.
-FP_s/fast:
-	$(MAKE) -f CMakeFiles/FP_s.dir/build.make CMakeFiles/FP_s.dir/build
-.PHONY : FP_s/fast
+main_s/fast:
+	$(MAKE) -f CMakeFiles/main_s.dir/build.make CMakeFiles/main_s.dir/build
+.PHONY : main_s/fast
 
 #=============================================================================
 # Target rules for targets named zeromq
@@ -174,77 +174,53 @@ FP_2c.cpp.s:
 	$(MAKE) -f CMakeFiles/FP_2c.dir/build.make CMakeFiles/FP_2c.dir/FP_2c.cpp.s
 .PHONY : FP_2c.cpp.s
 
-FP_c.o: FP_c.cpp.o
-.PHONY : FP_c.o
+home/moe/workspace/fp_github/flowerpower/db/main_c.o: home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o
+.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_c.o
 
 # target to build an object file
-FP_c.cpp.o:
-	$(MAKE) -f CMakeFiles/FP_c.dir/build.make CMakeFiles/FP_c.dir/FP_c.cpp.o
-.PHONY : FP_c.cpp.o
+home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o:
+	$(MAKE) -f CMakeFiles/main_c.dir/build.make CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o
+.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o
 
-FP_c.i: FP_c.cpp.i
-.PHONY : FP_c.i
+home/moe/workspace/fp_github/flowerpower/db/main_c.i: home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.i
+.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_c.i
 
 # target to preprocess a source file
-FP_c.cpp.i:
-	$(MAKE) -f CMakeFiles/FP_c.dir/build.make CMakeFiles/FP_c.dir/FP_c.cpp.i
-.PHONY : FP_c.cpp.i
+home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.i:
+	$(MAKE) -f CMakeFiles/main_c.dir/build.make CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.i
+.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.i
 
-FP_c.s: FP_c.cpp.s
-.PHONY : FP_c.s
+home/moe/workspace/fp_github/flowerpower/db/main_c.s: home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.s
+.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_c.s
 
 # target to generate assembly for a file
-FP_c.cpp.s:
-	$(MAKE) -f CMakeFiles/FP_c.dir/build.make CMakeFiles/FP_c.dir/FP_c.cpp.s
-.PHONY : FP_c.cpp.s
+home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.s:
+	$(MAKE) -f CMakeFiles/main_c.dir/build.make CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.s
+.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.s
 
-FP_s.o: FP_s.cpp.o
-.PHONY : FP_s.o
+home/moe/workspace/fp_github/flowerpower/db/main_s.o: home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o
+.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_s.o
 
 # target to build an object file
-FP_s.cpp.o:
-	$(MAKE) -f CMakeFiles/FP_s.dir/build.make CMakeFiles/FP_s.dir/FP_s.cpp.o
-.PHONY : FP_s.cpp.o
+home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o:
+	$(MAKE) -f CMakeFiles/main_s.dir/build.make CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o
+.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o
 
-FP_s.i: FP_s.cpp.i
-.PHONY : FP_s.i
-
-# target to preprocess a source file
-FP_s.cpp.i:
-	$(MAKE) -f CMakeFiles/FP_s.dir/build.make CMakeFiles/FP_s.dir/FP_s.cpp.i
-.PHONY : FP_s.cpp.i
-
-FP_s.s: FP_s.cpp.s
-.PHONY : FP_s.s
-
-# target to generate assembly for a file
-FP_s.cpp.s:
-	$(MAKE) -f CMakeFiles/FP_s.dir/build.make CMakeFiles/FP_s.dir/FP_s.cpp.s
-.PHONY : FP_s.cpp.s
-
-home/moe/workspace/fp_github/flowerpower/db/database.o: home/moe/workspace/fp_github/flowerpower/db/database.cpp.o
-.PHONY : home/moe/workspace/fp_github/flowerpower/db/database.o
-
-# target to build an object file
-home/moe/workspace/fp_github/flowerpower/db/database.cpp.o:
-	$(MAKE) -f CMakeFiles/FP_c.dir/build.make CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.o
-.PHONY : home/moe/workspace/fp_github/flowerpower/db/database.cpp.o
-
-home/moe/workspace/fp_github/flowerpower/db/database.i: home/moe/workspace/fp_github/flowerpower/db/database.cpp.i
-.PHONY : home/moe/workspace/fp_github/flowerpower/db/database.i
+home/moe/workspace/fp_github/flowerpower/db/main_s.i: home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.i
+.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_s.i
 
 # target to preprocess a source file
-home/moe/workspace/fp_github/flowerpower/db/database.cpp.i:
-	$(MAKE) -f CMakeFiles/FP_c.dir/build.make CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.i
-.PHONY : home/moe/workspace/fp_github/flowerpower/db/database.cpp.i
+home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.i:
+	$(MAKE) -f CMakeFiles/main_s.dir/build.make CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.i
+.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.i
 
-home/moe/workspace/fp_github/flowerpower/db/database.s: home/moe/workspace/fp_github/flowerpower/db/database.cpp.s
-.PHONY : home/moe/workspace/fp_github/flowerpower/db/database.s
+home/moe/workspace/fp_github/flowerpower/db/main_s.s: home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.s
+.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_s.s
 
 # target to generate assembly for a file
-home/moe/workspace/fp_github/flowerpower/db/database.cpp.s:
-	$(MAKE) -f CMakeFiles/FP_c.dir/build.make CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.s
-.PHONY : home/moe/workspace/fp_github/flowerpower/db/database.cpp.s
+home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.s:
+	$(MAKE) -f CMakeFiles/main_s.dir/build.make CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.s
+.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.s
 
 home/moe/workspace/zeromq-4.0.5/src/address.o: home/moe/workspace/zeromq-4.0.5/src/address.cpp.o
 .PHONY : home/moe/workspace/zeromq-4.0.5/src/address.o
@@ -1813,23 +1789,20 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... FP_2c"
-	@echo "... FP_c"
-	@echo "... FP_s"
 	@echo "... edit_cache"
+	@echo "... main_c"
+	@echo "... main_s"
 	@echo "... rebuild_cache"
 	@echo "... zeromq"
 	@echo "... FP_2c.o"
 	@echo "... FP_2c.i"
 	@echo "... FP_2c.s"
-	@echo "... FP_c.o"
-	@echo "... FP_c.i"
-	@echo "... FP_c.s"
-	@echo "... FP_s.o"
-	@echo "... FP_s.i"
-	@echo "... FP_s.s"
-	@echo "... home/moe/workspace/fp_github/flowerpower/db/database.o"
-	@echo "... home/moe/workspace/fp_github/flowerpower/db/database.i"
-	@echo "... home/moe/workspace/fp_github/flowerpower/db/database.s"
+	@echo "... home/moe/workspace/fp_github/flowerpower/db/main_c.o"
+	@echo "... home/moe/workspace/fp_github/flowerpower/db/main_c.i"
+	@echo "... home/moe/workspace/fp_github/flowerpower/db/main_c.s"
+	@echo "... home/moe/workspace/fp_github/flowerpower/db/main_s.o"
+	@echo "... home/moe/workspace/fp_github/flowerpower/db/main_s.i"
+	@echo "... home/moe/workspace/fp_github/flowerpower/db/main_s.s"
 	@echo "... home/moe/workspace/zeromq-4.0.5/src/address.o"
 	@echo "... home/moe/workspace/zeromq-4.0.5/src/address.i"
 	@echo "... home/moe/workspace/zeromq-4.0.5/src/address.s"

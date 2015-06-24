@@ -1,0 +1,1 @@
+/usr/bin/gcc-4.8   -O2    CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o  -o main_s  -L/home/moe/workspace/install_zmq -rdynamic /lib/x86_64-linux-gnu/libm.so.6 -Wl,-Bstatic -lmysqlclient -Wl,-Bdynamic -ldl -lz -lm -lwiringPi libzeromq.a -lpthread -lstdc++ -Wl,-rpath,/home/moe/workspace/install_zmq 

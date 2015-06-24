@@ -2,11 +2,10 @@ CC = gcc
 CFLAGS = `pkg-config --cflags opencv` -Wall -O2
 LDFLAGS = `pkg-config --libs opencv` -lm
 RPI = -lwiringPi -DRaspberryPi
-MYSQLLIB = -L/usr/lib/mysql -lmysqlclient
-MYSQLINC = -I/usr/include/mysql
 TARGET = controller
+HEADER = $(TARGET).h ../struct.h
 SRC = $(TARGET).cpp
 OUT = $(TARGET).o
-prog: $(SRC)
-	$(CC) -c $(MYSQLINC) $(SRC)
-	$(CC) -o $(TARGET) $(OUT) $(CFLAGS) $(LDFLAGS) $(MYSQLLIB) $(RPI)
+prog: $(SRC) $(HEADER)
+	# $(CC) -o $(TARGET) $(SRC) $(CFLAGS) $(LDFLAGS) $(RPI)
+	$(CC) -c $(SRC) $(CFLAGS) $(LDFLAGS) $(RPI)

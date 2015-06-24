@@ -6,18 +6,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+ 
 
 // Socket talks to server
 void *context = zmq_ctx_new ();
 void *requester = zmq_socket (context, ZMQ_REQ);
 
 // Global variables & function
-int size;
+int size, set;
 int major, minor, patch;
 char *data_to_client = (char*)malloc(32 * sizeof(char));
+int request_nbr;
 
-extern int readFromDatabase();
-extern int init();
+//extern int readFromDatabase(char[]);
+//extern int init();
 
 //  Receive ZeroMQ string from socket and convert into C string
 //  Chops string at 255 chars, if it's longer
@@ -32,18 +34,80 @@ static char *s_recv (void *requester) {
                 return strdup (buffer);
 }
 
+void send_client(const char *table){
 
-int main (int argc, char* argv[])
+	struct measurement data[100];
+	int num = readFromDatabase(table, data);
+	int dataLength = sizeof(data) / sizeof(data[0]);
+	char *hw_id = (char*)malloc(10);
+        char *temperature = (char*)malloc(256);
+        char *humidity = (char*)malloc(256);
+        char *brightness = (char*)malloc(256);
+        char *timestamp = (char*)malloc(256);
+
+        for(int i = 0; i < dataLength; i++) {
+
+                printf("%d %f %f %f %s\n", data[i].hw_id, data[i].temperature, data[i].humidity, data[i].brightness, data[i].timestamp);
+
+                sprintf(hw_id,"%d", data[i].hw_id);
+               	printf ("Sending: %s... %d…\n", hw_id, request_nbr);
+		zmq_send (requester, hw_id, 255, 0);
+		printf ("Received:%s\n", s_recv(requester));
+
+		sprintf(temperature,"%f", data[i].temperature);
+		printf ("Sending: %s... %d…\n", temperature, request_nbr);
+		zmq_send (requester, temperature, 255, 0);
+		printf ("Received:%s\n", s_recv(requester));
+
+        	sprintf(humidity,"%f", data[i].humidity);
+        	printf ("Sending: %s... %d…\n", humidity, request_nbr);
+		zmq_send (requester, humidity, 255, 0);
+		printf ("Received:%s\n", s_recv(requester));
+
+       		sprintf(brightness,"%f", data[i].brightness);
+		printf ("Sending: %s... %d…\n", brightness, request_nbr);
+		zmq_send (requester, brightness, 255, 0);
+		printf ("Received:%s\n", s_recv(requester));
+
+                sprintf(timestamp,"%s", data[i].timestamp);
+		printf ("Sending: %s... %d…\n", timestamp, request_nbr);
+		zmq_send (requester, timestamp, 255, 0);
+		printf ("Received:%s\n", s_recv(requester));
+
+	//data_to_client = "Hey";	
+
+	//for (request_nbr = 0; request_nbr != 10; request_nbr++) {
+		
+	}
+	
+	//return 0;
+
+}
+
+int close_client(){
+
+	zmq_close (requester);
+	zmq_ctx_destroy (context);
+
+	//delete allocated mem
+	//delete [] param_port;
+	//delete [] param_ip;
+	//delete [] tcp_addr;
+	
+	return 0;
+}
+
+int init_client (int argc, char* argv[])
 {	
-	int request_nbr;
 	
 
 	//scan parameter
 	if (1 == argc || 2 == argc) {
-        	printf("port ip\n");
-	        return 1;
+        	printf("No clientparameter, please type port ip\n");
+		exit(0);	        
    	}
 	
+
 	char *param_port = (char*)malloc(strlen(argv[1]));
 	char *param_ip = (char*)malloc(strlen(argv[2]));
 	char *tcp_addr = (char*)malloc(26 * sizeof(char));
@@ -73,25 +137,15 @@ int main (int argc, char* argv[])
 	
 	//begin connecting
 	printf ("Connecting to hello world server…\n");
-	init();
-	if(0 == ((char*)readFromDatabase()))
-	{
-		data_to_client = "Hey";
-	}
-	zmq_connect (requester, tcp_addr);
-	for (request_nbr = 0; request_nbr != 10; request_nbr++) {
-		
-		printf ("Sending: %s... %d…\n", data_to_client, request_nbr);
-		zmq_send (requester, data_to_client, 255, 0);
-		printf ("Received:%s\n", s_recv(requester));
-	}
-	zmq_close (requester);
-	zmq_ctx_destroy (context);
-
-	//delete allocated mem
-	delete [] param_port;
-	delete [] param_ip;
-	delete [] tcp_addr;
 	
+
+	zmq_connect (requester, tcp_addr);
+	
+
 	return 0;
 }
+
+
+
+
+

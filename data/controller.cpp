@@ -1,25 +1,27 @@
-#ifdef RaspberryPi 
+//#ifdef RaspberryPi 
  
 #include <stdio.h> //for printf
 #include <stdint.h> //uint8_t definitions
 #include <stdlib.h> //for exit(int);
 #include <string.h> //for errno
 #include <errno.h> //error output
- 
+#include <stdbool.h>
+
 #include <wiringPi.h>
 #include <wiringSerial.h>
- 
-// #include "../db/database.cpp"
+
+#include "../struct.h"
+#include "controller.h"
 
 char device[]= "/dev/ttyACM0";
 
 int fd;
 unsigned long baud = 115200;
-unsigned long time=0;
- 
-int main(void);
-void loop(void);
-void setup(void);
+unsigned long t = 0;
+
+struct measurement *data;
+char str[64];
+int i = 0;
 
 void command(const char cmd[]) {
 	if(strcmp(cmd, "rd!") == 0) {
@@ -61,26 +63,50 @@ void setup() {
  
 void loop(){
 	// Pong every 3 seconds
-	if(millis()-time >= 3000){
+	if(millis()-t >= 5000){
 		// you can also write data from 0-255
 		command("rd!");
 		// command("vo!");
     	// command("vc!");
-		time=millis();
+		t=millis();
 	}
 	
 	// read signal
-	if(serialDataAvail(fd)){
+	/*if(serialDataAvail(fd)){
   		char newChar = serialGetchar(fd);
 		printf("%c", newChar);
 		fflush(stdout);
-	} 
+	}*/
+
+	if(serialDataAvail(fd)){
+		char c = serialGetchar(fd);
+		if(c == '#') {
+			str_to_struct(str, data);
+		} else {
+			str[i]  = c;
+		}
+
+		printf("%c", c);
+		fflush(stdout);
+
+		i++;
+	}
 }
 
-int main() {
-	// init Database	
-	// init("Param1", "Param2");	
-	
+int str_to_struct(char *str, struct measurement *data) {
+	char delimiter[] = ";";
+	char *ptr;
+
+	ptr = strtok(str, delimiter);
+
+	while(ptr != NULL) {
+		printf("Abschnitt gefunden: %s\n", ptr);
+		// naechsten Abschnitt erstellen
+		ptr = strtok(NULL, delimiter);
+	}
+}
+
+int init_ctl() {
 	setup();
 	
 	while(1) {
@@ -90,4 +116,4 @@ int main() {
 	return 0;
 }
  
-#endif
+//#endif

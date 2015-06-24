@@ -1,4 +1,4 @@
-
+//#include "/home/moe/workspace/fp_github/flowerpower/db/database.cpp"
 
 // Hello World server
 
@@ -16,8 +16,8 @@ void *responder = zmq_socket (context, ZMQ_REP);
 // Global variables & functions
 int size;
 int major, minor, patch;
-//extern char *data_to_db;
-//void writeToDatabase(void);
+char *data_to_db;
+
 
 //  Receive ZeroMQ string from socket and convert into C string
 //  Chops string at 255 chars, if it's longer
@@ -32,13 +32,56 @@ static char *s_recv (void *responder) {
     		return strdup (buffer);
 }
 
+void send_db(const char *table, int num = 100){
 	
-int main (int argc, char* argv[])
+	struct measurement data;
+	char *hw_id = (char*)malloc(10);
+        char *temperature = (char*)malloc(256);
+        char *humidity = (char*)malloc(256);
+        char *brightness = (char*)malloc(256);
+        char *timestamp = (char*)malloc(256);
+	
+	for(int i = 0; i < num; i++){
+		
+		strcpy(hw_id, s_recv(responder));
+		sscanf(hw_id, "%d", data.hw_id);
+		zmq_send (responder, "hw", 255, 0);
+		strcpy(temperature, s_recv(responder));
+		sscanf(temperature, "%f", data.temperature);	
+		zmq_send (responder, "temp", 255, 0);
+		strcpy(humidity, s_recv(responder));
+		sscanf(humidity, "%f", data.humidity);	
+		zmq_send (responder, "hum", 255, 0);
+		strcpy(brightness, s_recv(responder));
+		sscanf(brightness, "%f", data.brightness);	
+		zmq_send (responder, "bri", 255, 0);
+		strcpy(timestamp, s_recv(responder));
+		sscanf(timestamp, "%s", data.timestamp);		
+		zmq_send (responder, "time", 255, 0);
+	
+		writeToDatabase(table, &data);
+		
+		sleep (1); // Do some 'work'
+	}
+	
+}
+
+
+int close_server(){
+
+	//delete allocated mem	
+	//free(param_port);
+       // free(param_ip);
+       // free(tcp_addr);
+	return 0;
+}
+
+int init_server (int argc, char* argv[])
 {
 	//scan parameter
         if (1 == argc || 2 == argc) {
-                printf("port ip\n");
-                return 1;
+                printf("No server parameter, please type port ip\n");
+                exit(0);
         }
         
         char *param_port = (char*)malloc(strlen(argv[1]));
@@ -73,19 +116,6 @@ int main (int argc, char* argv[])
 	assert (rc == 0);
 	
 
-	while (1) {
-		//strcpy(data_to_db, s_recv(responder));
-		//printf ("Received:%s\n", data_to_db);
-		//writeToDatabase();
-		
-		sleep (1); // Do some 'work'
-		zmq_send (responder, "World", 255, 0);
-	}
-
-	//delete allocated mem	
-	free(param_port);
-        free(param_ip);
-        free(tcp_addr);
 
 	return 0;
 

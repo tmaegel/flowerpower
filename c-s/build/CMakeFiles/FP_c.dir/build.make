@@ -72,42 +72,16 @@ CMakeFiles/FP_c.dir/FP_c.cpp.o.provides: CMakeFiles/FP_c.dir/FP_c.cpp.o.requires
 
 CMakeFiles/FP_c.dir/FP_c.cpp.o.provides.build: CMakeFiles/FP_c.dir/FP_c.cpp.o
 
-CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.o: CMakeFiles/FP_c.dir/flags.make
-CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.o: /home/moe/workspace/fp_github/flowerpower/db/database.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.o"
-	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.o -c /home/moe/workspace/fp_github/flowerpower/db/database.cpp
-
-CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.i"
-	/usr/bin/gcc-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/moe/workspace/fp_github/flowerpower/db/database.cpp > CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.i
-
-CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.s"
-	/usr/bin/gcc-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/moe/workspace/fp_github/flowerpower/db/database.cpp -o CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.s
-
-CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.o.requires:
-.PHONY : CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.o.requires
-
-CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.o.provides: CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.o.requires
-	$(MAKE) -f CMakeFiles/FP_c.dir/build.make CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.o.provides.build
-.PHONY : CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.o.provides
-
-CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.o.provides.build: CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.o
-
 # Object files for target FP_c
 FP_c_OBJECTS = \
-"CMakeFiles/FP_c.dir/FP_c.cpp.o" \
-"CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.o"
+"CMakeFiles/FP_c.dir/FP_c.cpp.o"
 
 # External object files for target FP_c
 FP_c_EXTERNAL_OBJECTS =
 
 FP_c: CMakeFiles/FP_c.dir/FP_c.cpp.o
-FP_c: CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.o
 FP_c: CMakeFiles/FP_c.dir/build.make
-FP_c: /usr/lib/x86_64-linux-gnu/libm.so
-FP_c: /usr/lib/x86_64-linux-gnu/libmysqlclient.a
+FP_c: /lib/x86_64-linux-gnu/libm.so.6
 FP_c: libzeromq.a
 FP_c: CMakeFiles/FP_c.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable FP_c"
@@ -118,7 +92,6 @@ CMakeFiles/FP_c.dir/build: FP_c
 .PHONY : CMakeFiles/FP_c.dir/build
 
 CMakeFiles/FP_c.dir/requires: CMakeFiles/FP_c.dir/FP_c.cpp.o.requires
-CMakeFiles/FP_c.dir/requires: CMakeFiles/FP_c.dir/home/moe/workspace/fp_github/flowerpower/db/database.cpp.o.requires
 .PHONY : CMakeFiles/FP_c.dir/requires
 
 CMakeFiles/FP_c.dir/clean:
