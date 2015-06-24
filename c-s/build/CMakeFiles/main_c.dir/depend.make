@@ -7,4 +7,5 @@ CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o: 
 CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o: /home/moe/workspace/fp_github/flowerpower/data/controller.h
 CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o: /home/moe/workspace/fp_github/flowerpower/db/database.cpp
 CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o: /home/moe/workspace/fp_github/flowerpower/db/main_c.cpp
+CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o: /home/moe/workspace/fp_github/flowerpower/struct.h
 

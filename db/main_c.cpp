@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include "database.cpp"
 #include "../c-s/FP_c.cpp"
-#include "../data/controller.h"
-
 #include "../struct.h"
-
+#include "../data/controller.cpp"
 int main(int argc, char* argv[])  {
 	// int database = -1, table = -1;				/**< parameter index for arguments */
 
