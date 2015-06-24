@@ -10,6 +10,7 @@
 #include <wiringPi.h>
 #include <wiringSerial.h>
 
+#include "../struct.h"
 #include "controller.h"
 
 char device[]= "/dev/ttyACM0";
@@ -21,15 +22,6 @@ unsigned long time = 0;
 struct measurement *data;
 char str[64];
 int i = 0;
-
-/**< struct to manage the measurements */
-struct measurement {
-	int hw_id;
-	double temperature;
-	double humidity;
-	double brightness;
-	char timestamp[20];		/**< char ausreichend, da timestamp in Datenbank als Zeichenkette an SQL übergeben wird */
-};
 
 void command(const char cmd[]) {
 	if(strcmp(cmd, "rd!") == 0) {
