@@ -94,8 +94,7 @@ void loop(){
 }
 
 int str_to_struct(char *str, struct measurement *data) {
-	char cut = ";";
-	char *delimiter = &cut;
+	char delimiter[] = ";";
 	char *ptr;
 
 	ptr = strtok(str, delimiter);
