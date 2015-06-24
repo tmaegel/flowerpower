@@ -9,17 +9,14 @@
 
 #include <wiringPi.h>
 #include <wiringSerial.h>
- 
+
+#include "controller.h"
+
 char device[]= "/dev/ttyACM0";
 
 int fd;
 unsigned long baud = 115200;
 unsigned long time = 0;
-
-int init_ctl(void);
-void loop(void);
-void setup(void);
-int str_to_struct(char *, struct measurement *);
 
 struct measurement *data;
 char str[64];
