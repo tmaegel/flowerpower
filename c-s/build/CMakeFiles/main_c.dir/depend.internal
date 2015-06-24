@@ -5,5 +5,6 @@ CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o
  ../src/zmq.h
  /home/moe/workspace/fp_github/flowerpower/c-s/FP_c.cpp
  /home/moe/workspace/fp_github/flowerpower/data/controller.cpp
+ /home/moe/workspace/fp_github/flowerpower/data/controller.h
  /home/moe/workspace/fp_github/flowerpower/db/database.cpp
  /home/moe/workspace/fp_github/flowerpower/db/main_c.cpp

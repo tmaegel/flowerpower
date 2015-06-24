@@ -16,7 +16,7 @@ char device[]= "/dev/ttyACM0";
 
 int fd;
 unsigned long baud = 115200;
-unsigned long t = 0;
+unsigned long time = 0;
 
 struct measurement *data;
 char str[64];
@@ -71,12 +71,12 @@ void setup() {
  
 void loop(){
 	// Pong every 3 seconds
-	if(millis()-t >= 5000){
+	if(millis()-time >= 5000){
 		// you can also write data from 0-255
 		command("rd!");
 		// command("vo!");
     	// command("vc!");
-		t=millis();
+		time=millis();
 	}
 	
 	// read signal
@@ -102,7 +102,8 @@ void loop(){
 }
 
 int str_to_struct(char *str, struct measurement *data) {
-	char *delimiter = ";";
+	char cut = ";";
+	char *delimiter = &cut;
 	char *ptr;
 
 	ptr = strtok(str, delimiter);
