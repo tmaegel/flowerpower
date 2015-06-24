@@ -81,6 +81,7 @@ main_c_EXTERNAL_OBJECTS =
 
 main_c: CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o
 main_c: CMakeFiles/main_c.dir/build.make
+main_c: /home/moe/workspace/fp_github/flowerpower/data/controller.o
 main_c: /lib/x86_64-linux-gnu/libm.so.6
 main_c: /usr/lib/x86_64-linux-gnu/libmysqlclient.a
 main_c: libzeromq.a

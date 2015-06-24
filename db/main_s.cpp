@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 #include "database.cpp"
-#include "/home/moe/workspace/fp_github/flowerpower/c-s/FP_s.cpp"
+#include "../c-s/FP_s.cpp"
 
 #include "../struct.h"
 

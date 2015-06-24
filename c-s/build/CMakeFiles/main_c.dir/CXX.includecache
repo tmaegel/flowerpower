@@ -49,6 +49,10 @@ wiringPi.h
 -
 wiringSerial.h
 -
+controller.h
+/home/moe/workspace/fp_github/flowerpower/data/controller.h
+
+/home/moe/workspace/fp_github/flowerpower/data/controller.h
 
 /home/moe/workspace/fp_github/flowerpower/db/database.cpp
 stdlib.h
