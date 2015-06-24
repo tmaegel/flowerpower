@@ -5,7 +5,8 @@
 #include <stdlib.h> //for exit(int);
 #include <string.h> //for errno
 #include <errno.h> //error output
- 
+#include <stdbool.h>
+
 #include <wiringPi.h>
 #include <wiringSerial.h>
  
@@ -16,10 +17,22 @@ char device[]= "/dev/ttyACM0";
 int fd;
 unsigned long baud = 115200;
 unsigned long time=0;
- 
+
 int main(void);
 void loop(void);
 void setup(void);
+
+char data[64];
+int i = 0;
+
+/**< struct to manage the measurements */
+struct measurement {
+	int hw_id;
+	double temperature;
+	double humidity;
+	double brightness;
+	char timestamp[20];		/**< char ausreichend, da timestamp in Datenbank als Zeichenkette an SQL übergeben wird */
+};
 
 void command(const char cmd[]) {
 	if(strcmp(cmd, "rd!") == 0) {
@@ -61,7 +74,7 @@ void setup() {
  
 void loop(){
 	// Pong every 3 seconds
-	if(millis()-time >= 3000){
+	if(millis()-time >= 5000){
 		// you can also write data from 0-255
 		command("rd!");
 		// command("vo!");
@@ -70,17 +83,41 @@ void loop(){
 	}
 	
 	// read signal
-	if(serialDataAvail(fd)){
+	/*if(serialDataAvail(fd)){
   		char newChar = serialGetchar(fd);
 		printf("%c", newChar);
 		fflush(stdout);
-	} 
+	}*/
+
+	if(serialDataAvail(fd)){
+		char c = serialGetchar(fd);
+		if(c == '#') {
+			str_to_struct(data);
+		} else {
+			date[i]  = c;
+		}
+
+		printf("%c", newChar);
+		fflush(stdout);
+
+		i++;
+	}
 }
 
-int main() {
-	// init Database	
-	// init("Param1", "Param2");	
-	
+int str_to_struct(const char *str, struct measurement *data) {
+	char delimiter[] = ";";
+	char *ptr;
+
+	ptr = strtok(str, delimiter);
+
+	while(ptr != NULL) {
+		printf("Abschnitt gefunden: %s\n", ptr);
+		// naechsten Abschnitt erstellen
+		ptr = strtok(NULL, delimiter);
+	}
+}
+
+int init_ctl() {
 	setup();
 	
 	while(1) {
