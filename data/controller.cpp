@@ -1,4 +1,4 @@
-//#ifdef RaspberryPi 
+#ifdef RaspberryPi 
  
 #include <stdio.h> //for printf
 #include <stdint.h> //uint8_t definitions
@@ -18,11 +18,13 @@ int fd;
 unsigned long baud = 115200;
 unsigned long time=0;
 
-int main(void);
+int init_ctl(void);
 void loop(void);
 void setup(void);
+int str_to_struct(char *, struct measurement *);
 
-char data[64];
+struct measurement *data;
+char str[64];
 int i = 0;
 
 /**< struct to manage the measurements */
@@ -92,20 +94,20 @@ void loop(){
 	if(serialDataAvail(fd)){
 		char c = serialGetchar(fd);
 		if(c == '#') {
-			str_to_struct(data);
+			str_to_struct(str, data);
 		} else {
-			date[i]  = c;
+			str[i]  = c;
 		}
 
-		printf("%c", newChar);
+		printf("%c", c);
 		fflush(stdout);
 
 		i++;
 	}
 }
 
-int str_to_struct(const char *str, struct measurement *data) {
-	char delimiter[] = ";";
+int str_to_struct(char *str, struct measurement *data) {
+	char *delimiter = ";";
 	char *ptr;
 
 	ptr = strtok(str, delimiter);

@@ -6,4 +6,4 @@ TARGET = controller
 SRC = $(TARGET).cpp
 OUT = $(TARGET).o
 prog: $(SRC)
-	$(CC) -c $(MYSQLINC) $(SRC)
+	$(CC) -o $(TARGET) $(SRC) $(CFLAGS) $(LDFLAGS) $(RPI)
