@@ -4,6 +4,8 @@
 #include "/home/moe/workspace/fp_github/flowerpower/c-s/FP_c.cpp"
 #include "/home/moe/workspace/fp_github/flowerpower/data/controller.cpp"
 
+#include "../struct.h"
+
 int main(int argc, char* argv[])  {
 	// int database = -1, table = -1;				/**< parameter index for arguments */
 
