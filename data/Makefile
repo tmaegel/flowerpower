@@ -3,7 +3,7 @@ CFLAGS = `pkg-config --cflags opencv` -Wall -O2
 LDFLAGS = `pkg-config --libs opencv` -lm
 RPI = -lwiringPi -DRaspberryPi
 TARGET = controller
-HEADER = $(TARGET).h
+HEADER = $(TARGET).h ../struct.h
 SRC = $(TARGET).cpp
 OUT = $(TARGET).o
 prog: $(SRC) $(HEADER)
