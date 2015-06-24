@@ -51,12 +51,18 @@ mysql/errmsg.h
 -
 time.h
 -
+../struct.h
+/home/moe/workspace/fp_github/flowerpower/struct.h
 
 /home/moe/workspace/fp_github/flowerpower/db/main_s.cpp
 stdio.h
 -
 database.cpp
 /home/moe/workspace/fp_github/flowerpower/db/database.cpp
+../c-s/FP_s.cpp
 /home/moe/workspace/fp_github/flowerpower/c-s/FP_s.cpp
--
+../struct.h
+/home/moe/workspace/fp_github/flowerpower/struct.h
+
+/home/moe/workspace/fp_github/flowerpower/struct.h
 

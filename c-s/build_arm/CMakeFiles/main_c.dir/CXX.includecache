@@ -49,6 +49,12 @@ wiringPi.h
 -
 wiringSerial.h
 -
+../struct.h
+/home/moe/workspace/fp_github/flowerpower/struct.h
+controller.h
+/home/moe/workspace/fp_github/flowerpower/data/controller.h
+
+/home/moe/workspace/fp_github/flowerpower/data/controller.h
 
 /home/moe/workspace/fp_github/flowerpower/db/database.cpp
 stdlib.h
@@ -67,14 +73,20 @@ mysql/errmsg.h
 -
 time.h
 -
+../struct.h
+/home/moe/workspace/fp_github/flowerpower/struct.h
 
 /home/moe/workspace/fp_github/flowerpower/db/main_c.cpp
 stdio.h
 -
 database.cpp
 /home/moe/workspace/fp_github/flowerpower/db/database.cpp
+../c-s/FP_c.cpp
 /home/moe/workspace/fp_github/flowerpower/c-s/FP_c.cpp
--
+../struct.h
+/home/moe/workspace/fp_github/flowerpower/struct.h
+../data/controller.cpp
 /home/moe/workspace/fp_github/flowerpower/data/controller.cpp
--
+
+/home/moe/workspace/fp_github/flowerpower/struct.h
 

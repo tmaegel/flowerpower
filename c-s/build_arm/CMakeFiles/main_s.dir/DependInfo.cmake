@@ -23,7 +23,6 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/moe/workspace/install_zmq_arm"
   "/home/moe/workspace/install_zmq_arm/include"
-  "/home/moe/workspace/install_zmq/include"
   "/usr/include/mysql"
   "../src/home/mberghof/work/install_zmq_arm/include"
   "../src"
