@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 #include "database.cpp"
-#include "/home/moe/workspace/fp_github/flowerpower/c-s/FP_s.cpp"
+#include "../c-s/FP_s.cpp"
 
 int main(int argc, char* argv[])  {
 	// int database = -1, table = -1;				/**< parameter index for arguments */
