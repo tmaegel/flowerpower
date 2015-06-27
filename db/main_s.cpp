@@ -35,7 +35,7 @@ int main(int argc, char* argv[])  {
 	} else {
 		showHelp();
 	}
-	
+
 	if(database != -1 && table != -1) {
 		db_init(argv[database], argv[table]);
 	} else {
@@ -43,25 +43,22 @@ int main(int argc, char* argv[])  {
 		exit(EXIT_FAILURE);
 	}*/
 
-	const char *database = "db_data2";
-	const char *table = "table_data2";
-	
+	const char *database = "flowerpower_s";
+	const char *table = "table_s";
 
 	//struct measurement data[100];
-	
-		
-	
+
 	init_server(argc, argv);
 
 	init(database, table);
 
-	send_db(table);	
+	send_db(table);
 
 //	printf("Anzahl der Elemente: %d\n", num);
 
 	close_server();
 
 	closeDatabase();
-	
+
 	return EXIT_SUCCESS;
 }

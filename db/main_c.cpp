@@ -33,7 +33,7 @@ int main(int argc, char* argv[])  {
 	} else {
 		showHelp();
 	}
-	
+
 	if(database != -1 && table != -1) {
 		db_init(argv[database], argv[table]);
 	} else {
@@ -41,14 +41,14 @@ int main(int argc, char* argv[])  {
 		exit(EXIT_FAILURE);
 	}*/
 
-	const char *database = "db_data";
-	const char *table = "table_data";
-	
-	
+	const char *database = "flowerpower_c";
+	const char *table = "table_c";
+
+
 	init_client(argc, argv);
 
 	init(database, table);
-	
+
 	init_ctl();
 
 	send_client(table);
@@ -58,6 +58,6 @@ int main(int argc, char* argv[])  {
 	close_client();
 
 	closeDatabase();
-	
+
 	return EXIT_SUCCESS;
 }
