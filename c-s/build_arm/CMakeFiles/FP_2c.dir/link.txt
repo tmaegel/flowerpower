@@ -1,1 +1,1 @@
-/usr/bin/gcc-4.8   -O2    CMakeFiles/FP_2c.dir/FP_2c.cpp.o  -o FP_2c  -L/home/moe/workspace/install_zmq_arm -rdynamic libzeromq.a -lpthread -lstdc++ -Wl,-rpath,/home/moe/workspace/install_zmq_arm 
+/usr/bin/arm-linux-gnueabi-gcc    -O2    CMakeFiles/FP_2c.dir/FP_2c.cpp.o  -o FP_2c  -L/home/moe/workspace/install_zmq_arm -rdynamic libzeromq.a -lpthread -lstdc++ -Wl,-rpath,/home/moe/workspace/install_zmq_arm 

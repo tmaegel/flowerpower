@@ -5,4 +5,5 @@ CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o: 
 CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o: ../FP_s.cpp
 CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o: /home/moe/workspace/fp_github/flowerpower/db/database.cpp
 CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o: /home/moe/workspace/fp_github/flowerpower/db/main_s.cpp
+CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o: /home/moe/workspace/fp_github/flowerpower/struct.h
 

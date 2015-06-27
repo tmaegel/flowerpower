@@ -53,15 +53,15 @@ CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o: 
 CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o: /home/moe/workspace/fp_github/flowerpower/db/main_c.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o"
-	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o -c /home/moe/workspace/fp_github/flowerpower/db/main_c.cpp
+	/usr/bin/arm-linux-gnueabi-gcc   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o -c /home/moe/workspace/fp_github/flowerpower/db/main_c.cpp
 
 CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.i"
-	/usr/bin/gcc-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/moe/workspace/fp_github/flowerpower/db/main_c.cpp > CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.i
+	/usr/bin/arm-linux-gnueabi-gcc  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/moe/workspace/fp_github/flowerpower/db/main_c.cpp > CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.i
 
 CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.s"
-	/usr/bin/gcc-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/moe/workspace/fp_github/flowerpower/db/main_c.cpp -o CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.s
+	/usr/bin/arm-linux-gnueabi-gcc  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/moe/workspace/fp_github/flowerpower/db/main_c.cpp -o CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.s
 
 CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o.requires:
 .PHONY : CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o.requires
@@ -81,7 +81,7 @@ main_c_EXTERNAL_OBJECTS =
 
 main_c: CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o
 main_c: CMakeFiles/main_c.dir/build.make
-main_c: /lib/x86_64-linux-gnu/libm.so.6
+main_c: /home/moe/workspace/petalinux-v2014.4-final/tools/linux-i386/arm-xilinx-linux-gnueabi/arm-xilinx-linux-gnueabi/libc/lib/libm.so.6
 main_c: /usr/lib/x86_64-linux-gnu/libmysqlclient.a
 main_c: libzeromq.a
 main_c: CMakeFiles/main_c.dir/link.txt

@@ -6,10 +6,10 @@
 #include <string.h> //for errno
 #include <errno.h> //error output
 #include <stdbool.h>
-
-#include <wiringPi.h>
-#include <wiringSerial.h>
-
+#include "/usr/local/include/wiringPi.h"
+//#include <wiringPi.h>
+//#include <wiringSerial.h>
+#include "/usr/local/include/wiringSerial.h"
 #include "../struct.h"
 #include "controller.h"
 

@@ -45,9 +45,9 @@ errno.h
 -
 stdbool.h
 -
-wiringPi.h
+/usr/local/include/wiringPi.h
 -
-wiringSerial.h
+/usr/local/include/wiringSerial.h
 -
 ../struct.h
 /home/moe/workspace/fp_github/flowerpower/struct.h
@@ -89,4 +89,8 @@ database.cpp
 /home/moe/workspace/fp_github/flowerpower/data/controller.cpp
 
 /home/moe/workspace/fp_github/flowerpower/struct.h
+
+/usr/local/include/wiringPi.h
+
+/usr/local/include/wiringSerial.h
 

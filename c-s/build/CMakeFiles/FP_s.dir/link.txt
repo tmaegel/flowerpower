@@ -1,1 +1,0 @@
-/usr/bin/gcc-4.8   -O2    CMakeFiles/FP_s.dir/FP_s.cpp.o  -o FP_s  -L/home/moe/workspace/install_zmq -rdynamic libzeromq.a -lpthread -lstdc++ -Wl,-rpath,/home/moe/workspace/install_zmq 
