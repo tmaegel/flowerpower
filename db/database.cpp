@@ -11,8 +11,8 @@
 #include "../struct.h"
 
 #define HOST "localhost"
-#define USER "root"
-#define PASSWORD "TrOoNoIt#90+"
+#define USER "flowerpower"
+#define PASSWORD "flowerpower"
 
 MYSQL *db;
 MYSQL_RES *result;
@@ -22,7 +22,7 @@ unsigned int error;
 
 /**
  * @brief check for options
- * @param char* argument
+ * @param char* argumentIst aber egal jetzt :D Mach dir kein Stress. Ich mache die Visualisierung weiter. Musst mir Nächste woche mal genau sagen was da runter geladen hast.
  * @param char* option
  * @return int exists option, true or false
  */
@@ -52,21 +52,21 @@ void showHelp() {
 	"\t-h\t\thelp\n"\
 	"\t-d\t\tselect database\n"\
 	"\t-t\t\tinit table\n\n");
-	
+
 	exit(EXIT_FAILURE);
 }
 
 /**
  * @brief select items
  * @param char* pointer to string
- * @return int number of read data 
+ * @return int number of read data
  */
 int readFromDatabase(const char *table, struct measurement *data) {
 	char query[256];
 	int num_fields, num = 0;
 
 	snprintf(query, sizeof(query), "SELECT * FROM %s", table);
-	
+
 	mysql_query(db, query);
 	result = mysql_store_result(db);
 
@@ -84,7 +84,7 @@ int readFromDatabase(const char *table, struct measurement *data) {
 		data[num].humidity = atof(row[3]);
 		data[num].brightness= atof(row[4]);
 		strcpy(data[num].timestamp, row[5]);
-		
+
 		num++;
 	}
 
@@ -98,13 +98,14 @@ int readFromDatabase(const char *table, struct measurement *data) {
  * @param char* pointer to data
  * @todo return int for number of written data
  */
-void writeToDatabase(const char *table, struct measurement *data) {	
+void writeToDatabase(const char *table, struct measurement *data) {
 	char query[256];
-	
+
 	snprintf(query, sizeof(query), "INSERT INTO %s VALUES (NULL, %d, %f, %f, %f, '%s')", table, data->hw_id, data->temperature, data->brightness, data->humidity, data->timestamp);
 
 	printf("%s\n", query);
 	mysql_query(db, query);
+	checkError();
 }
 
 /**
@@ -115,6 +116,7 @@ void createDatabase(const char *database) {
 	char query[128];
 	snprintf(query, sizeof(query), "CREATE DATABASE IF NOT EXISTS %s", database);
 
+	printf("%s\n", query);
 	mysql_query(db, query);
 	checkError();
 	printf("create database '%s' success\n", database);
@@ -144,18 +146,18 @@ void insertSimData(const char *table, int num = 100) {
 
 	time(&t1);
 	srand(time(NULL));
-	
+
 	for(int i = 0; i < num; i++) {
 		/**< add 10 minutes */
 		t2 = t1 + i * 600;
 		tm_info = localtime(&t2);
 
-		strftime(str_time, 26, "%Y:%m:%d %H:%M:%S", tm_info);
-		
+		strftime(str_time, 26, "%Y-%m-%d %H:%M:%S", tm_info);
+
 		data.hw_id = 1;
 		data.temperature = rand() % 30;
 		data.brightness = rand() % 150;
-		data.humidity = rand() % 80;	
+		data.humidity = rand() % 80;
 		strcpy(data.timestamp, str_time);
 
 		writeToDatabase(table, &data);
@@ -168,12 +170,12 @@ void insertSimData(const char *table, int num = 100) {
  * @param char* table name
  * @param bool simulate date
  */
-void init(const char *database, const char *table, bool simulate = false) {	
+void init(const char *database, const char *table, bool simulate = false) {
 	char data[256];							/**< pointer to data  */
-		
-	// init and reserve memory	
+
+	// init and reserve memory
 	db = mysql_init(NULL);
-	checkError();	
+	checkError();
 	printf("initialize...\n");
 
 	// database connect
@@ -181,7 +183,7 @@ void init(const char *database, const char *table, bool simulate = false) {
 	checkError();
 	printf("connect  success\n");
 
-	createDatabase(database);	
+	createDatabase(database);
 
 	// selectt db
 	mysql_select_db(db, database);

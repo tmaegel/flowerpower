@@ -50,7 +50,7 @@ int main(int argc, char* argv[])  {
 
 	init_server(argc, argv);
 
-	init(database, table);
+	init(database, table, true);
 
 	send_db(table);
 
