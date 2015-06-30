@@ -33,3 +33,10 @@
 # tmp files
 *.swp
 *.*~
+
+# ignore build
+c-s/build/
+c.s/build-arm/
+
+# backup files
+*.bak
