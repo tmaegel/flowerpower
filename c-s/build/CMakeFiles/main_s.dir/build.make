@@ -81,7 +81,7 @@ main_s_EXTERNAL_OBJECTS =
 
 main_s: CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o
 main_s: CMakeFiles/main_s.dir/build.make
-main_s: /lib/x86_64-linux-gnu/libm.so.6
+main_s: /home/moe/workspace/petalinux-v2014.4-final/tools/linux-i386/arm-xilinx-linux-gnueabi/arm-xilinx-linux-gnueabi/libc/lib/libm.so.6
 main_s: /usr/lib/x86_64-linux-gnu/libmysqlclient.a
 main_s: libzeromq.a
 main_s: CMakeFiles/main_s.dir/link.txt

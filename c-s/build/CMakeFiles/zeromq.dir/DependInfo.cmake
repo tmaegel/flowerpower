@@ -85,8 +85,8 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "zeromq_generated"
-  "/home/moe/workspace/install_zmq"
-  "/home/moe/workspace/install_zmq/include"
+  "/home/moe/workspace/install_zmq_arm"
+  "/home/moe/workspace/install_zmq_arm/include"
   "/usr/include/mysql"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

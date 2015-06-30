@@ -28,30 +28,30 @@ The CXX compiler identification is GNU, found in "/home/moe/workspace/fp_github/
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec804603405/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec804603405.dir/build.make CMakeFiles/cmTryCompileExec804603405.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec2093342783/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2093342783.dir/build.make CMakeFiles/cmTryCompileExec2093342783.dir/build
 make[1]: Entering directory `/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec804603405.dir/testCCompiler.c.o
-/usr/bin/arm-linux-gnueabi-gcc    -o CMakeFiles/cmTryCompileExec804603405.dir/testCCompiler.c.o   -c /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTryCompileExec804603405
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec804603405.dir/link.txt --verbose=1
-/usr/bin/arm-linux-gnueabi-gcc       CMakeFiles/cmTryCompileExec804603405.dir/testCCompiler.c.o  -o cmTryCompileExec804603405 -rdynamic 
+Building C object CMakeFiles/cmTryCompileExec2093342783.dir/testCCompiler.c.o
+/usr/bin/arm-linux-gnueabi-gcc    -o CMakeFiles/cmTryCompileExec2093342783.dir/testCCompiler.c.o   -c /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec2093342783
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2093342783.dir/link.txt --verbose=1
+/usr/bin/arm-linux-gnueabi-gcc       CMakeFiles/cmTryCompileExec2093342783.dir/testCCompiler.c.o  -o cmTryCompileExec2093342783 -rdynamic 
 make[1]: Leaving directory `/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec2782630484/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2782630484.dir/build.make CMakeFiles/cmTryCompileExec2782630484.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec3251946819/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3251946819.dir/build.make CMakeFiles/cmTryCompileExec3251946819.dir/build
 make[1]: Entering directory `/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2782630484.dir/CMakeCCompilerABI.c.o
-/usr/bin/arm-linux-gnueabi-gcc    -o CMakeFiles/cmTryCompileExec2782630484.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
-Linking C executable cmTryCompileExec2782630484
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2782630484.dir/link.txt --verbose=1
-/usr/bin/arm-linux-gnueabi-gcc     -v CMakeFiles/cmTryCompileExec2782630484.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2782630484 -rdynamic  
+Building C object CMakeFiles/cmTryCompileExec3251946819.dir/CMakeCCompilerABI.c.o
+/usr/bin/arm-linux-gnueabi-gcc    -o CMakeFiles/cmTryCompileExec3251946819.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec3251946819
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3251946819.dir/link.txt --verbose=1
+/usr/bin/arm-linux-gnueabi-gcc     -v CMakeFiles/cmTryCompileExec3251946819.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3251946819 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/arm-linux-gnueabi-gcc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/lto-wrapper
@@ -61,8 +61,8 @@ Thread model: posix
 gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-12ubuntu1) 
 COMPILER_PATH=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/bin/
 LIBRARY_PATH=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2782630484' '-rdynamic' '-march=armv5t' '-mfloat-abi=soft' '-mtls-dialect=gnu'
- /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTryCompileExec2782630484 /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crt1.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crti.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtbegin.o -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7 -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib CMakeFiles/cmTryCompileExec2782630484.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtend.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3251946819' '-rdynamic' '-march=armv5t' '-mfloat-abi=soft' '-mtls-dialect=gnu'
+ /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTryCompileExec3251946819 /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crt1.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crti.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtbegin.o -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7 -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib CMakeFiles/cmTryCompileExec3251946819.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtend.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crtn.o
 make[1]: Leaving directory `/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
 
 
@@ -70,15 +70,15 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec2782630484/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2782630484.dir/build.make CMakeFiles/cmTryCompileExec2782630484.dir/build]
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec3251946819/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3251946819.dir/build.make CMakeFiles/cmTryCompileExec3251946819.dir/build]
   ignore line: [make[1]: Entering directory `/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp']
   ignore line: [/usr/bin/cmake -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec2782630484.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/arm-linux-gnueabi-gcc    -o CMakeFiles/cmTryCompileExec2782630484.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTryCompileExec2782630484]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2782630484.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/arm-linux-gnueabi-gcc     -v CMakeFiles/cmTryCompileExec2782630484.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2782630484 -rdynamic  ]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec3251946819.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/arm-linux-gnueabi-gcc    -o CMakeFiles/cmTryCompileExec3251946819.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec3251946819]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3251946819.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/arm-linux-gnueabi-gcc     -v CMakeFiles/cmTryCompileExec3251946819.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3251946819 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/arm-linux-gnueabi-gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/lto-wrapper]
@@ -88,8 +88,8 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-12ubuntu1) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2782630484' '-rdynamic' '-march=armv5t' '-mfloat-abi=soft' '-mtls-dialect=gnu']
-  link line: [ /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTryCompileExec2782630484 /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crt1.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crti.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtbegin.o -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7 -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib CMakeFiles/cmTryCompileExec2782630484.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtend.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3251946819' '-rdynamic' '-march=armv5t' '-mfloat-abi=soft' '-mtls-dialect=gnu']
+  link line: [ /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTryCompileExec3251946819 /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crt1.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crti.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtbegin.o -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7 -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib CMakeFiles/cmTryCompileExec3251946819.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtend.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crtn.o]
     arg [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/collect2] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
@@ -104,7 +104,7 @@ Parsed C implicit link information from above output:
     arg [armelf_linux_eabi] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec2782630484] ==> ignore
+    arg [cmTryCompileExec3251946819] ==> ignore
     arg [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crt1.o] ==> ignore
     arg [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crti.o] ==> ignore
     arg [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtbegin.o] ==> ignore
@@ -113,7 +113,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7] ==> dir [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7]
     arg [-L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib] ==> dir [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib]
-    arg [CMakeFiles/cmTryCompileExec2782630484.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec3251946819.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -142,30 +142,30 @@ Parsed C implicit link information from above output:
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec1961678829/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1961678829.dir/build.make CMakeFiles/cmTryCompileExec1961678829.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec1133933855/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1133933855.dir/build.make CMakeFiles/cmTryCompileExec1133933855.dir/build
 make[1]: Entering directory `/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1961678829.dir/testCXXCompiler.cxx.o
-/usr/bin/arm-linux-gnueabi-gcc     -o CMakeFiles/cmTryCompileExec1961678829.dir/testCXXCompiler.cxx.o -c /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTryCompileExec1961678829
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1961678829.dir/link.txt --verbose=1
-/usr/bin/arm-linux-gnueabi-gcc        CMakeFiles/cmTryCompileExec1961678829.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec1961678829 -rdynamic 
+Building CXX object CMakeFiles/cmTryCompileExec1133933855.dir/testCXXCompiler.cxx.o
+/usr/bin/arm-linux-gnueabi-gcc     -o CMakeFiles/cmTryCompileExec1133933855.dir/testCXXCompiler.cxx.o -c /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec1133933855
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1133933855.dir/link.txt --verbose=1
+/usr/bin/arm-linux-gnueabi-gcc        CMakeFiles/cmTryCompileExec1133933855.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec1133933855 -rdynamic 
 make[1]: Leaving directory `/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec3161211600/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3161211600.dir/build.make CMakeFiles/cmTryCompileExec3161211600.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec3141769844/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3141769844.dir/build.make CMakeFiles/cmTryCompileExec3141769844.dir/build
 make[1]: Entering directory `/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec3161211600.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/arm-linux-gnueabi-gcc     -o CMakeFiles/cmTryCompileExec3161211600.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTryCompileExec3161211600
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3161211600.dir/link.txt --verbose=1
-/usr/bin/arm-linux-gnueabi-gcc      -v CMakeFiles/cmTryCompileExec3161211600.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3161211600 -rdynamic  
+Building CXX object CMakeFiles/cmTryCompileExec3141769844.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/arm-linux-gnueabi-gcc     -o CMakeFiles/cmTryCompileExec3141769844.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec3141769844
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3141769844.dir/link.txt --verbose=1
+/usr/bin/arm-linux-gnueabi-gcc      -v CMakeFiles/cmTryCompileExec3141769844.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3141769844 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/arm-linux-gnueabi-gcc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/lto-wrapper
@@ -175,8 +175,8 @@ Thread model: posix
 gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-12ubuntu1) 
 COMPILER_PATH=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/bin/
 LIBRARY_PATH=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3161211600' '-rdynamic' '-march=armv5t' '-mfloat-abi=soft' '-mtls-dialect=gnu'
- /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTryCompileExec3161211600 /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crt1.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crti.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtbegin.o -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7 -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib CMakeFiles/cmTryCompileExec3161211600.dir/CMakeCXXCompilerABI.cpp.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtend.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3141769844' '-rdynamic' '-march=armv5t' '-mfloat-abi=soft' '-mtls-dialect=gnu'
+ /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTryCompileExec3141769844 /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crt1.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crti.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtbegin.o -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7 -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib CMakeFiles/cmTryCompileExec3141769844.dir/CMakeCXXCompilerABI.cpp.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtend.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crtn.o
 make[1]: Leaving directory `/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
 
 
@@ -184,15 +184,15 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec3161211600/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3161211600.dir/build.make CMakeFiles/cmTryCompileExec3161211600.dir/build]
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec3141769844/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3141769844.dir/build.make CMakeFiles/cmTryCompileExec3141769844.dir/build]
   ignore line: [make[1]: Entering directory `/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp']
   ignore line: [/usr/bin/cmake -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3161211600.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/arm-linux-gnueabi-gcc     -o CMakeFiles/cmTryCompileExec3161211600.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTryCompileExec3161211600]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3161211600.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/arm-linux-gnueabi-gcc      -v CMakeFiles/cmTryCompileExec3161211600.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3161211600 -rdynamic  ]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3141769844.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/arm-linux-gnueabi-gcc     -o CMakeFiles/cmTryCompileExec3141769844.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec3141769844]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3141769844.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/arm-linux-gnueabi-gcc      -v CMakeFiles/cmTryCompileExec3141769844.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3141769844 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/arm-linux-gnueabi-gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/lto-wrapper]
@@ -202,8 +202,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-12ubuntu1) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3161211600' '-rdynamic' '-march=armv5t' '-mfloat-abi=soft' '-mtls-dialect=gnu']
-  link line: [ /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTryCompileExec3161211600 /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crt1.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crti.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtbegin.o -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7 -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib CMakeFiles/cmTryCompileExec3161211600.dir/CMakeCXXCompilerABI.cpp.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtend.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3141769844' '-rdynamic' '-march=armv5t' '-mfloat-abi=soft' '-mtls-dialect=gnu']
+  link line: [ /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTryCompileExec3141769844 /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crt1.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crti.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtbegin.o -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7 -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib CMakeFiles/cmTryCompileExec3141769844.dir/CMakeCXXCompilerABI.cpp.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtend.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crtn.o]
     arg [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/collect2] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
@@ -218,7 +218,7 @@ Parsed CXX implicit link information from above output:
     arg [armelf_linux_eabi] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec3161211600] ==> ignore
+    arg [cmTryCompileExec3141769844] ==> ignore
     arg [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crt1.o] ==> ignore
     arg [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crti.o] ==> ignore
     arg [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtbegin.o] ==> ignore
@@ -227,7 +227,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7] ==> dir [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7]
     arg [-L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib] ==> dir [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib]
-    arg [CMakeFiles/cmTryCompileExec3161211600.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec3141769844.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
