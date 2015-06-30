@@ -58,6 +58,14 @@ function Chart(id) {
 		self.resize();
 	}
 
+	this.clear = function() {
+		c.clearRect(0, 0, $(chart).attr("width"), $(chart).attr("height"));
+
+		// reset variables
+		yMaxArr = new Array();
+		stepArr = new Array();
+	}
+
 	this.resize = function() {
 		$(chart).attr("width", $(id).parent().width());
 
