@@ -11,8 +11,8 @@
 #include "../struct.h"
 
 #define HOST "localhost"
-#define USER "root"
-#define PASSWORD "TrOoNoIt#90+"
+#define USER "flowerpower"
+#define PASSWORD "flowerpower"
 
 MYSQL *db;
 MYSQL_RES *result;
