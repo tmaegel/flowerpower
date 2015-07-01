@@ -1,4 +1,0 @@
-/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/FP_2c.dir
-/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/main_c.dir
-/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/main_s.dir
-/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/zeromq.dir
