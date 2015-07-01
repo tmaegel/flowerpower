@@ -53,15 +53,15 @@ CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o: 
 CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o: /home/moe/workspace/fp_github/flowerpower/db/main_s.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o"
-	/usr/bin/gcc-4.8   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o -c /home/moe/workspace/fp_github/flowerpower/db/main_s.cpp
+	/usr/bin/gcc   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o -c /home/moe/workspace/fp_github/flowerpower/db/main_s.cpp
 
 CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.i"
-	/usr/bin/gcc-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/moe/workspace/fp_github/flowerpower/db/main_s.cpp > CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.i
+	/usr/bin/gcc  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/moe/workspace/fp_github/flowerpower/db/main_s.cpp > CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.i
 
 CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.s"
-	/usr/bin/gcc-4.8  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/moe/workspace/fp_github/flowerpower/db/main_s.cpp -o CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.s
+	/usr/bin/gcc  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/moe/workspace/fp_github/flowerpower/db/main_s.cpp -o CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.s
 
 CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o.requires:
 .PHONY : CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o.requires
@@ -82,7 +82,7 @@ main_s_EXTERNAL_OBJECTS =
 main_s: CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o
 main_s: CMakeFiles/main_s.dir/build.make
 main_s: /lib/x86_64-linux-gnu/libm.so.6
-main_s: /usr/lib/x86_64-linux-gnu/libmysqlclient.a
+main_s: /usr/lib/x86_64-linux-gnu/libmysqlclient.so
 main_s: libzeromq.a
 main_s: CMakeFiles/main_s.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable main_s"

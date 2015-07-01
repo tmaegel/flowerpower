@@ -1,4 +1,5 @@
-set(SRC /home/moe/workspace/zeromq-4.1.0/src)
+set(SRC /home/moe/workspace/fp_github/flowerpower/c-s/src)
+#set(SRC /home/toni/Downloads/zeromq/src)
 
 add_library(zeromq STATIC
     ${SRC}/address.cpp
@@ -31,7 +32,7 @@ add_library(zeromq STATIC
     ${SRC}/pgm_sender.cpp
     ${SRC}/pgm_socket.cpp
     ${SRC}/pipe.cpp
-    #${SRC}/plain_mechanism.cpp
+    ${SRC}/plain_mechanism.cpp
     ${SRC}/poll.cpp
     ${SRC}/poller_base.cpp
     ${SRC}/proxy.cpp
