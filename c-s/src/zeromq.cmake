@@ -1,4 +1,4 @@
-set(SRC /home/toni/Downloads/zeromq/src)
+set(SRC /home/user/zeromq/src)
 
 add_library(zeromq STATIC
     ${SRC}/address.cpp
