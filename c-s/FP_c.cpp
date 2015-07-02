@@ -45,6 +45,8 @@ void send_client(const char *table){
         char *brightness = (char*)malloc(256);
         char *timestamp = (char*)malloc(256);
 
+		int counts = 0;
+
         for(int i = 0; i < dataLength; i++) {
 
                 printf("%d %f %f %f %s\n", data[i].hw_id, data[i].temperature, data[i].humidity, data[i].brightness, data[i].timestamp);
@@ -73,7 +75,10 @@ void send_client(const char *table){
 		printf ("Sending: %s... %d…\n", timestamp, request_nbr);
 		zmq_send (requester, timestamp, 255, 0);
 		printf ("Received:%s\n", s_recv(requester));
-
+		
+		counts++;
+		printf("Anzahl:%d\n", counts);
+		
 	//data_to_client = "Hey";	
 
 	//for (request_nbr = 0; request_nbr != 10; request_nbr++) {

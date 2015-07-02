@@ -49,7 +49,7 @@ int main(int argc, char* argv[])  {
 
 	init(database, table);
 
-	init_ctl();
+//	init_ctl();
 
 	send_client(table);
 
