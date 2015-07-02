@@ -1,5 +1,7 @@
-set(SRC /home/moe/workspace/zeromq-4.0.5/src)
+#set(SRC /home/pi/zeromq/src)
+#set(SRC /home/moe/workspace/zeromq-4.0.5/src)
 #set(SRC /home/toni/Downloads/zeromq/src)
+set(SRC /home/user/zeromq/src)
 
 add_library(zeromq STATIC
     ${SRC}/address.cpp
@@ -190,11 +192,11 @@ endif ()
 configure_file(${CMAKE_CURRENT_LIST_DIR}/zeromq.platform.hpp.cmake.in
     ${CMAKE_CURRENT_BINARY_DIR}/zeromq_generated/platform.hpp)
 
-target_include_directories(zeromq
-    INTERFACE
-        ${CMAKE_CURRENT_LIST_DIR}/home/mberghof/work/install_zmq_arm/include
-        ${CMAKE_CURRENT_LIST_DIR}
-    PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/zeromq_generated)
+#target_include_directories(zeromq
+#    INTERFACE
+ #       ${CMAKE_CURRENT_LIST_DIR}/home/pi/zeromq/include
+  #      ${CMAKE_CURRENT_LIST_DIR}
+   # PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/zeromq_generated)
 
-target_compile_definitions(zeromq
-    PUBLIC ZMQ_STATIC)
+#target_compile_definitions(zeromq
+ #   PUBLIC ZMQ_STATIC)

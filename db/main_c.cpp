@@ -47,7 +47,7 @@ int main(int argc, char* argv[])  {
 
 	//init_client(argc, argv);
 
-	init(database, table, true);
+	init(database, table);
 
 	//init_ctl();
 
