@@ -1,6 +1,7 @@
-set(SRC /home/pi/zeromq/src)
+#set(SRC /home/pi/zeromq/src)
 #set(SRC /home/moe/workspace/zeromq-4.0.5/src)
 #set(SRC /home/toni/Downloads/zeromq/src)
+set(SRC /home/user/zeromq/src)
 
 add_library(zeromq STATIC
     ${SRC}/address.cpp
