@@ -82,7 +82,7 @@ main_c_EXTERNAL_OBJECTS =
 main_c: CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o
 main_c: CMakeFiles/main_c.dir/build.make
 main_c: /home/moe/workspace/petalinux-v2014.4-final/tools/linux-i386/arm-xilinx-linux-gnueabi/arm-xilinx-linux-gnueabi/libc/lib/libm.so.6
-main_c: ../lib/libmysqlclient.a
+main_c: /usr/lib/x86_64-linux-gnu/libmysqlclient.a
 main_c: libzeromq.a
 main_c: CMakeFiles/main_c.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable main_c"
