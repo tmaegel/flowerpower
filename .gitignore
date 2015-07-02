@@ -35,8 +35,10 @@
 *.*~
 
 # ignore build
+CMakeLists.txt
 c-s/build/
 c.s/build-arm/
+c-s/src/
 
 # backup files
 *.bak
