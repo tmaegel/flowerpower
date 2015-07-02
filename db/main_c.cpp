@@ -45,17 +45,17 @@ int main(int argc, char* argv[])  {
 	const char *table = "table_c";
 
 
-	init_client(argc, argv);
+	//init_client(argc, argv);
 
-	init(database, table);
+	init(database, table, true);
 
-	init_ctl();
+	//init_ctl();
 
-	send_client(table);
+	//send_client(table);
 
 	//printf("Anzahl der Elemente: %d\n", num);
 
-	close_client();
+	//close_client();
 
 	closeDatabase();
 
