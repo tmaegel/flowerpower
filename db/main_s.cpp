@@ -50,8 +50,8 @@ int main(int argc, char* argv[])  {
 
 	init_server(argc, argv);
 
-	init(database, table, true);
-
+	init(database, table);
+ 
 	send_db(table);
 
 //	printf("Anzahl der Elemente: %d\n", num);
