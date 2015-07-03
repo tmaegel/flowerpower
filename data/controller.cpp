@@ -5,12 +5,13 @@
 #include <stdlib.h> //for exit(int);
 #include <string.h> //for errno
 #include <errno.h> //error output
+#include <unistd.h>
 #include <stdbool.h>
 #include "/usr/local/include/wiringPi.h"
 //#include <wiringPi.h>
 //#include <wiringSerial.h>
 #include "/usr/local/include/wiringSerial.h"
-#include "../struct.h"
+//#include "../struct.h"
 #include "controller.h"
 
 char device[]= "/dev/ttyACM0";
@@ -18,11 +19,18 @@ char device[]= "/dev/ttyACM0";
 int fd;
 unsigned long baud = 115200;
 unsigned long t = 0;
-
-struct measurement *data;
+int number = 0;
+struct measurement data;
 char str[64];
 int i = 0;
+int count_raute = 0;
+int part = 0;
 
+	char *hw_id = (char*)malloc(10);
+	char *temperature = (char*)malloc(256);
+	char *humidity = (char*)malloc(256);
+	char *brightness = (char*)malloc(256);
+	char timestamp[20];
 void command(const char cmd[]) {
 	if(strcmp(cmd, "rd!") == 0) {
 		// read
@@ -61,12 +69,12 @@ void setup() {
 	}
 }
  
-void loop(){
+int loop(const char *table){
 	// Pong every 3 seconds
 	if(millis()-t >= 5000){
 		// you can also write data from 0-255
 		command("rd!");
-		// command("vo!");
+		//command("vo!");
     	// command("vc!");
 		t=millis();
 	}
@@ -80,40 +88,71 @@ void loop(){
 
 	if(serialDataAvail(fd)){
 		char c = serialGetchar(fd);
+		printf("XX: %c\n", c);
 		if(c == '#') {
-			str_to_struct(str, data);
-		} else {
+			str_to_struct(str, table);
+			i = 1;
+			count_raute++;
+		
+		}else{
 			str[i]  = c;
+			i++;
 		}
 
-		printf("%c", c);
 		fflush(stdout);
 
-		i++;
 	}
+//	count_raute = 1;
+	return count_raute;
 }
 
-int str_to_struct(char *str, struct measurement *data) {
-	char delimiter[] = ";";
+int str_to_struct(char *str, const char *table){
+	//printf("%s\n", str);
+	
+   
+   	char delimiter[] = ";";
 	char *ptr;
+   	
+	
 
 	ptr = strtok(str, delimiter);
 
 	while(ptr != NULL) {
 		printf("Abschnitt gefunden: %s\n", ptr);
-		// naechsten Abschnitt erstellen
+		part++;
+		if(part == 3){
+			sscanf(ptr, "%d", &data.hw_id);
+		}
+		if(part == 4){
+			sscanf(ptr, "%lf", &data.temperature);
+		}
+		if(part == 5){			
+			sscanf(ptr, "%lf", &data.humidity);
+		}
+		if(part == 6){
+			sscanf(ptr, "%lf", &data.brightness);
+		}
+		if(part == 7){
+			sscanf(ptr, "%s", data.timestamp);
+		}
+
+
 		ptr = strtok(NULL, delimiter);
 	}
+
+	writeToDatabase(table, &data);
+	printf("\n\n");
 }
 
-int init_ctl() {
+int init_ctl(const char *table) {
 	setup();
 	
-	while(1) {
-		loop();
+
+	while(number < 3){
+		number = loop(table);
 	}
 	
-	return 0;
+	return 1;
 }
  
 //#endif
