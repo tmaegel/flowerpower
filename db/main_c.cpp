@@ -49,10 +49,11 @@ int main(int argc, char* argv[])  {
 
 	init(database, table);
 
-//	init_ctl();
+	//init_ctl(table);
+	printf("hallo\n");
 
 	send_client(table);
-
+	
 	//printf("Anzahl der Elemente: %d\n", num);
 
 	close_client();
