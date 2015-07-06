@@ -6,21 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../src/zmq.h
-errno.h
--
-stddef.h
--
-stdio.h
--
-winsock2.h
--
-inttypes.h
--
-stdint.h
--
-
-/home/moe/workspace/fp_github/flowerpower/c-s/FP_s.cpp
+/home/pi/flowerpower/db/../c-s/FP_s.cpp
 zmq.h
 -
 stdio.h
@@ -34,7 +20,9 @@ string.h
 assert.h
 -
 
-/home/moe/workspace/fp_github/flowerpower/db/database.cpp
+/home/pi/flowerpower/db/../struct.h
+
+/home/pi/flowerpower/db/database.cpp
 stdlib.h
 -
 stdio.h
@@ -52,17 +40,29 @@ mysql/errmsg.h
 time.h
 -
 ../struct.h
-/home/moe/workspace/fp_github/flowerpower/struct.h
+/home/pi/flowerpower/db/../struct.h
 
-/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp
+/home/pi/flowerpower/db/main_s.cpp
 stdio.h
 -
 database.cpp
-/home/moe/workspace/fp_github/flowerpower/db/database.cpp
+/home/pi/flowerpower/db/database.cpp
 ../c-s/FP_s.cpp
-/home/moe/workspace/fp_github/flowerpower/c-s/FP_s.cpp
+/home/pi/flowerpower/db/../c-s/FP_s.cpp
 ../struct.h
-/home/moe/workspace/fp_github/flowerpower/struct.h
+/home/pi/flowerpower/db/../struct.h
 
-/home/moe/workspace/fp_github/flowerpower/struct.h
+/home/pi/zeromq/include/zmq.h
+errno.h
+-
+stddef.h
+-
+stdio.h
+-
+winsock2.h
+-
+inttypes.h
+-
+stdint.h
+-
 

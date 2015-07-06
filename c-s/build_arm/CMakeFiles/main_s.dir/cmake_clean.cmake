@@ -1,5 +1,5 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o"
+  "CMakeFiles/main_s.dir/home/pi/flowerpower/db/main_s.cpp.o"
   "main_s.pdb"
   "main_s"
 )

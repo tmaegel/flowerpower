@@ -1,6 +1,6 @@
-The system is: Linux - 3.16.0-38-generic - x86_64
+The system is: Linux - 3.18.11+ - armv6l
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /usr/bin/arm-linux-gnueabi-gcc 
+Compiler: /usr/bin/gcc 
 Build flags: 
 Id flags: 
 
@@ -10,10 +10,10 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/2.8.12.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/pi/flowerpower/c-s/build_arm/CMakeFiles/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /usr/bin/arm-linux-gnueabi-gcc 
+Compiler: /usr/bin/gcc 
 Build flags: 
 Id flags: 
 
@@ -23,97 +23,96 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/2.8.12.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/pi/flowerpower/c-s/build_arm/CMakeFiles/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp
+Change Dir: /home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec804603405/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec804603405.dir/build.make CMakeFiles/cmTryCompileExec804603405.dir/build
-make[1]: Entering directory `/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec804603405.dir/testCCompiler.c.o
-/usr/bin/arm-linux-gnueabi-gcc    -o CMakeFiles/cmTryCompileExec804603405.dir/testCCompiler.c.o   -c /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTryCompileExec804603405
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec804603405.dir/link.txt --verbose=1
-/usr/bin/arm-linux-gnueabi-gcc       CMakeFiles/cmTryCompileExec804603405.dir/testCCompiler.c.o  -o cmTryCompileExec804603405 -rdynamic 
-make[1]: Leaving directory `/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
+Run Build Command:/usr/bin/make "cmTryCompileExec647433365/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec647433365.dir/build.make CMakeFiles/cmTryCompileExec647433365.dir/build
+make[1]: Entering directory '/home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec647433365.dir/testCCompiler.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec647433365.dir/testCCompiler.c.o   -c /home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec647433365
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec647433365.dir/link.txt --verbose=1
+/usr/bin/gcc         CMakeFiles/cmTryCompileExec647433365.dir/testCCompiler.c.o  -o cmTryCompileExec647433365 -rdynamic 
+make[1]: Leaving directory '/home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp
+Change Dir: /home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec2782630484/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2782630484.dir/build.make CMakeFiles/cmTryCompileExec2782630484.dir/build
-make[1]: Entering directory `/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2782630484.dir/CMakeCCompilerABI.c.o
-/usr/bin/arm-linux-gnueabi-gcc    -o CMakeFiles/cmTryCompileExec2782630484.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
-Linking C executable cmTryCompileExec2782630484
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2782630484.dir/link.txt --verbose=1
-/usr/bin/arm-linux-gnueabi-gcc     -v CMakeFiles/cmTryCompileExec2782630484.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2782630484 -rdynamic  
+Run Build Command:/usr/bin/make "cmTryCompileExec938727309/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec938727309.dir/build.make CMakeFiles/cmTryCompileExec938727309.dir/build
+make[1]: Entering directory '/home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec938727309.dir/CMakeCCompilerABI.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec938727309.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec938727309
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec938727309.dir/link.txt --verbose=1
+/usr/bin/gcc       -v CMakeFiles/cmTryCompileExec938727309.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec938727309 -rdynamic  
 Using built-in specs.
-COLLECT_GCC=/usr/bin/arm-linux-gnueabi-gcc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/lto-wrapper
-Target: arm-linux-gnueabi
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.7.3-12ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.7/README.Bugs --enable-languages=c,c++,go,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.7 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/arm-linux-gnueabi/include/c++/4.7.3 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-gnu-unique-object --disable-libmudflap --disable-libitm --enable-plugin --with-system-zlib --enable-objc-gc --with-cloog --enable-cloog-backend=ppl --disable-cloog-version-check --disable-ppl-version-check --enable-multiarch --enable-multilib --disable-sjlj-exceptions --with-arch=armv5t --with-float=soft --disable-werror --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=arm-linux-gnueabi --program-prefix=arm-linux-gnueabi- --includedir=/usr/arm-linux-gnueabi/include
+COLLECT_GCC=/usr/bin/gcc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/4.6/lto-wrapper
+Target: arm-linux-gnueabihf
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.6.3-14+rpi1' --with-bugurl=file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.6 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --enable-objc-gc --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
 Thread model: posix
-gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-12ubuntu1) 
-COMPILER_PATH=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/bin/
-LIBRARY_PATH=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2782630484' '-rdynamic' '-march=armv5t' '-mfloat-abi=soft' '-mtls-dialect=gnu'
- /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTryCompileExec2782630484 /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crt1.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crti.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtbegin.o -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7 -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib CMakeFiles/cmTryCompileExec2782630484.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtend.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crtn.o
-make[1]: Leaving directory `/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
+gcc version 4.6.3 (Debian 4.6.3-14+rpi1) 
+COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/
+LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec938727309' '-rdynamic' '-march=armv6' '-mfloat-abi=hard' '-mfpu=vfp'
+ /usr/lib/gcc/arm-linux-gnueabihf/4.6/collect2 --sysroot=/ --build-id --no-add-needed --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=both -m armelf_linux_eabi -o cmTryCompileExec938727309 /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/4.6 -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTryCompileExec938727309.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crtn.o
+make[1]: Leaving directory '/home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp]
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec2782630484/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2782630484.dir/build.make CMakeFiles/cmTryCompileExec2782630484.dir/build]
-  ignore line: [make[1]: Entering directory `/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec2782630484.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/arm-linux-gnueabi-gcc    -o CMakeFiles/cmTryCompileExec2782630484.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTryCompileExec2782630484]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2782630484.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/arm-linux-gnueabi-gcc     -v CMakeFiles/cmTryCompileExec2782630484.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2782630484 -rdynamic  ]
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec938727309/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec938727309.dir/build.make CMakeFiles/cmTryCompileExec938727309.dir/build]
+  ignore line: [make[1]: Entering directory '/home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec938727309.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec938727309.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec938727309]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec938727309.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/gcc       -v CMakeFiles/cmTryCompileExec938727309.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec938727309 -rdynamic  ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/arm-linux-gnueabi-gcc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/lto-wrapper]
-  ignore line: [Target: arm-linux-gnueabi]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.7.3-12ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.7/README.Bugs --enable-languages=c,c++,go,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.7 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/arm-linux-gnueabi/include/c++/4.7.3 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-gnu-unique-object --disable-libmudflap --disable-libitm --enable-plugin --with-system-zlib --enable-objc-gc --with-cloog --enable-cloog-backend=ppl --disable-cloog-version-check --disable-ppl-version-check --enable-multiarch --enable-multilib --disable-sjlj-exceptions --with-arch=armv5t --with-float=soft --disable-werror --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=arm-linux-gnueabi --program-prefix=arm-linux-gnueabi- --includedir=/usr/arm-linux-gnueabi/include]
+  ignore line: [COLLECT_GCC=/usr/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/4.6/lto-wrapper]
+  ignore line: [Target: arm-linux-gnueabihf]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 4.6.3-14+rpi1' --with-bugurl=file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.6 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --enable-objc-gc --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-12ubuntu1) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/bin/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2782630484' '-rdynamic' '-march=armv5t' '-mfloat-abi=soft' '-mtls-dialect=gnu']
-  link line: [ /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTryCompileExec2782630484 /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crt1.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crti.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtbegin.o -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7 -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib CMakeFiles/cmTryCompileExec2782630484.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtend.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crtn.o]
-    arg [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/collect2] ==> ignore
+  ignore line: [gcc version 4.6.3 (Debian 4.6.3-14+rpi1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec938727309' '-rdynamic' '-march=armv6' '-mfloat-abi=hard' '-mfpu=vfp']
+  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/4.6/collect2 --sysroot=/ --build-id --no-add-needed --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=both -m armelf_linux_eabi -o cmTryCompileExec938727309 /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/4.6 -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTryCompileExec938727309.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crtn.o]
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/collect2] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-export-dynamic] ==> ignore
     arg [-dynamic-linker] ==> ignore
-    arg [/lib/ld-linux.so.3] ==> ignore
+    arg [/lib/ld-linux-armhf.so.3] ==> ignore
     arg [-X] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
+    arg [--hash-style=both] ==> ignore
     arg [-m] ==> ignore
     arg [armelf_linux_eabi] ==> ignore
-    arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec2782630484] ==> ignore
-    arg [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crt1.o] ==> ignore
-    arg [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crti.o] ==> ignore
-    arg [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib] ==> dir [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7] ==> dir [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7]
-    arg [-L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib] ==> dir [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib]
-    arg [CMakeFiles/cmTryCompileExec2782630484.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [cmTryCompileExec938727309] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crti.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.6] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../..] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../..]
+    arg [-L/lib/arm-linux-gnueabihf] ==> dir [/lib/arm-linux-gnueabihf]
+    arg [-L/usr/lib/arm-linux-gnueabihf] ==> dir [/usr/lib/arm-linux-gnueabihf]
+    arg [CMakeFiles/cmTryCompileExec938727309.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -123,111 +122,109 @@ Parsed C implicit link information from above output:
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [--no-as-needed] ==> ignore
-    arg [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtend.o] ==> ignore
-    arg [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crtn.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crtn.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc_s]
   remove lib [gcc]
   remove lib [gcc_s]
-  collapse library dir [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib] ==> [/usr/arm-linux-gnueabi/lib]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7] ==> [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7]
-  collapse library dir [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib] ==> [/usr/arm-linux-gnueabi/lib]
+  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6] ==> [/usr/lib/gcc/arm-linux-gnueabihf/4.6]
+  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
+  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../..] ==> [/usr/lib]
+  collapse dir [/lib/arm-linux-gnueabihf] ==> [/lib/arm-linux-gnueabihf]
+  collapse dir [/usr/lib/arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
   implicit libs: [c]
-  implicit dirs: [/usr/arm-linux-gnueabi/lib;/lib;/usr/lib;/usr/lib/gcc-cross/arm-linux-gnueabi/4.7]
-  implicit fwks: []
+  implicit dirs: [/usr/lib/gcc/arm-linux-gnueabihf/4.6;/usr/lib/arm-linux-gnueabihf;/usr/lib;/lib/arm-linux-gnueabihf]
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp
+Change Dir: /home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec1961678829/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1961678829.dir/build.make CMakeFiles/cmTryCompileExec1961678829.dir/build
-make[1]: Entering directory `/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1961678829.dir/testCXXCompiler.cxx.o
-/usr/bin/arm-linux-gnueabi-gcc     -o CMakeFiles/cmTryCompileExec1961678829.dir/testCXXCompiler.cxx.o -c /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTryCompileExec1961678829
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1961678829.dir/link.txt --verbose=1
-/usr/bin/arm-linux-gnueabi-gcc        CMakeFiles/cmTryCompileExec1961678829.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec1961678829 -rdynamic 
-make[1]: Leaving directory `/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
+Run Build Command:/usr/bin/make "cmTryCompileExec294649191/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec294649191.dir/build.make CMakeFiles/cmTryCompileExec294649191.dir/build
+make[1]: Entering directory '/home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec294649191.dir/testCXXCompiler.cxx.o
+/usr/bin/gcc     -o CMakeFiles/cmTryCompileExec294649191.dir/testCXXCompiler.cxx.o -c /home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec294649191
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec294649191.dir/link.txt --verbose=1
+/usr/bin/gcc          CMakeFiles/cmTryCompileExec294649191.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec294649191 -rdynamic 
+make[1]: Leaving directory '/home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp
+Change Dir: /home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec3161211600/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3161211600.dir/build.make CMakeFiles/cmTryCompileExec3161211600.dir/build
-make[1]: Entering directory `/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec3161211600.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/arm-linux-gnueabi-gcc     -o CMakeFiles/cmTryCompileExec3161211600.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTryCompileExec3161211600
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3161211600.dir/link.txt --verbose=1
-/usr/bin/arm-linux-gnueabi-gcc      -v CMakeFiles/cmTryCompileExec3161211600.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3161211600 -rdynamic  
+Run Build Command:/usr/bin/make "cmTryCompileExec3589395234/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3589395234.dir/build.make CMakeFiles/cmTryCompileExec3589395234.dir/build
+make[1]: Entering directory '/home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3589395234.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/gcc     -o CMakeFiles/cmTryCompileExec3589395234.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec3589395234
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3589395234.dir/link.txt --verbose=1
+/usr/bin/gcc        -v CMakeFiles/cmTryCompileExec3589395234.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3589395234 -rdynamic  
 Using built-in specs.
-COLLECT_GCC=/usr/bin/arm-linux-gnueabi-gcc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/lto-wrapper
-Target: arm-linux-gnueabi
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.7.3-12ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.7/README.Bugs --enable-languages=c,c++,go,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.7 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/arm-linux-gnueabi/include/c++/4.7.3 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-gnu-unique-object --disable-libmudflap --disable-libitm --enable-plugin --with-system-zlib --enable-objc-gc --with-cloog --enable-cloog-backend=ppl --disable-cloog-version-check --disable-ppl-version-check --enable-multiarch --enable-multilib --disable-sjlj-exceptions --with-arch=armv5t --with-float=soft --disable-werror --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=arm-linux-gnueabi --program-prefix=arm-linux-gnueabi- --includedir=/usr/arm-linux-gnueabi/include
+COLLECT_GCC=/usr/bin/gcc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/4.6/lto-wrapper
+Target: arm-linux-gnueabihf
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.6.3-14+rpi1' --with-bugurl=file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.6 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --enable-objc-gc --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
 Thread model: posix
-gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-12ubuntu1) 
-COMPILER_PATH=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/bin/
-LIBRARY_PATH=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3161211600' '-rdynamic' '-march=armv5t' '-mfloat-abi=soft' '-mtls-dialect=gnu'
- /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTryCompileExec3161211600 /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crt1.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crti.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtbegin.o -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7 -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib CMakeFiles/cmTryCompileExec3161211600.dir/CMakeCXXCompilerABI.cpp.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtend.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crtn.o
-make[1]: Leaving directory `/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
+gcc version 4.6.3 (Debian 4.6.3-14+rpi1) 
+COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/
+LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3589395234' '-rdynamic' '-march=armv6' '-mfloat-abi=hard' '-mfpu=vfp'
+ /usr/lib/gcc/arm-linux-gnueabihf/4.6/collect2 --sysroot=/ --build-id --no-add-needed --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=both -m armelf_linux_eabi -o cmTryCompileExec3589395234 /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/4.6 -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTryCompileExec3589395234.dir/CMakeCXXCompilerABI.cpp.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crtn.o
+make[1]: Leaving directory '/home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp]
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec3161211600/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3161211600.dir/build.make CMakeFiles/cmTryCompileExec3161211600.dir/build]
-  ignore line: [make[1]: Entering directory `/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3161211600.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/arm-linux-gnueabi-gcc     -o CMakeFiles/cmTryCompileExec3161211600.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTryCompileExec3161211600]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3161211600.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/arm-linux-gnueabi-gcc      -v CMakeFiles/cmTryCompileExec3161211600.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3161211600 -rdynamic  ]
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec3589395234/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3589395234.dir/build.make CMakeFiles/cmTryCompileExec3589395234.dir/build]
+  ignore line: [make[1]: Entering directory '/home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/pi/flowerpower/c-s/build_arm/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3589395234.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/gcc     -o CMakeFiles/cmTryCompileExec3589395234.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec3589395234]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3589395234.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/gcc        -v CMakeFiles/cmTryCompileExec3589395234.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3589395234 -rdynamic  ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/arm-linux-gnueabi-gcc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/lto-wrapper]
-  ignore line: [Target: arm-linux-gnueabi]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.7.3-12ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.7/README.Bugs --enable-languages=c,c++,go,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.7 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/arm-linux-gnueabi/include/c++/4.7.3 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-gnu-unique-object --disable-libmudflap --disable-libitm --enable-plugin --with-system-zlib --enable-objc-gc --with-cloog --enable-cloog-backend=ppl --disable-cloog-version-check --disable-ppl-version-check --enable-multiarch --enable-multilib --disable-sjlj-exceptions --with-arch=armv5t --with-float=soft --disable-werror --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=arm-linux-gnueabi --program-prefix=arm-linux-gnueabi- --includedir=/usr/arm-linux-gnueabi/include]
+  ignore line: [COLLECT_GCC=/usr/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/4.6/lto-wrapper]
+  ignore line: [Target: arm-linux-gnueabihf]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 4.6.3-14+rpi1' --with-bugurl=file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.6 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --enable-objc-gc --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-12ubuntu1) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/bin/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/:/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3161211600' '-rdynamic' '-march=armv5t' '-mfloat-abi=soft' '-mtls-dialect=gnu']
-  link line: [ /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/collect2 --sysroot=/ --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -z relro -o cmTryCompileExec3161211600 /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crt1.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crti.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtbegin.o -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7 -L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib CMakeFiles/cmTryCompileExec3161211600.dir/CMakeCXXCompilerABI.cpp.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtend.o /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crtn.o]
-    arg [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/collect2] ==> ignore
+  ignore line: [gcc version 4.6.3 (Debian 4.6.3-14+rpi1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3589395234' '-rdynamic' '-march=armv6' '-mfloat-abi=hard' '-mfpu=vfp']
+  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/4.6/collect2 --sysroot=/ --build-id --no-add-needed --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=both -m armelf_linux_eabi -o cmTryCompileExec3589395234 /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/4.6 -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTryCompileExec3589395234.dir/CMakeCXXCompilerABI.cpp.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crtn.o]
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/collect2] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-export-dynamic] ==> ignore
     arg [-dynamic-linker] ==> ignore
-    arg [/lib/ld-linux.so.3] ==> ignore
+    arg [/lib/ld-linux-armhf.so.3] ==> ignore
     arg [-X] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
+    arg [--hash-style=both] ==> ignore
     arg [-m] ==> ignore
     arg [armelf_linux_eabi] ==> ignore
-    arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec3161211600] ==> ignore
-    arg [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crt1.o] ==> ignore
-    arg [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crti.o] ==> ignore
-    arg [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib] ==> dir [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7] ==> dir [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7]
-    arg [-L/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib] ==> dir [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib]
-    arg [CMakeFiles/cmTryCompileExec3161211600.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [cmTryCompileExec3589395234] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crti.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.6] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../..] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../..]
+    arg [-L/lib/arm-linux-gnueabihf] ==> dir [/lib/arm-linux-gnueabihf]
+    arg [-L/usr/lib/arm-linux-gnueabihf] ==> dir [/usr/lib/arm-linux-gnueabihf]
+    arg [CMakeFiles/cmTryCompileExec3589395234.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -237,19 +234,18 @@ Parsed CXX implicit link information from above output:
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [--no-as-needed] ==> ignore
-    arg [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/crtend.o] ==> ignore
-    arg [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib/crtn.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crtn.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc_s]
   remove lib [gcc]
   remove lib [gcc_s]
-  collapse library dir [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib/../lib] ==> [/usr/arm-linux-gnueabi/lib]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7] ==> [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7]
-  collapse library dir [/usr/lib/gcc-cross/arm-linux-gnueabi/4.7/../../../../arm-linux-gnueabi/lib] ==> [/usr/arm-linux-gnueabi/lib]
+  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6] ==> [/usr/lib/gcc/arm-linux-gnueabihf/4.6]
+  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
+  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../..] ==> [/usr/lib]
+  collapse dir [/lib/arm-linux-gnueabihf] ==> [/lib/arm-linux-gnueabihf]
+  collapse dir [/usr/lib/arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
   implicit libs: [c]
-  implicit dirs: [/usr/arm-linux-gnueabi/lib;/lib;/usr/lib;/usr/lib/gcc-cross/arm-linux-gnueabi/4.7]
-  implicit fwks: []
+  implicit dirs: [/usr/lib/gcc/arm-linux-gnueabihf/4.6;/usr/lib/arm-linux-gnueabihf;/usr/lib;/lib/arm-linux-gnueabihf]
 
 

@@ -6,21 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../src/zmq.h
-errno.h
--
-stddef.h
--
-stdio.h
--
-winsock2.h
--
-inttypes.h
--
-stdint.h
--
-
-/home/moe/workspace/fp_github/flowerpower/c-s/FP_2c.cpp
+/home/pi/flowerpower/c-s/FP_2c.cpp
 zmq.h
 -
 string.h
@@ -32,5 +18,19 @@ stdlib.h
 unistd.h
 -
 pthread.h
+-
+
+/home/pi/zeromq/include/zmq.h
+errno.h
+-
+stddef.h
+-
+stdio.h
+-
+winsock2.h
+-
+inttypes.h
+-
+stdint.h
 -
 
