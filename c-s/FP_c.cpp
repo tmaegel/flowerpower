@@ -32,10 +32,12 @@ static char *s_recv (void *requester) {
                 return strdup (buffer);
 }
 
-void send_client(const char *table){
+void *send_client(void*ptr_sc){//(const char *table){
 
-	
-	struct measurement data[100];
+	const char *table;
+	table = (char*) ptr_sc;
+
+	struct measurement data[1];
 	int num = readFromDatabase(table, data);
 	int dataLength = sizeof(data) / sizeof(data[0]);
 	char *hw_id = (char*)malloc(10);
@@ -45,8 +47,15 @@ void send_client(const char *table){
     char *timestamp = (char*)malloc(256);
 
 	int counts = 0;
+	
+	extern pthread_cond_t notready;
+	extern pthread_mutex_t lock;
+	
 
-        for(int i = 0; i < dataLength; i++) {
+	while(1){
+	
+		pthread_cond_wait(&notready, &lock);
+			for(int i = 0; i < dataLength; i++) {
 
                 printf("%d %f %f %f %s\n", data[i].hw_id, data[i].humidity, data[i].temperature, data[i].brightness, data[i].timestamp);
 
@@ -77,14 +86,12 @@ void send_client(const char *table){
 		
 				counts++;
 
-//				printf("Anzahl:%d\n", counts);
 		
-				//data_to_client = "Hey";	
 
 		
+			}
+		pthread_mutex_unlock(&lock);
 	}
-	
-
 }
 
 int close_client(){

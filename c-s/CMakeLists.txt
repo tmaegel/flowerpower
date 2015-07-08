@@ -28,7 +28,7 @@ include(src/zeromq.cmake)
 include_directories(/usr/include/mysql/)
 add_executable(main_s ../db/main_s.cpp)
 
- target_link_libraries(main_s /lib/arm-linux-gnueabihf/libm.so.6 /usr/lib/arm-linux-gnueabihf/libmysqlclient.a -lwiringPi -lrt -ldl -lz -lm zeromq pthread stdc++  ) # arm
+ target_link_libraries(main_s /lib/arm-linux-gnueabihf/libm.so.6 /usr/lib/arm-linux-gnueabihf/libmysqlclient.a -lwiringPi -lrt -ldl -lz -lm zeromq -lpthread stdc++  ) # arm
 
 # target_link_libraries(main_s /lib/x86_64-linux-gnu/libm.so.6 /usr/lib/x86_64-linux-gnu/libmysqlclient.so -lwiringPi -ldl -lz -lm zeromq pthread stdc++  ) # vserver
 
@@ -38,7 +38,7 @@ add_executable(main_s ../db/main_s.cpp)
 
 add_executable(main_c ../db/main_c.cpp)
 
-target_link_libraries(main_c /lib/arm-linux-gnueabihf/libm.so.6 /usr/lib/arm-linux-gnueabihf/libmysqlclient.a -lwiringPi -lrt -ldl -lz -lm zeromq pthread stdc++  ) # arm
+target_link_libraries(main_c /lib/arm-linux-gnueabihf/libm.so.6 /usr/lib/arm-linux-gnueabihf/libmysqlclient.a -lwiringPi -lrt -ldl -lz -lm zeromq -lpthread stdc++  ) # arm
 
 # target_link_libraries(main_c /lib/x86_64-linux-gnu/libm.so.6 /usr/lib/x86_64-linux-gnu/libmysqlclient.so -lwiringPi -ldl -lz -lm zeromq pthread stdc++  ) # versver
 
