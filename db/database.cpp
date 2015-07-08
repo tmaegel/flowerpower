@@ -19,6 +19,9 @@ MYSQL_RES *result;
 MYSQL_ROW row;
 
 unsigned int error;
+time_t t1, t2;
+struct tm* tm_info;
+char str_time[26];
 
 /**
  * @brief check for options
@@ -139,10 +142,7 @@ void createTable(const char *table) {
  * @brief Insert simulation data
  */
 void insertSimData(const char *table, int num = 100) {
-	time_t t1, t2;
 	struct measurement data;
-	struct tm* tm_info;
-	char str_time[26];
 
 	time(&t1);
 	srand(time(NULL));

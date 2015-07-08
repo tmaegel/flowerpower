@@ -48,16 +48,11 @@ void send_client(const char *table){
 
         for(int i = 0; i < dataLength; i++) {
 
-                printf("%d %f %f %f %s\n", data[i].hw_id, data[i].temperature, data[i].humidity, data[i].brightness, data[i].timestamp);
+                printf("%d %f %f %f %s\n", data[i].hw_id, data[i].humidity, data[i].temperature, data[i].brightness, data[i].timestamp);
 
                 sprintf(hw_id,"%d", data[i].hw_id);
                	printf ("Sending: %s ... %d \n", hw_id, request_nbr);
 				zmq_send (requester, hw_id, 255, 0);
-				printf ("Received:%s\n", s_recv(requester));
-
-				sprintf(temperature,"%f", data[i].temperature);
-				printf ("Sending: %s ... %d \n", temperature, request_nbr);
-				zmq_send (requester, temperature, 255, 0);
 				printf ("Received:%s\n", s_recv(requester));
 
         		sprintf(humidity,"%f", data[i].humidity);
@@ -65,7 +60,12 @@ void send_client(const char *table){
 				zmq_send (requester, humidity, 255, 0);
 				printf ("Received:%s\n", s_recv(requester));
 
-       			sprintf(brightness,"%f", data[i].brightness);
+				sprintf(temperature,"%f", data[i].temperature);
+				printf ("Sending: %s ... %d \n", temperature, request_nbr);
+				zmq_send (requester, temperature, 255, 0);
+				printf ("Received:%s\n", s_recv(requester));
+       		
+				sprintf(brightness,"%f", data[i].brightness);
 				printf ("Sending: %s ... %d \n", brightness, request_nbr);
 				zmq_send (requester, brightness, 255, 0);
 				printf ("Received:%s\n", s_recv(requester));
