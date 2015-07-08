@@ -35,8 +35,8 @@
 *.*~
 
 # ignore build
+CMakeLists.txt
 c-s/src/zeromq.cmake
-c-s/CMakeLists.txt
 c-s/build/
 c-s/build-arm/
 c-s/src/
