@@ -51,6 +51,7 @@ int main(int argc, char* argv[])  {
 
 	const char *database = "flowerpower_c";
 	const char *table = "table_c";
+
 	int ith1 ;
 	int ith2 ;
 	
@@ -59,9 +60,12 @@ int main(int argc, char* argv[])  {
 	pthread_t thread1, thread2;
 	
 
+
+
 	init_client(argc, argv);
 
 	init(database, table);
+
 	
 	
 	ith1 = pthread_create (&thread1, NULL, init_ctl, (void*) table);
@@ -71,6 +75,7 @@ int main(int argc, char* argv[])  {
 	pthread_join(thread2, NULL);
 
 	//printf("Anzahl der Elemente: %d\n", num);
+
 
 	close_client();
 

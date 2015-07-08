@@ -34,14 +34,16 @@ static char *s_recv (void *requester) {
 
 void *send_client(void*ptr_sc){//(const char *table){
 
+
 	const char *table;
 	table = (char*) ptr_sc;
 
 	struct measurement data[1];
+
 	int num = readFromDatabase(table, data);
 	int dataLength = sizeof(data) / sizeof(data[0]);
 	char *hw_id = (char*)malloc(10);
-    char *temperature = (char*)malloc(256);
+	char *temperature = (char*)malloc(256);
     char *humidity = (char*)malloc(256);
     char *brightness = (char*)malloc(256);
     char *timestamp = (char*)malloc(256);
@@ -51,6 +53,7 @@ void *send_client(void*ptr_sc){//(const char *table){
 	extern pthread_cond_t notready;
 	extern pthread_mutex_t lock;
 	
+
 
 	while(1){
 	

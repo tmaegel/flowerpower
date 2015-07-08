@@ -39,7 +39,7 @@ void send_db(const char *table, int num = 100){
 		char *temperature = (char*)malloc(256);
         char *humidity = (char*)malloc(256);
         char *brightness = (char*)malloc(256);
-        char timestamp[20];
+        char *timestamp = (char*)malloc(20);
 	
 	for(int i = 0; i < num; i++){
 		
@@ -60,7 +60,7 @@ void send_db(const char *table, int num = 100){
 		zmq_send (responder, "bri", 255, 0);
 		
 		strcpy(timestamp, s_recv(responder));
-		sscanf(timestamp, "%s", data.timestamp);		
+		strcpy(data.timestamp, timestamp);
 		zmq_send (responder, "time", 255, 0);
 
 		writeToDatabase(table, &data);
