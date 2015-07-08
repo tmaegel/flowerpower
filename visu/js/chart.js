@@ -23,6 +23,9 @@ function Chart(id) {
 	var chart = id;
 	var c = chart[0].getContext('2d');
 
+	// curve data
+	var curveTmp;
+
 	var colors = new Array("#FF0000", "#0000FF", "#009600", "#FF7D00", "#FF00FF", "#7D4B00");
 
 	var width ;
@@ -54,31 +57,15 @@ function Chart(id) {
 
 	var lineThickness = 1;
 
-	this.init = function() {
-		self.resize();
-	}
-
-	this.clear = function() {
-		c.clearRect(0, 0, $(chart).attr("width"), $(chart).attr("height"));
-
-		// reset variables
-		yMaxArr = new Array();
-		stepArr = new Array();
-	}
-
-	this.resize = function() {
-		$(chart).attr("width", $(id).parent().width());
-
-		width = $(chart).attr("width");
-		height = $(chart).attr("height");
-	}
-
-	this.draw = function(curve) {
+	this.init = function(curve) {
+		self.update();
 
 		// curve temp
-		var curveTmp = new Curve(curve.yCount);
+		curveTmp = new Curve(curve.yCount);
 
-		// dimension x-axis (date)
+		/**
+		 * dimension x-axis (date)
+		 */
 		var minDate = getTimestamp(curve.data[0].x)
 		var maxDate = getTimestamp(curve.data[curve.data.length - 1].x);
 		var countDate = minDate;
@@ -100,12 +87,25 @@ function Chart(id) {
 
 		size = curveTmp.data.length;
 
-		// calculate the max value for each graph
+		/**
+		 * calculate the max value for each graph
+		 */
 		for(var i = 0; i < curveTmp.yCount; i++) {
 			yMaxArr.push(getMaxY(curveTmp.data, i));
 			stepArr.push(getStepWidth(i));
 		}
+	}
 
+	this.update = function() {
+		c.clearRect(0, 0, $(chart).attr("width"), $(chart).attr("height"));
+
+		$(chart).attr("width", $(id).parent().width());
+
+		width = $(chart).attr("width");
+		height = $(chart).attr("height");
+	}
+
+	this.draw = function() {
 		var xPixelZero = getXPixel(0);
 
 		/**
@@ -148,7 +148,6 @@ function Chart(id) {
 			// x-Axis labels
 			if(xAxisLabel) {
 				var dt = curveTmp.data[xaxis].x;
-
 				c.fillText(addZero(dt.getHours())+':'+addZero(dt.getMinutes()), xPixel, getGraphHeight() + yGraphOffset + 15);
 			}
 		}
@@ -203,7 +202,6 @@ function Chart(id) {
 		for(var iY = 0; iY < curveTmp.yCount; iY++) {
 			c.strokeStyle = colors[iY];
 			c.beginPath();
-
 			for(var iData in curveTmp.data) {
 				var yPixel = getYPixel(curveTmp.data[iData].y[iY], iY);
 				// draw line
