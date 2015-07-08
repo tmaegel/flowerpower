@@ -44,19 +44,15 @@ int main(int argc, char* argv[])  {
 	const char *database = "flowerpower_c";
 	const char *table = "table_c";
 
-
-	//init_client(argc, argv);
+	init_client(argc, argv);
 
 	init(database, table);
 
 	//init_ctl();
 
-	//send_client(table);
+	send_client(table);
 
-
-	//printf("Anzahl der Elemente: %d\n", num);
-
-	//close_client();
+	close_client();
 
 	closeDatabase();
 

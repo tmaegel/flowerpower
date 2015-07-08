@@ -1,5 +1,5 @@
 CC = gcc
-TARGET = main_s
+TARGET = main_c
 SRC = $(TARGET).cpp
 OUT = $(TARGET).o
 prog: $(SRC)
