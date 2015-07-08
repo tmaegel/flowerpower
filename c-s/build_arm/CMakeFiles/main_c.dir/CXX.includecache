@@ -67,6 +67,8 @@ time.h
 /home/pi/flowerpower/db/main_c.cpp
 stdio.h
 -
+pthread.h
+-
 database.cpp
 /home/pi/flowerpower/db/database.cpp
 ../c-s/FP_c.cpp

@@ -26,11 +26,15 @@ int i = 0;
 int count_raute = 0;
 int part = 0;
 
-	char *hw_id = (char*)malloc(10);
-	char *temperature = (char*)malloc(256);
-	char *humidity = (char*)malloc(256);
-	char *brightness = (char*)malloc(256);
-	char timestamp[20];
+char *hw_id = (char*)malloc(10);
+char *temperature = (char*)malloc(256);
+char *humidity = (char*)malloc(256);
+char *brightness = (char*)malloc(256);
+char timestamp[20];
+
+extern pthread_cond_t notready;
+extern pthread_mutex_t lock;
+
 void command(const char cmd[]) {
 	if(strcmp(cmd, "rd!") == 0) {
 		// read
@@ -78,7 +82,6 @@ int loop(const char *table){
     	// command("vc!");
 		t=millis();
 	}
-	
 	// read signal
 	/*if(serialDataAvail(fd)){
   		char newChar = serialGetchar(fd);
@@ -88,12 +91,13 @@ int loop(const char *table){
 
 	if(serialDataAvail(fd)){
 		char c = serialGetchar(fd);
-		printf("XX: %c\n", c);
+		//printf("XX: %c\n", c);
 		if(c == '#') {
 			str_to_struct(str, table);
 			i = 1;
 			count_raute++;
-		
+			pthread_cond_signal(&notready);
+			pthread_mutex_unlock(&lock);
 		}else{
 			str[i]  = c;
 			i++;
@@ -102,7 +106,6 @@ int loop(const char *table){
 		fflush(stdout);
 
 	}
-//	count_raute = 1;
 	return count_raute;
 }
 
@@ -149,15 +152,16 @@ int str_to_struct(char *str, const char *table){
 	printf("\n\n");
 }
 
-int init_ctl(const char *table) {
-	setup();
+void *init_ctl(void *ptr_ic){//(const char *table) {
 	
+	const char *table;
+	table = (char*) ptr_ic;
 
-	while(number < 3){
+	setup();
+
+	while(1){
 		number = loop(table);
 	}
-	
-	return 1;
 }
  
 //#endif

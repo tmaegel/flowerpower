@@ -6,7 +6,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
- 
 
 // Socket talks to server
 void *context = zmq_ctx_new ();
@@ -32,10 +31,19 @@ static char *s_recv (void *requester) {
                 return strdup (buffer);
 }
 
-void send_client(const char *table){
+void *send_client(void*ptr_sc){//(const char *table){
 
-	struct measurement data[100];
-	int num = readFromDatabase(table, data);
+
+	const char *table;
+	table = (char*) ptr_sc;
+
+	struct measurement data[1];
+
+	
+    char *timestamp_tmp = (char*)malloc(256);
+	getLastTimestamp(table, timestamp_tmp);
+	printf("time: %s\n", timestamp_tmp);
+	int num = readFromDatabase(table, data, timestamp_tmp);
 	int dataLength = sizeof(data) / sizeof(data[0]);
 	char *hw_id = (char*)malloc(10);
 	char *temperature = (char*)malloc(256);
@@ -44,38 +52,51 @@ void send_client(const char *table){
     char *timestamp = (char*)malloc(256);
 
 	int counts = 0;
-
-	for(int i = 0; i < dataLength; i++) {
-		printf("%d %f %f %f %s\n", data[i].hw_id, data[i].humidity, data[i].temperature, data[i].brightness, data[i].timestamp);
-
-		sprintf(hw_id,"%d", data[i].hw_id);
-		printf ("Sending: %s ... %d \n", hw_id, request_nbr);
-		zmq_send (requester, hw_id, 255, 0);
-		printf ("Received:%s\n", s_recv(requester));
-
-		sprintf(humidity,"%f", data[i].humidity);
-		printf ("Sending: %s ... %d \n", humidity, request_nbr);
-		zmq_send (requester, humidity, 255, 0);
-		printf ("Received:%s\n", s_recv(requester));
-
-		sprintf(temperature,"%f", data[i].temperature);
-		printf ("Sending: %s ... %d \n", temperature, request_nbr);
-		zmq_send (requester, temperature, 255, 0);
-		printf ("Received:%s\n", s_recv(requester));
 	
-		sprintf(brightness,"%f", data[i].brightness);
-		printf ("Sending: %s ... %d \n", brightness, request_nbr);
-		zmq_send (requester, brightness, 255, 0);
-		printf ("Received:%s\n", s_recv(requester));
+	extern pthread_cond_t notready;
+	extern pthread_mutex_t lock;
+	
 
-		sprintf(timestamp,"%s", data[i].timestamp);
-		printf ("Sending: %s ... %d \n", timestamp, request_nbr);
-		zmq_send (requester, timestamp, 255, 0);
-		printf ("Received:%s\n", s_recv(requester));
 
-		counts++;
+	while(1){
+	
+		pthread_cond_wait(&notready, &lock);
+			for(int i = 0; i < dataLength; i++) {
 
-		//data_to_client = "Hey";	
+                printf("%d %f %f %f %s\n", data[i].hw_id, data[i].humidity, data[i].temperature, data[i].brightness, data[i].timestamp);
+
+                sprintf(hw_id,"%d", data[i].hw_id);
+               	printf ("Sending: %s ... %d \n", hw_id, request_nbr);
+				zmq_send (requester, hw_id, 255, 0);
+				printf ("Received:%s\n", s_recv(requester));
+
+        		sprintf(humidity,"%f", data[i].humidity);
+        		printf ("Sending: %s ... %d \n", humidity, request_nbr);
+				zmq_send (requester, humidity, 255, 0);
+				printf ("Received:%s\n", s_recv(requester));
+
+				sprintf(temperature,"%f", data[i].temperature);
+				printf ("Sending: %s ... %d \n", temperature, request_nbr);
+				zmq_send (requester, temperature, 255, 0);
+				printf ("Received:%s\n", s_recv(requester));
+       		
+				sprintf(brightness,"%f", data[i].brightness);
+				printf ("Sending: %s ... %d \n", brightness, request_nbr);
+				zmq_send (requester, brightness, 255, 0);
+				printf ("Received:%s\n", s_recv(requester));
+
+                sprintf(timestamp,"%s", data[i].timestamp);
+				printf ("Sending: %s ... %d \n", timestamp, request_nbr);
+				zmq_send (requester, timestamp, 255, 0);
+				printf ("Received:%s\n", s_recv(requester));
+		
+				counts++;
+
+		
+
+		
+			}
+		pthread_mutex_unlock(&lock);
 	}
 }
 

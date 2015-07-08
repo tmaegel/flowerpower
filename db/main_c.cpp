@@ -1,8 +1,16 @@
 #include <stdio.h>
+#include <pthread.h>
 #include "database.cpp"
 #include "../c-s/FP_c.cpp"
 #include "../struct.h"
 #include "../data/controller.cpp"
+
+void *send_client (void *ptr_sc);
+void *init_ctl (void *ptr_ic);
+
+pthread_cond_t notready;
+pthread_mutex_t lock;
+
 int main(int argc, char* argv[])  {
 	// int database = -1, table = -1;				/**< parameter index for arguments */
 
@@ -44,13 +52,24 @@ int main(int argc, char* argv[])  {
 	const char *database = "flowerpower_c";
 	const char *table = "table_c";
 
+	int ith1 ;
+	int ith2 ;
+	
+	pthread_cond_init(&notready, NULL);
+	pthread_mutex_init(&lock, NULL);
+	pthread_t thread1, thread2;
+	
 	init_client(argc, argv);
-
 	init(database, table);
 
-	init_ctl(table);
+	ith1 = pthread_create (&thread1, NULL, init_ctl, (void*) table);
+	ith2 = pthread_create (&thread2, NULL, send_client, (void*) table);
+	
+	pthread_join(thread1, NULL);
+	pthread_join(thread2, NULL);
 
-	send_client(table);
+	//printf("Anzahl der Elemente: %d\n", num);
+
 
 	close_client();
 
