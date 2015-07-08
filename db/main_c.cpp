@@ -59,15 +59,9 @@ int main(int argc, char* argv[])  {
 	pthread_mutex_init(&lock, NULL);
 	pthread_t thread1, thread2;
 	
-
-
-
 	init_client(argc, argv);
-
 	init(database, table);
 
-	
-	
 	ith1 = pthread_create (&thread1, NULL, init_ctl, (void*) table);
 	ith2 = pthread_create (&thread2, NULL, send_client, (void*) table);
 	

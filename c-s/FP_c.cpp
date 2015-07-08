@@ -6,7 +6,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
- 
 
 // Socket talks to server
 void *context = zmq_ctx_new ();
@@ -40,7 +39,11 @@ void *send_client(void*ptr_sc){//(const char *table){
 
 	struct measurement data[1];
 
-	int num = readFromDatabase(table, data);
+	
+    char *timestamp_tmp = (char*)malloc(256);
+	getLastTimestamp(table, timestamp_tmp);
+	printf("time: %s\n", timestamp_tmp);
+	int num = readFromDatabase(table, data, timestamp_tmp);
 	int dataLength = sizeof(data) / sizeof(data[0]);
 	char *hw_id = (char*)malloc(10);
 	char *temperature = (char*)malloc(256);
