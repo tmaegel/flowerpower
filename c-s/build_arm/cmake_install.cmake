@@ -1,4 +1,4 @@
-# Install script for directory: /home/moe/workspace/fp_github/flowerpower/c-s
+# Install script for directory: /home/pi/flowerpower/c-s
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/pi/flowerpower/c-s/build_arm/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/moe/workspace/fp_github/flowerpower/c-s/build_arm/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/pi/flowerpower/c-s/build_arm/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

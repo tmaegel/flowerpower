@@ -19,6 +19,9 @@ MYSQL_RES *result;
 MYSQL_ROW row;
 
 unsigned int error;
+time_t t1, t2;
+struct tm* tm_info;
+char str_time[26];
 
 /**
  * @brief check for options
@@ -80,8 +83,8 @@ int readFromDatabase(const char *table, struct measurement *data) {
 
 		/**< row[0] ignored, its index */
 		data[num].hw_id = atoi(row[1]);
-		data[num].temperature = atof(row[2]);
-		data[num].humidity = atof(row[3]);
+		data[num].humidity = atof(row[2]);
+		data[num].temperature = atof(row[3]);
 		data[num].brightness= atof(row[4]);
 		strcpy(data[num].timestamp, row[5]);
 
@@ -101,7 +104,7 @@ int readFromDatabase(const char *table, struct measurement *data) {
 void writeToDatabase(const char *table, struct measurement *data) {
 	char query[256];
 
-	snprintf(query, sizeof(query), "INSERT INTO %s VALUES (NULL, %d, %f, %f, %f, '%s')", table, data->hw_id, data->temperature, data->brightness, data->humidity, data->timestamp);
+	snprintf(query, sizeof(query), "INSERT INTO %s VALUES (NULL, %d, %f, %f, %f, '%s')", table, data->hw_id, data->humidity, data->temperature, data->brightness, data->timestamp);
 
 	printf("%s\n", query);
 	mysql_query(db, query);
@@ -139,10 +142,7 @@ void createTable(const char *table) {
  * @brief Insert simulation data
  */
 void insertSimData(const char *table, int num = 100) {
-	time_t t1, t2;
 	struct measurement data;
-	struct tm* tm_info;
-	char str_time[26];
 
 	time(&t1);
 	srand(time(NULL));

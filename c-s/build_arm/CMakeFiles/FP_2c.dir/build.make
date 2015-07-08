@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/moe/workspace/fp_github/flowerpower/c-s
+CMAKE_SOURCE_DIR = /home/pi/flowerpower/c-s
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/moe/workspace/fp_github/flowerpower/c-s/build_arm
+CMAKE_BINARY_DIR = /home/pi/flowerpower/c-s/build_arm
 
 # Include any dependencies generated for this target.
 include CMakeFiles/FP_2c.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/FP_2c.dir/flags.make
 
 CMakeFiles/FP_2c.dir/FP_2c.cpp.o: CMakeFiles/FP_2c.dir/flags.make
 CMakeFiles/FP_2c.dir/FP_2c.cpp.o: ../FP_2c.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/flowerpower/c-s/build_arm/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/FP_2c.dir/FP_2c.cpp.o"
-	/usr/bin/arm-linux-gnueabi-gcc   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/FP_2c.dir/FP_2c.cpp.o -c /home/moe/workspace/fp_github/flowerpower/c-s/FP_2c.cpp
+	/usr/bin/gcc   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/FP_2c.dir/FP_2c.cpp.o -c /home/pi/flowerpower/c-s/FP_2c.cpp
 
 CMakeFiles/FP_2c.dir/FP_2c.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FP_2c.dir/FP_2c.cpp.i"
-	/usr/bin/arm-linux-gnueabi-gcc  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/moe/workspace/fp_github/flowerpower/c-s/FP_2c.cpp > CMakeFiles/FP_2c.dir/FP_2c.cpp.i
+	/usr/bin/gcc  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/pi/flowerpower/c-s/FP_2c.cpp > CMakeFiles/FP_2c.dir/FP_2c.cpp.i
 
 CMakeFiles/FP_2c.dir/FP_2c.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FP_2c.dir/FP_2c.cpp.s"
-	/usr/bin/arm-linux-gnueabi-gcc  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/moe/workspace/fp_github/flowerpower/c-s/FP_2c.cpp -o CMakeFiles/FP_2c.dir/FP_2c.cpp.s
+	/usr/bin/gcc  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/pi/flowerpower/c-s/FP_2c.cpp -o CMakeFiles/FP_2c.dir/FP_2c.cpp.s
 
 CMakeFiles/FP_2c.dir/FP_2c.cpp.o.requires:
 .PHONY : CMakeFiles/FP_2c.dir/FP_2c.cpp.o.requires
@@ -98,6 +98,6 @@ CMakeFiles/FP_2c.dir/clean:
 .PHONY : CMakeFiles/FP_2c.dir/clean
 
 CMakeFiles/FP_2c.dir/depend:
-	cd /home/moe/workspace/fp_github/flowerpower/c-s/build_arm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/moe/workspace/fp_github/flowerpower/c-s /home/moe/workspace/fp_github/flowerpower/c-s /home/moe/workspace/fp_github/flowerpower/c-s/build_arm /home/moe/workspace/fp_github/flowerpower/c-s/build_arm /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/FP_2c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/flowerpower/c-s/build_arm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/flowerpower/c-s /home/pi/flowerpower/c-s /home/pi/flowerpower/c-s/build_arm /home/pi/flowerpower/c-s/build_arm /home/pi/flowerpower/c-s/build_arm/CMakeFiles/FP_2c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/FP_2c.dir/depend
 

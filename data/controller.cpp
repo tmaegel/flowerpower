@@ -120,20 +120,25 @@ int str_to_struct(char *str, const char *table){
 	while(ptr != NULL) {
 		printf("Abschnitt gefunden: %s\n", ptr);
 		part++;
-		if(part == 3){
+		if(part == 1){
 			sscanf(ptr, "%d", &data.hw_id);
 		}
-		if(part == 4){
-			sscanf(ptr, "%lf", &data.temperature);
-		}
-		if(part == 5){			
+		if(part == 4){			
 			sscanf(ptr, "%lf", &data.humidity);
+		}
+		if(part == 5){
+			sscanf(ptr, "%lf", &data.temperature);
 		}
 		if(part == 6){
 			sscanf(ptr, "%lf", &data.brightness);
 		}
 		if(part == 7){
-			sscanf(ptr, "%s", data.timestamp);
+		//	sscanf(ptr, "%s", data.timestamp);
+		
+		time(&t1);
+		tm_info = localtime(&t1);
+		strftime(str_time, 26, "%Y-%m-%d %H:%M:%S", tm_info);
+		strcpy(data.timestamp, str_time);
 		}
 
 

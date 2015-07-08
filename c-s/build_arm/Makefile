@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/moe/workspace/fp_github/flowerpower/c-s
+CMAKE_SOURCE_DIR = /home/pi/flowerpower/c-s
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/moe/workspace/fp_github/flowerpower/c-s/build_arm
+CMAKE_BINARY_DIR = /home/pi/flowerpower/c-s/build_arm
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,9 +69,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/flowerpower/c-s/build_arm/CMakeFiles /home/pi/flowerpower/c-s/build_arm/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moe/workspace/fp_github/flowerpower/c-s/build_arm/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/flowerpower/c-s/build_arm/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -97,19 +97,6 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named FP_2c
-
-# Build rule for target.
-FP_2c: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 FP_2c
-.PHONY : FP_2c
-
-# fast build rule for target.
-FP_2c/fast:
-	$(MAKE) -f CMakeFiles/FP_2c.dir/build.make CMakeFiles/FP_2c.dir/build
-.PHONY : FP_2c/fast
 
 #=============================================================================
 # Target rules for targets named main_c
@@ -150,1637 +137,1613 @@ zeromq/fast:
 	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/build
 .PHONY : zeromq/fast
 
-FP_2c.o: FP_2c.cpp.o
-.PHONY : FP_2c.o
+home/pi/flowerpower/db/main_c.o: home/pi/flowerpower/db/main_c.cpp.o
+.PHONY : home/pi/flowerpower/db/main_c.o
 
 # target to build an object file
-FP_2c.cpp.o:
-	$(MAKE) -f CMakeFiles/FP_2c.dir/build.make CMakeFiles/FP_2c.dir/FP_2c.cpp.o
-.PHONY : FP_2c.cpp.o
+home/pi/flowerpower/db/main_c.cpp.o:
+	$(MAKE) -f CMakeFiles/main_c.dir/build.make CMakeFiles/main_c.dir/home/pi/flowerpower/db/main_c.cpp.o
+.PHONY : home/pi/flowerpower/db/main_c.cpp.o
 
-FP_2c.i: FP_2c.cpp.i
-.PHONY : FP_2c.i
+home/pi/flowerpower/db/main_c.i: home/pi/flowerpower/db/main_c.cpp.i
+.PHONY : home/pi/flowerpower/db/main_c.i
 
 # target to preprocess a source file
-FP_2c.cpp.i:
-	$(MAKE) -f CMakeFiles/FP_2c.dir/build.make CMakeFiles/FP_2c.dir/FP_2c.cpp.i
-.PHONY : FP_2c.cpp.i
+home/pi/flowerpower/db/main_c.cpp.i:
+	$(MAKE) -f CMakeFiles/main_c.dir/build.make CMakeFiles/main_c.dir/home/pi/flowerpower/db/main_c.cpp.i
+.PHONY : home/pi/flowerpower/db/main_c.cpp.i
 
-FP_2c.s: FP_2c.cpp.s
-.PHONY : FP_2c.s
+home/pi/flowerpower/db/main_c.s: home/pi/flowerpower/db/main_c.cpp.s
+.PHONY : home/pi/flowerpower/db/main_c.s
 
 # target to generate assembly for a file
-FP_2c.cpp.s:
-	$(MAKE) -f CMakeFiles/FP_2c.dir/build.make CMakeFiles/FP_2c.dir/FP_2c.cpp.s
-.PHONY : FP_2c.cpp.s
+home/pi/flowerpower/db/main_c.cpp.s:
+	$(MAKE) -f CMakeFiles/main_c.dir/build.make CMakeFiles/main_c.dir/home/pi/flowerpower/db/main_c.cpp.s
+.PHONY : home/pi/flowerpower/db/main_c.cpp.s
 
-home/moe/workspace/fp_github/flowerpower/db/main_c.o: home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o
-.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_c.o
+home/pi/flowerpower/db/main_s.o: home/pi/flowerpower/db/main_s.cpp.o
+.PHONY : home/pi/flowerpower/db/main_s.o
 
 # target to build an object file
-home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o:
-	$(MAKE) -f CMakeFiles/main_c.dir/build.make CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o
-.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.o
+home/pi/flowerpower/db/main_s.cpp.o:
+	$(MAKE) -f CMakeFiles/main_s.dir/build.make CMakeFiles/main_s.dir/home/pi/flowerpower/db/main_s.cpp.o
+.PHONY : home/pi/flowerpower/db/main_s.cpp.o
 
-home/moe/workspace/fp_github/flowerpower/db/main_c.i: home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.i
-.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_c.i
+home/pi/flowerpower/db/main_s.i: home/pi/flowerpower/db/main_s.cpp.i
+.PHONY : home/pi/flowerpower/db/main_s.i
 
 # target to preprocess a source file
-home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.i:
-	$(MAKE) -f CMakeFiles/main_c.dir/build.make CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.i
-.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.i
+home/pi/flowerpower/db/main_s.cpp.i:
+	$(MAKE) -f CMakeFiles/main_s.dir/build.make CMakeFiles/main_s.dir/home/pi/flowerpower/db/main_s.cpp.i
+.PHONY : home/pi/flowerpower/db/main_s.cpp.i
 
-home/moe/workspace/fp_github/flowerpower/db/main_c.s: home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.s
-.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_c.s
+home/pi/flowerpower/db/main_s.s: home/pi/flowerpower/db/main_s.cpp.s
+.PHONY : home/pi/flowerpower/db/main_s.s
 
 # target to generate assembly for a file
-home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.s:
-	$(MAKE) -f CMakeFiles/main_c.dir/build.make CMakeFiles/main_c.dir/home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.s
-.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_c.cpp.s
+home/pi/flowerpower/db/main_s.cpp.s:
+	$(MAKE) -f CMakeFiles/main_s.dir/build.make CMakeFiles/main_s.dir/home/pi/flowerpower/db/main_s.cpp.s
+.PHONY : home/pi/flowerpower/db/main_s.cpp.s
 
-home/moe/workspace/fp_github/flowerpower/db/main_s.o: home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o
-.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_s.o
+home/pi/zeromq/src/address.o: home/pi/zeromq/src/address.cpp.o
+.PHONY : home/pi/zeromq/src/address.o
 
 # target to build an object file
-home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o:
-	$(MAKE) -f CMakeFiles/main_s.dir/build.make CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o
-.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.o
+home/pi/zeromq/src/address.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/address.cpp.o
+.PHONY : home/pi/zeromq/src/address.cpp.o
 
-home/moe/workspace/fp_github/flowerpower/db/main_s.i: home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.i
-.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_s.i
+home/pi/zeromq/src/address.i: home/pi/zeromq/src/address.cpp.i
+.PHONY : home/pi/zeromq/src/address.i
 
 # target to preprocess a source file
-home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.i:
-	$(MAKE) -f CMakeFiles/main_s.dir/build.make CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.i
-.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.i
+home/pi/zeromq/src/address.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/address.cpp.i
+.PHONY : home/pi/zeromq/src/address.cpp.i
 
-home/moe/workspace/fp_github/flowerpower/db/main_s.s: home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.s
-.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_s.s
+home/pi/zeromq/src/address.s: home/pi/zeromq/src/address.cpp.s
+.PHONY : home/pi/zeromq/src/address.s
 
 # target to generate assembly for a file
-home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.s:
-	$(MAKE) -f CMakeFiles/main_s.dir/build.make CMakeFiles/main_s.dir/home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.s
-.PHONY : home/moe/workspace/fp_github/flowerpower/db/main_s.cpp.s
+home/pi/zeromq/src/address.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/address.cpp.s
+.PHONY : home/pi/zeromq/src/address.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/address.o: home/moe/workspace/zeromq-4.0.5/src/address.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/address.o
+home/pi/zeromq/src/clock.o: home/pi/zeromq/src/clock.cpp.o
+.PHONY : home/pi/zeromq/src/clock.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/address.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/address.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/address.cpp.o
+home/pi/zeromq/src/clock.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/clock.cpp.o
+.PHONY : home/pi/zeromq/src/clock.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/address.i: home/moe/workspace/zeromq-4.0.5/src/address.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/address.i
+home/pi/zeromq/src/clock.i: home/pi/zeromq/src/clock.cpp.i
+.PHONY : home/pi/zeromq/src/clock.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/address.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/address.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/address.cpp.i
+home/pi/zeromq/src/clock.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/clock.cpp.i
+.PHONY : home/pi/zeromq/src/clock.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/address.s: home/moe/workspace/zeromq-4.0.5/src/address.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/address.s
+home/pi/zeromq/src/clock.s: home/pi/zeromq/src/clock.cpp.s
+.PHONY : home/pi/zeromq/src/clock.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/address.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/address.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/address.cpp.s
+home/pi/zeromq/src/clock.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/clock.cpp.s
+.PHONY : home/pi/zeromq/src/clock.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/clock.o: home/moe/workspace/zeromq-4.0.5/src/clock.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/clock.o
+home/pi/zeromq/src/ctx.o: home/pi/zeromq/src/ctx.cpp.o
+.PHONY : home/pi/zeromq/src/ctx.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/clock.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/clock.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/clock.cpp.o
+home/pi/zeromq/src/ctx.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/ctx.cpp.o
+.PHONY : home/pi/zeromq/src/ctx.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/clock.i: home/moe/workspace/zeromq-4.0.5/src/clock.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/clock.i
+home/pi/zeromq/src/ctx.i: home/pi/zeromq/src/ctx.cpp.i
+.PHONY : home/pi/zeromq/src/ctx.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/clock.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/clock.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/clock.cpp.i
+home/pi/zeromq/src/ctx.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/ctx.cpp.i
+.PHONY : home/pi/zeromq/src/ctx.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/clock.s: home/moe/workspace/zeromq-4.0.5/src/clock.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/clock.s
+home/pi/zeromq/src/ctx.s: home/pi/zeromq/src/ctx.cpp.s
+.PHONY : home/pi/zeromq/src/ctx.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/clock.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/clock.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/clock.cpp.s
+home/pi/zeromq/src/ctx.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/ctx.cpp.s
+.PHONY : home/pi/zeromq/src/ctx.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/ctx.o: home/moe/workspace/zeromq-4.0.5/src/ctx.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ctx.o
+home/pi/zeromq/src/dealer.o: home/pi/zeromq/src/dealer.cpp.o
+.PHONY : home/pi/zeromq/src/dealer.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/ctx.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ctx.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ctx.cpp.o
+home/pi/zeromq/src/dealer.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/dealer.cpp.o
+.PHONY : home/pi/zeromq/src/dealer.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/ctx.i: home/moe/workspace/zeromq-4.0.5/src/ctx.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ctx.i
+home/pi/zeromq/src/dealer.i: home/pi/zeromq/src/dealer.cpp.i
+.PHONY : home/pi/zeromq/src/dealer.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/ctx.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ctx.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ctx.cpp.i
+home/pi/zeromq/src/dealer.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/dealer.cpp.i
+.PHONY : home/pi/zeromq/src/dealer.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/ctx.s: home/moe/workspace/zeromq-4.0.5/src/ctx.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ctx.s
+home/pi/zeromq/src/dealer.s: home/pi/zeromq/src/dealer.cpp.s
+.PHONY : home/pi/zeromq/src/dealer.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/ctx.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ctx.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ctx.cpp.s
+home/pi/zeromq/src/dealer.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/dealer.cpp.s
+.PHONY : home/pi/zeromq/src/dealer.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/dealer.o: home/moe/workspace/zeromq-4.0.5/src/dealer.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/dealer.o
+home/pi/zeromq/src/devpoll.o: home/pi/zeromq/src/devpoll.cpp.o
+.PHONY : home/pi/zeromq/src/devpoll.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/dealer.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/dealer.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/dealer.cpp.o
+home/pi/zeromq/src/devpoll.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/devpoll.cpp.o
+.PHONY : home/pi/zeromq/src/devpoll.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/dealer.i: home/moe/workspace/zeromq-4.0.5/src/dealer.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/dealer.i
+home/pi/zeromq/src/devpoll.i: home/pi/zeromq/src/devpoll.cpp.i
+.PHONY : home/pi/zeromq/src/devpoll.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/dealer.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/dealer.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/dealer.cpp.i
+home/pi/zeromq/src/devpoll.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/devpoll.cpp.i
+.PHONY : home/pi/zeromq/src/devpoll.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/dealer.s: home/moe/workspace/zeromq-4.0.5/src/dealer.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/dealer.s
+home/pi/zeromq/src/devpoll.s: home/pi/zeromq/src/devpoll.cpp.s
+.PHONY : home/pi/zeromq/src/devpoll.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/dealer.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/dealer.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/dealer.cpp.s
+home/pi/zeromq/src/devpoll.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/devpoll.cpp.s
+.PHONY : home/pi/zeromq/src/devpoll.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/devpoll.o: home/moe/workspace/zeromq-4.0.5/src/devpoll.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/devpoll.o
+home/pi/zeromq/src/dist.o: home/pi/zeromq/src/dist.cpp.o
+.PHONY : home/pi/zeromq/src/dist.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/devpoll.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/devpoll.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/devpoll.cpp.o
+home/pi/zeromq/src/dist.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/dist.cpp.o
+.PHONY : home/pi/zeromq/src/dist.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/devpoll.i: home/moe/workspace/zeromq-4.0.5/src/devpoll.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/devpoll.i
+home/pi/zeromq/src/dist.i: home/pi/zeromq/src/dist.cpp.i
+.PHONY : home/pi/zeromq/src/dist.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/devpoll.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/devpoll.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/devpoll.cpp.i
+home/pi/zeromq/src/dist.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/dist.cpp.i
+.PHONY : home/pi/zeromq/src/dist.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/devpoll.s: home/moe/workspace/zeromq-4.0.5/src/devpoll.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/devpoll.s
+home/pi/zeromq/src/dist.s: home/pi/zeromq/src/dist.cpp.s
+.PHONY : home/pi/zeromq/src/dist.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/devpoll.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/devpoll.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/devpoll.cpp.s
+home/pi/zeromq/src/dist.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/dist.cpp.s
+.PHONY : home/pi/zeromq/src/dist.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/dist.o: home/moe/workspace/zeromq-4.0.5/src/dist.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/dist.o
+home/pi/zeromq/src/epoll.o: home/pi/zeromq/src/epoll.cpp.o
+.PHONY : home/pi/zeromq/src/epoll.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/dist.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/dist.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/dist.cpp.o
+home/pi/zeromq/src/epoll.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/epoll.cpp.o
+.PHONY : home/pi/zeromq/src/epoll.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/dist.i: home/moe/workspace/zeromq-4.0.5/src/dist.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/dist.i
+home/pi/zeromq/src/epoll.i: home/pi/zeromq/src/epoll.cpp.i
+.PHONY : home/pi/zeromq/src/epoll.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/dist.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/dist.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/dist.cpp.i
+home/pi/zeromq/src/epoll.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/epoll.cpp.i
+.PHONY : home/pi/zeromq/src/epoll.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/dist.s: home/moe/workspace/zeromq-4.0.5/src/dist.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/dist.s
+home/pi/zeromq/src/epoll.s: home/pi/zeromq/src/epoll.cpp.s
+.PHONY : home/pi/zeromq/src/epoll.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/dist.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/dist.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/dist.cpp.s
+home/pi/zeromq/src/epoll.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/epoll.cpp.s
+.PHONY : home/pi/zeromq/src/epoll.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/epoll.o: home/moe/workspace/zeromq-4.0.5/src/epoll.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/epoll.o
+home/pi/zeromq/src/err.o: home/pi/zeromq/src/err.cpp.o
+.PHONY : home/pi/zeromq/src/err.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/epoll.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/epoll.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/epoll.cpp.o
+home/pi/zeromq/src/err.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/err.cpp.o
+.PHONY : home/pi/zeromq/src/err.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/epoll.i: home/moe/workspace/zeromq-4.0.5/src/epoll.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/epoll.i
+home/pi/zeromq/src/err.i: home/pi/zeromq/src/err.cpp.i
+.PHONY : home/pi/zeromq/src/err.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/epoll.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/epoll.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/epoll.cpp.i
+home/pi/zeromq/src/err.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/err.cpp.i
+.PHONY : home/pi/zeromq/src/err.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/epoll.s: home/moe/workspace/zeromq-4.0.5/src/epoll.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/epoll.s
+home/pi/zeromq/src/err.s: home/pi/zeromq/src/err.cpp.s
+.PHONY : home/pi/zeromq/src/err.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/epoll.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/epoll.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/epoll.cpp.s
+home/pi/zeromq/src/err.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/err.cpp.s
+.PHONY : home/pi/zeromq/src/err.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/err.o: home/moe/workspace/zeromq-4.0.5/src/err.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/err.o
+home/pi/zeromq/src/fq.o: home/pi/zeromq/src/fq.cpp.o
+.PHONY : home/pi/zeromq/src/fq.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/err.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/err.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/err.cpp.o
+home/pi/zeromq/src/fq.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/fq.cpp.o
+.PHONY : home/pi/zeromq/src/fq.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/err.i: home/moe/workspace/zeromq-4.0.5/src/err.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/err.i
+home/pi/zeromq/src/fq.i: home/pi/zeromq/src/fq.cpp.i
+.PHONY : home/pi/zeromq/src/fq.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/err.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/err.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/err.cpp.i
+home/pi/zeromq/src/fq.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/fq.cpp.i
+.PHONY : home/pi/zeromq/src/fq.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/err.s: home/moe/workspace/zeromq-4.0.5/src/err.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/err.s
+home/pi/zeromq/src/fq.s: home/pi/zeromq/src/fq.cpp.s
+.PHONY : home/pi/zeromq/src/fq.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/err.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/err.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/err.cpp.s
+home/pi/zeromq/src/fq.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/fq.cpp.s
+.PHONY : home/pi/zeromq/src/fq.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/fq.o: home/moe/workspace/zeromq-4.0.5/src/fq.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/fq.o
+home/pi/zeromq/src/io_object.o: home/pi/zeromq/src/io_object.cpp.o
+.PHONY : home/pi/zeromq/src/io_object.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/fq.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/fq.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/fq.cpp.o
+home/pi/zeromq/src/io_object.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/io_object.cpp.o
+.PHONY : home/pi/zeromq/src/io_object.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/fq.i: home/moe/workspace/zeromq-4.0.5/src/fq.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/fq.i
+home/pi/zeromq/src/io_object.i: home/pi/zeromq/src/io_object.cpp.i
+.PHONY : home/pi/zeromq/src/io_object.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/fq.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/fq.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/fq.cpp.i
+home/pi/zeromq/src/io_object.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/io_object.cpp.i
+.PHONY : home/pi/zeromq/src/io_object.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/fq.s: home/moe/workspace/zeromq-4.0.5/src/fq.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/fq.s
+home/pi/zeromq/src/io_object.s: home/pi/zeromq/src/io_object.cpp.s
+.PHONY : home/pi/zeromq/src/io_object.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/fq.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/fq.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/fq.cpp.s
+home/pi/zeromq/src/io_object.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/io_object.cpp.s
+.PHONY : home/pi/zeromq/src/io_object.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/io_object.o: home/moe/workspace/zeromq-4.0.5/src/io_object.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/io_object.o
+home/pi/zeromq/src/io_thread.o: home/pi/zeromq/src/io_thread.cpp.o
+.PHONY : home/pi/zeromq/src/io_thread.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/io_object.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/io_object.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/io_object.cpp.o
+home/pi/zeromq/src/io_thread.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/io_thread.cpp.o
+.PHONY : home/pi/zeromq/src/io_thread.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/io_object.i: home/moe/workspace/zeromq-4.0.5/src/io_object.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/io_object.i
+home/pi/zeromq/src/io_thread.i: home/pi/zeromq/src/io_thread.cpp.i
+.PHONY : home/pi/zeromq/src/io_thread.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/io_object.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/io_object.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/io_object.cpp.i
+home/pi/zeromq/src/io_thread.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/io_thread.cpp.i
+.PHONY : home/pi/zeromq/src/io_thread.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/io_object.s: home/moe/workspace/zeromq-4.0.5/src/io_object.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/io_object.s
+home/pi/zeromq/src/io_thread.s: home/pi/zeromq/src/io_thread.cpp.s
+.PHONY : home/pi/zeromq/src/io_thread.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/io_object.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/io_object.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/io_object.cpp.s
+home/pi/zeromq/src/io_thread.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/io_thread.cpp.s
+.PHONY : home/pi/zeromq/src/io_thread.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/io_thread.o: home/moe/workspace/zeromq-4.0.5/src/io_thread.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/io_thread.o
+home/pi/zeromq/src/ip.o: home/pi/zeromq/src/ip.cpp.o
+.PHONY : home/pi/zeromq/src/ip.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/io_thread.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/io_thread.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/io_thread.cpp.o
+home/pi/zeromq/src/ip.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/ip.cpp.o
+.PHONY : home/pi/zeromq/src/ip.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/io_thread.i: home/moe/workspace/zeromq-4.0.5/src/io_thread.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/io_thread.i
+home/pi/zeromq/src/ip.i: home/pi/zeromq/src/ip.cpp.i
+.PHONY : home/pi/zeromq/src/ip.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/io_thread.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/io_thread.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/io_thread.cpp.i
+home/pi/zeromq/src/ip.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/ip.cpp.i
+.PHONY : home/pi/zeromq/src/ip.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/io_thread.s: home/moe/workspace/zeromq-4.0.5/src/io_thread.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/io_thread.s
+home/pi/zeromq/src/ip.s: home/pi/zeromq/src/ip.cpp.s
+.PHONY : home/pi/zeromq/src/ip.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/io_thread.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/io_thread.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/io_thread.cpp.s
+home/pi/zeromq/src/ip.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/ip.cpp.s
+.PHONY : home/pi/zeromq/src/ip.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/ip.o: home/moe/workspace/zeromq-4.0.5/src/ip.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ip.o
+home/pi/zeromq/src/ipc_address.o: home/pi/zeromq/src/ipc_address.cpp.o
+.PHONY : home/pi/zeromq/src/ipc_address.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/ip.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ip.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ip.cpp.o
+home/pi/zeromq/src/ipc_address.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/ipc_address.cpp.o
+.PHONY : home/pi/zeromq/src/ipc_address.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/ip.i: home/moe/workspace/zeromq-4.0.5/src/ip.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ip.i
+home/pi/zeromq/src/ipc_address.i: home/pi/zeromq/src/ipc_address.cpp.i
+.PHONY : home/pi/zeromq/src/ipc_address.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/ip.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ip.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ip.cpp.i
+home/pi/zeromq/src/ipc_address.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/ipc_address.cpp.i
+.PHONY : home/pi/zeromq/src/ipc_address.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/ip.s: home/moe/workspace/zeromq-4.0.5/src/ip.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ip.s
+home/pi/zeromq/src/ipc_address.s: home/pi/zeromq/src/ipc_address.cpp.s
+.PHONY : home/pi/zeromq/src/ipc_address.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/ip.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ip.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ip.cpp.s
+home/pi/zeromq/src/ipc_address.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/ipc_address.cpp.s
+.PHONY : home/pi/zeromq/src/ipc_address.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/ipc_address.o: home/moe/workspace/zeromq-4.0.5/src/ipc_address.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ipc_address.o
+home/pi/zeromq/src/ipc_connecter.o: home/pi/zeromq/src/ipc_connecter.cpp.o
+.PHONY : home/pi/zeromq/src/ipc_connecter.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/ipc_address.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_address.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ipc_address.cpp.o
+home/pi/zeromq/src/ipc_connecter.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/ipc_connecter.cpp.o
+.PHONY : home/pi/zeromq/src/ipc_connecter.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/ipc_address.i: home/moe/workspace/zeromq-4.0.5/src/ipc_address.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ipc_address.i
+home/pi/zeromq/src/ipc_connecter.i: home/pi/zeromq/src/ipc_connecter.cpp.i
+.PHONY : home/pi/zeromq/src/ipc_connecter.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/ipc_address.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_address.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ipc_address.cpp.i
+home/pi/zeromq/src/ipc_connecter.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/ipc_connecter.cpp.i
+.PHONY : home/pi/zeromq/src/ipc_connecter.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/ipc_address.s: home/moe/workspace/zeromq-4.0.5/src/ipc_address.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ipc_address.s
+home/pi/zeromq/src/ipc_connecter.s: home/pi/zeromq/src/ipc_connecter.cpp.s
+.PHONY : home/pi/zeromq/src/ipc_connecter.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/ipc_address.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_address.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ipc_address.cpp.s
+home/pi/zeromq/src/ipc_connecter.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/ipc_connecter.cpp.s
+.PHONY : home/pi/zeromq/src/ipc_connecter.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.o: home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.o
+home/pi/zeromq/src/ipc_listener.o: home/pi/zeromq/src/ipc_listener.cpp.o
+.PHONY : home/pi/zeromq/src/ipc_listener.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.cpp.o
+home/pi/zeromq/src/ipc_listener.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/ipc_listener.cpp.o
+.PHONY : home/pi/zeromq/src/ipc_listener.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.i: home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.i
+home/pi/zeromq/src/ipc_listener.i: home/pi/zeromq/src/ipc_listener.cpp.i
+.PHONY : home/pi/zeromq/src/ipc_listener.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.cpp.i
+home/pi/zeromq/src/ipc_listener.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/ipc_listener.cpp.i
+.PHONY : home/pi/zeromq/src/ipc_listener.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.s: home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.s
+home/pi/zeromq/src/ipc_listener.s: home/pi/zeromq/src/ipc_listener.cpp.s
+.PHONY : home/pi/zeromq/src/ipc_listener.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.cpp.s
+home/pi/zeromq/src/ipc_listener.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/ipc_listener.cpp.s
+.PHONY : home/pi/zeromq/src/ipc_listener.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/ipc_listener.o: home/moe/workspace/zeromq-4.0.5/src/ipc_listener.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ipc_listener.o
+home/pi/zeromq/src/kqueue.o: home/pi/zeromq/src/kqueue.cpp.o
+.PHONY : home/pi/zeromq/src/kqueue.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/ipc_listener.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_listener.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ipc_listener.cpp.o
+home/pi/zeromq/src/kqueue.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/kqueue.cpp.o
+.PHONY : home/pi/zeromq/src/kqueue.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/ipc_listener.i: home/moe/workspace/zeromq-4.0.5/src/ipc_listener.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ipc_listener.i
+home/pi/zeromq/src/kqueue.i: home/pi/zeromq/src/kqueue.cpp.i
+.PHONY : home/pi/zeromq/src/kqueue.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/ipc_listener.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_listener.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ipc_listener.cpp.i
+home/pi/zeromq/src/kqueue.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/kqueue.cpp.i
+.PHONY : home/pi/zeromq/src/kqueue.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/ipc_listener.s: home/moe/workspace/zeromq-4.0.5/src/ipc_listener.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ipc_listener.s
+home/pi/zeromq/src/kqueue.s: home/pi/zeromq/src/kqueue.cpp.s
+.PHONY : home/pi/zeromq/src/kqueue.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/ipc_listener.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/ipc_listener.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/ipc_listener.cpp.s
+home/pi/zeromq/src/kqueue.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/kqueue.cpp.s
+.PHONY : home/pi/zeromq/src/kqueue.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/kqueue.o: home/moe/workspace/zeromq-4.0.5/src/kqueue.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/kqueue.o
+home/pi/zeromq/src/lb.o: home/pi/zeromq/src/lb.cpp.o
+.PHONY : home/pi/zeromq/src/lb.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/kqueue.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/kqueue.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/kqueue.cpp.o
+home/pi/zeromq/src/lb.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/lb.cpp.o
+.PHONY : home/pi/zeromq/src/lb.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/kqueue.i: home/moe/workspace/zeromq-4.0.5/src/kqueue.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/kqueue.i
+home/pi/zeromq/src/lb.i: home/pi/zeromq/src/lb.cpp.i
+.PHONY : home/pi/zeromq/src/lb.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/kqueue.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/kqueue.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/kqueue.cpp.i
+home/pi/zeromq/src/lb.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/lb.cpp.i
+.PHONY : home/pi/zeromq/src/lb.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/kqueue.s: home/moe/workspace/zeromq-4.0.5/src/kqueue.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/kqueue.s
+home/pi/zeromq/src/lb.s: home/pi/zeromq/src/lb.cpp.s
+.PHONY : home/pi/zeromq/src/lb.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/kqueue.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/kqueue.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/kqueue.cpp.s
+home/pi/zeromq/src/lb.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/lb.cpp.s
+.PHONY : home/pi/zeromq/src/lb.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/lb.o: home/moe/workspace/zeromq-4.0.5/src/lb.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/lb.o
+home/pi/zeromq/src/mailbox.o: home/pi/zeromq/src/mailbox.cpp.o
+.PHONY : home/pi/zeromq/src/mailbox.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/lb.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/lb.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/lb.cpp.o
+home/pi/zeromq/src/mailbox.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/mailbox.cpp.o
+.PHONY : home/pi/zeromq/src/mailbox.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/lb.i: home/moe/workspace/zeromq-4.0.5/src/lb.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/lb.i
+home/pi/zeromq/src/mailbox.i: home/pi/zeromq/src/mailbox.cpp.i
+.PHONY : home/pi/zeromq/src/mailbox.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/lb.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/lb.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/lb.cpp.i
+home/pi/zeromq/src/mailbox.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/mailbox.cpp.i
+.PHONY : home/pi/zeromq/src/mailbox.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/lb.s: home/moe/workspace/zeromq-4.0.5/src/lb.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/lb.s
+home/pi/zeromq/src/mailbox.s: home/pi/zeromq/src/mailbox.cpp.s
+.PHONY : home/pi/zeromq/src/mailbox.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/lb.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/lb.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/lb.cpp.s
+home/pi/zeromq/src/mailbox.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/mailbox.cpp.s
+.PHONY : home/pi/zeromq/src/mailbox.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/mailbox.o: home/moe/workspace/zeromq-4.0.5/src/mailbox.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/mailbox.o
+home/pi/zeromq/src/mechanism.o: home/pi/zeromq/src/mechanism.cpp.o
+.PHONY : home/pi/zeromq/src/mechanism.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/mailbox.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mailbox.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/mailbox.cpp.o
+home/pi/zeromq/src/mechanism.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/mechanism.cpp.o
+.PHONY : home/pi/zeromq/src/mechanism.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/mailbox.i: home/moe/workspace/zeromq-4.0.5/src/mailbox.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/mailbox.i
+home/pi/zeromq/src/mechanism.i: home/pi/zeromq/src/mechanism.cpp.i
+.PHONY : home/pi/zeromq/src/mechanism.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/mailbox.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mailbox.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/mailbox.cpp.i
+home/pi/zeromq/src/mechanism.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/mechanism.cpp.i
+.PHONY : home/pi/zeromq/src/mechanism.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/mailbox.s: home/moe/workspace/zeromq-4.0.5/src/mailbox.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/mailbox.s
+home/pi/zeromq/src/mechanism.s: home/pi/zeromq/src/mechanism.cpp.s
+.PHONY : home/pi/zeromq/src/mechanism.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/mailbox.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mailbox.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/mailbox.cpp.s
+home/pi/zeromq/src/mechanism.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/mechanism.cpp.s
+.PHONY : home/pi/zeromq/src/mechanism.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/mechanism.o: home/moe/workspace/zeromq-4.0.5/src/mechanism.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/mechanism.o
+home/pi/zeromq/src/msg.o: home/pi/zeromq/src/msg.cpp.o
+.PHONY : home/pi/zeromq/src/msg.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/mechanism.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mechanism.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/mechanism.cpp.o
+home/pi/zeromq/src/msg.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/msg.cpp.o
+.PHONY : home/pi/zeromq/src/msg.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/mechanism.i: home/moe/workspace/zeromq-4.0.5/src/mechanism.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/mechanism.i
+home/pi/zeromq/src/msg.i: home/pi/zeromq/src/msg.cpp.i
+.PHONY : home/pi/zeromq/src/msg.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/mechanism.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mechanism.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/mechanism.cpp.i
+home/pi/zeromq/src/msg.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/msg.cpp.i
+.PHONY : home/pi/zeromq/src/msg.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/mechanism.s: home/moe/workspace/zeromq-4.0.5/src/mechanism.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/mechanism.s
+home/pi/zeromq/src/msg.s: home/pi/zeromq/src/msg.cpp.s
+.PHONY : home/pi/zeromq/src/msg.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/mechanism.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mechanism.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/mechanism.cpp.s
+home/pi/zeromq/src/msg.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/msg.cpp.s
+.PHONY : home/pi/zeromq/src/msg.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/msg.o: home/moe/workspace/zeromq-4.0.5/src/msg.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/msg.o
+home/pi/zeromq/src/mtrie.o: home/pi/zeromq/src/mtrie.cpp.o
+.PHONY : home/pi/zeromq/src/mtrie.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/msg.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/msg.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/msg.cpp.o
+home/pi/zeromq/src/mtrie.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/mtrie.cpp.o
+.PHONY : home/pi/zeromq/src/mtrie.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/msg.i: home/moe/workspace/zeromq-4.0.5/src/msg.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/msg.i
+home/pi/zeromq/src/mtrie.i: home/pi/zeromq/src/mtrie.cpp.i
+.PHONY : home/pi/zeromq/src/mtrie.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/msg.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/msg.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/msg.cpp.i
+home/pi/zeromq/src/mtrie.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/mtrie.cpp.i
+.PHONY : home/pi/zeromq/src/mtrie.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/msg.s: home/moe/workspace/zeromq-4.0.5/src/msg.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/msg.s
+home/pi/zeromq/src/mtrie.s: home/pi/zeromq/src/mtrie.cpp.s
+.PHONY : home/pi/zeromq/src/mtrie.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/msg.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/msg.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/msg.cpp.s
+home/pi/zeromq/src/mtrie.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/mtrie.cpp.s
+.PHONY : home/pi/zeromq/src/mtrie.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/mtrie.o: home/moe/workspace/zeromq-4.0.5/src/mtrie.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/mtrie.o
+home/pi/zeromq/src/null_mechanism.o: home/pi/zeromq/src/null_mechanism.cpp.o
+.PHONY : home/pi/zeromq/src/null_mechanism.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/mtrie.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mtrie.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/mtrie.cpp.o
+home/pi/zeromq/src/null_mechanism.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/null_mechanism.cpp.o
+.PHONY : home/pi/zeromq/src/null_mechanism.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/mtrie.i: home/moe/workspace/zeromq-4.0.5/src/mtrie.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/mtrie.i
+home/pi/zeromq/src/null_mechanism.i: home/pi/zeromq/src/null_mechanism.cpp.i
+.PHONY : home/pi/zeromq/src/null_mechanism.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/mtrie.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mtrie.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/mtrie.cpp.i
+home/pi/zeromq/src/null_mechanism.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/null_mechanism.cpp.i
+.PHONY : home/pi/zeromq/src/null_mechanism.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/mtrie.s: home/moe/workspace/zeromq-4.0.5/src/mtrie.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/mtrie.s
+home/pi/zeromq/src/null_mechanism.s: home/pi/zeromq/src/null_mechanism.cpp.s
+.PHONY : home/pi/zeromq/src/null_mechanism.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/mtrie.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/mtrie.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/mtrie.cpp.s
+home/pi/zeromq/src/null_mechanism.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/null_mechanism.cpp.s
+.PHONY : home/pi/zeromq/src/null_mechanism.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/null_mechanism.o: home/moe/workspace/zeromq-4.0.5/src/null_mechanism.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/null_mechanism.o
+home/pi/zeromq/src/object.o: home/pi/zeromq/src/object.cpp.o
+.PHONY : home/pi/zeromq/src/object.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/null_mechanism.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/null_mechanism.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/null_mechanism.cpp.o
+home/pi/zeromq/src/object.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/object.cpp.o
+.PHONY : home/pi/zeromq/src/object.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/null_mechanism.i: home/moe/workspace/zeromq-4.0.5/src/null_mechanism.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/null_mechanism.i
+home/pi/zeromq/src/object.i: home/pi/zeromq/src/object.cpp.i
+.PHONY : home/pi/zeromq/src/object.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/null_mechanism.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/null_mechanism.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/null_mechanism.cpp.i
+home/pi/zeromq/src/object.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/object.cpp.i
+.PHONY : home/pi/zeromq/src/object.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/null_mechanism.s: home/moe/workspace/zeromq-4.0.5/src/null_mechanism.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/null_mechanism.s
+home/pi/zeromq/src/object.s: home/pi/zeromq/src/object.cpp.s
+.PHONY : home/pi/zeromq/src/object.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/null_mechanism.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/null_mechanism.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/null_mechanism.cpp.s
+home/pi/zeromq/src/object.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/object.cpp.s
+.PHONY : home/pi/zeromq/src/object.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/object.o: home/moe/workspace/zeromq-4.0.5/src/object.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/object.o
+home/pi/zeromq/src/options.o: home/pi/zeromq/src/options.cpp.o
+.PHONY : home/pi/zeromq/src/options.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/object.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/object.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/object.cpp.o
+home/pi/zeromq/src/options.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/options.cpp.o
+.PHONY : home/pi/zeromq/src/options.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/object.i: home/moe/workspace/zeromq-4.0.5/src/object.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/object.i
+home/pi/zeromq/src/options.i: home/pi/zeromq/src/options.cpp.i
+.PHONY : home/pi/zeromq/src/options.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/object.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/object.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/object.cpp.i
+home/pi/zeromq/src/options.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/options.cpp.i
+.PHONY : home/pi/zeromq/src/options.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/object.s: home/moe/workspace/zeromq-4.0.5/src/object.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/object.s
+home/pi/zeromq/src/options.s: home/pi/zeromq/src/options.cpp.s
+.PHONY : home/pi/zeromq/src/options.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/object.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/object.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/object.cpp.s
+home/pi/zeromq/src/options.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/options.cpp.s
+.PHONY : home/pi/zeromq/src/options.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/options.o: home/moe/workspace/zeromq-4.0.5/src/options.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/options.o
+home/pi/zeromq/src/own.o: home/pi/zeromq/src/own.cpp.o
+.PHONY : home/pi/zeromq/src/own.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/options.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/options.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/options.cpp.o
+home/pi/zeromq/src/own.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/own.cpp.o
+.PHONY : home/pi/zeromq/src/own.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/options.i: home/moe/workspace/zeromq-4.0.5/src/options.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/options.i
+home/pi/zeromq/src/own.i: home/pi/zeromq/src/own.cpp.i
+.PHONY : home/pi/zeromq/src/own.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/options.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/options.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/options.cpp.i
+home/pi/zeromq/src/own.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/own.cpp.i
+.PHONY : home/pi/zeromq/src/own.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/options.s: home/moe/workspace/zeromq-4.0.5/src/options.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/options.s
+home/pi/zeromq/src/own.s: home/pi/zeromq/src/own.cpp.s
+.PHONY : home/pi/zeromq/src/own.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/options.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/options.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/options.cpp.s
+home/pi/zeromq/src/own.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/own.cpp.s
+.PHONY : home/pi/zeromq/src/own.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/own.o: home/moe/workspace/zeromq-4.0.5/src/own.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/own.o
+home/pi/zeromq/src/pair.o: home/pi/zeromq/src/pair.cpp.o
+.PHONY : home/pi/zeromq/src/pair.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/own.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/own.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/own.cpp.o
+home/pi/zeromq/src/pair.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pair.cpp.o
+.PHONY : home/pi/zeromq/src/pair.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/own.i: home/moe/workspace/zeromq-4.0.5/src/own.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/own.i
+home/pi/zeromq/src/pair.i: home/pi/zeromq/src/pair.cpp.i
+.PHONY : home/pi/zeromq/src/pair.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/own.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/own.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/own.cpp.i
+home/pi/zeromq/src/pair.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pair.cpp.i
+.PHONY : home/pi/zeromq/src/pair.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/own.s: home/moe/workspace/zeromq-4.0.5/src/own.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/own.s
+home/pi/zeromq/src/pair.s: home/pi/zeromq/src/pair.cpp.s
+.PHONY : home/pi/zeromq/src/pair.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/own.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/own.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/own.cpp.s
+home/pi/zeromq/src/pair.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pair.cpp.s
+.PHONY : home/pi/zeromq/src/pair.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/pair.o: home/moe/workspace/zeromq-4.0.5/src/pair.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pair.o
+home/pi/zeromq/src/pgm_receiver.o: home/pi/zeromq/src/pgm_receiver.cpp.o
+.PHONY : home/pi/zeromq/src/pgm_receiver.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/pair.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pair.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pair.cpp.o
+home/pi/zeromq/src/pgm_receiver.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pgm_receiver.cpp.o
+.PHONY : home/pi/zeromq/src/pgm_receiver.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/pair.i: home/moe/workspace/zeromq-4.0.5/src/pair.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pair.i
+home/pi/zeromq/src/pgm_receiver.i: home/pi/zeromq/src/pgm_receiver.cpp.i
+.PHONY : home/pi/zeromq/src/pgm_receiver.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/pair.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pair.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pair.cpp.i
+home/pi/zeromq/src/pgm_receiver.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pgm_receiver.cpp.i
+.PHONY : home/pi/zeromq/src/pgm_receiver.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/pair.s: home/moe/workspace/zeromq-4.0.5/src/pair.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pair.s
+home/pi/zeromq/src/pgm_receiver.s: home/pi/zeromq/src/pgm_receiver.cpp.s
+.PHONY : home/pi/zeromq/src/pgm_receiver.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/pair.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pair.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pair.cpp.s
+home/pi/zeromq/src/pgm_receiver.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pgm_receiver.cpp.s
+.PHONY : home/pi/zeromq/src/pgm_receiver.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.o: home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.o
+home/pi/zeromq/src/pgm_sender.o: home/pi/zeromq/src/pgm_sender.cpp.o
+.PHONY : home/pi/zeromq/src/pgm_sender.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.cpp.o
+home/pi/zeromq/src/pgm_sender.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pgm_sender.cpp.o
+.PHONY : home/pi/zeromq/src/pgm_sender.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.i: home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.i
+home/pi/zeromq/src/pgm_sender.i: home/pi/zeromq/src/pgm_sender.cpp.i
+.PHONY : home/pi/zeromq/src/pgm_sender.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.cpp.i
+home/pi/zeromq/src/pgm_sender.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pgm_sender.cpp.i
+.PHONY : home/pi/zeromq/src/pgm_sender.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.s: home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.s
+home/pi/zeromq/src/pgm_sender.s: home/pi/zeromq/src/pgm_sender.cpp.s
+.PHONY : home/pi/zeromq/src/pgm_sender.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.cpp.s
+home/pi/zeromq/src/pgm_sender.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pgm_sender.cpp.s
+.PHONY : home/pi/zeromq/src/pgm_sender.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/pgm_sender.o: home/moe/workspace/zeromq-4.0.5/src/pgm_sender.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pgm_sender.o
+home/pi/zeromq/src/pgm_socket.o: home/pi/zeromq/src/pgm_socket.cpp.o
+.PHONY : home/pi/zeromq/src/pgm_socket.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/pgm_sender.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_sender.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pgm_sender.cpp.o
+home/pi/zeromq/src/pgm_socket.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pgm_socket.cpp.o
+.PHONY : home/pi/zeromq/src/pgm_socket.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/pgm_sender.i: home/moe/workspace/zeromq-4.0.5/src/pgm_sender.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pgm_sender.i
+home/pi/zeromq/src/pgm_socket.i: home/pi/zeromq/src/pgm_socket.cpp.i
+.PHONY : home/pi/zeromq/src/pgm_socket.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/pgm_sender.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_sender.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pgm_sender.cpp.i
+home/pi/zeromq/src/pgm_socket.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pgm_socket.cpp.i
+.PHONY : home/pi/zeromq/src/pgm_socket.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/pgm_sender.s: home/moe/workspace/zeromq-4.0.5/src/pgm_sender.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pgm_sender.s
+home/pi/zeromq/src/pgm_socket.s: home/pi/zeromq/src/pgm_socket.cpp.s
+.PHONY : home/pi/zeromq/src/pgm_socket.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/pgm_sender.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_sender.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pgm_sender.cpp.s
+home/pi/zeromq/src/pgm_socket.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pgm_socket.cpp.s
+.PHONY : home/pi/zeromq/src/pgm_socket.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/pgm_socket.o: home/moe/workspace/zeromq-4.0.5/src/pgm_socket.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pgm_socket.o
+home/pi/zeromq/src/pipe.o: home/pi/zeromq/src/pipe.cpp.o
+.PHONY : home/pi/zeromq/src/pipe.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/pgm_socket.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_socket.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pgm_socket.cpp.o
+home/pi/zeromq/src/pipe.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pipe.cpp.o
+.PHONY : home/pi/zeromq/src/pipe.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/pgm_socket.i: home/moe/workspace/zeromq-4.0.5/src/pgm_socket.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pgm_socket.i
+home/pi/zeromq/src/pipe.i: home/pi/zeromq/src/pipe.cpp.i
+.PHONY : home/pi/zeromq/src/pipe.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/pgm_socket.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_socket.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pgm_socket.cpp.i
+home/pi/zeromq/src/pipe.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pipe.cpp.i
+.PHONY : home/pi/zeromq/src/pipe.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/pgm_socket.s: home/moe/workspace/zeromq-4.0.5/src/pgm_socket.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pgm_socket.s
+home/pi/zeromq/src/pipe.s: home/pi/zeromq/src/pipe.cpp.s
+.PHONY : home/pi/zeromq/src/pipe.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/pgm_socket.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pgm_socket.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pgm_socket.cpp.s
+home/pi/zeromq/src/pipe.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pipe.cpp.s
+.PHONY : home/pi/zeromq/src/pipe.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/pipe.o: home/moe/workspace/zeromq-4.0.5/src/pipe.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pipe.o
+home/pi/zeromq/src/plain_mechanism.o: home/pi/zeromq/src/plain_mechanism.cpp.o
+.PHONY : home/pi/zeromq/src/plain_mechanism.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/pipe.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pipe.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pipe.cpp.o
+home/pi/zeromq/src/plain_mechanism.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/plain_mechanism.cpp.o
+.PHONY : home/pi/zeromq/src/plain_mechanism.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/pipe.i: home/moe/workspace/zeromq-4.0.5/src/pipe.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pipe.i
+home/pi/zeromq/src/plain_mechanism.i: home/pi/zeromq/src/plain_mechanism.cpp.i
+.PHONY : home/pi/zeromq/src/plain_mechanism.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/pipe.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pipe.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pipe.cpp.i
+home/pi/zeromq/src/plain_mechanism.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/plain_mechanism.cpp.i
+.PHONY : home/pi/zeromq/src/plain_mechanism.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/pipe.s: home/moe/workspace/zeromq-4.0.5/src/pipe.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pipe.s
+home/pi/zeromq/src/plain_mechanism.s: home/pi/zeromq/src/plain_mechanism.cpp.s
+.PHONY : home/pi/zeromq/src/plain_mechanism.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/pipe.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pipe.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pipe.cpp.s
+home/pi/zeromq/src/plain_mechanism.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/plain_mechanism.cpp.s
+.PHONY : home/pi/zeromq/src/plain_mechanism.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.o: home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.o
+home/pi/zeromq/src/poll.o: home/pi/zeromq/src/poll.cpp.o
+.PHONY : home/pi/zeromq/src/poll.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.cpp.o
+home/pi/zeromq/src/poll.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/poll.cpp.o
+.PHONY : home/pi/zeromq/src/poll.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.i: home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.i
+home/pi/zeromq/src/poll.i: home/pi/zeromq/src/poll.cpp.i
+.PHONY : home/pi/zeromq/src/poll.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.cpp.i
+home/pi/zeromq/src/poll.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/poll.cpp.i
+.PHONY : home/pi/zeromq/src/poll.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.s: home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.s
+home/pi/zeromq/src/poll.s: home/pi/zeromq/src/poll.cpp.s
+.PHONY : home/pi/zeromq/src/poll.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.cpp.s
+home/pi/zeromq/src/poll.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/poll.cpp.s
+.PHONY : home/pi/zeromq/src/poll.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/poll.o: home/moe/workspace/zeromq-4.0.5/src/poll.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/poll.o
+home/pi/zeromq/src/poller_base.o: home/pi/zeromq/src/poller_base.cpp.o
+.PHONY : home/pi/zeromq/src/poller_base.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/poll.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/poll.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/poll.cpp.o
+home/pi/zeromq/src/poller_base.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/poller_base.cpp.o
+.PHONY : home/pi/zeromq/src/poller_base.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/poll.i: home/moe/workspace/zeromq-4.0.5/src/poll.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/poll.i
+home/pi/zeromq/src/poller_base.i: home/pi/zeromq/src/poller_base.cpp.i
+.PHONY : home/pi/zeromq/src/poller_base.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/poll.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/poll.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/poll.cpp.i
+home/pi/zeromq/src/poller_base.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/poller_base.cpp.i
+.PHONY : home/pi/zeromq/src/poller_base.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/poll.s: home/moe/workspace/zeromq-4.0.5/src/poll.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/poll.s
+home/pi/zeromq/src/poller_base.s: home/pi/zeromq/src/poller_base.cpp.s
+.PHONY : home/pi/zeromq/src/poller_base.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/poll.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/poll.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/poll.cpp.s
+home/pi/zeromq/src/poller_base.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/poller_base.cpp.s
+.PHONY : home/pi/zeromq/src/poller_base.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/poller_base.o: home/moe/workspace/zeromq-4.0.5/src/poller_base.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/poller_base.o
+home/pi/zeromq/src/proxy.o: home/pi/zeromq/src/proxy.cpp.o
+.PHONY : home/pi/zeromq/src/proxy.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/poller_base.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/poller_base.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/poller_base.cpp.o
+home/pi/zeromq/src/proxy.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/proxy.cpp.o
+.PHONY : home/pi/zeromq/src/proxy.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/poller_base.i: home/moe/workspace/zeromq-4.0.5/src/poller_base.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/poller_base.i
+home/pi/zeromq/src/proxy.i: home/pi/zeromq/src/proxy.cpp.i
+.PHONY : home/pi/zeromq/src/proxy.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/poller_base.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/poller_base.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/poller_base.cpp.i
+home/pi/zeromq/src/proxy.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/proxy.cpp.i
+.PHONY : home/pi/zeromq/src/proxy.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/poller_base.s: home/moe/workspace/zeromq-4.0.5/src/poller_base.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/poller_base.s
+home/pi/zeromq/src/proxy.s: home/pi/zeromq/src/proxy.cpp.s
+.PHONY : home/pi/zeromq/src/proxy.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/poller_base.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/poller_base.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/poller_base.cpp.s
+home/pi/zeromq/src/proxy.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/proxy.cpp.s
+.PHONY : home/pi/zeromq/src/proxy.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/proxy.o: home/moe/workspace/zeromq-4.0.5/src/proxy.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/proxy.o
+home/pi/zeromq/src/pub.o: home/pi/zeromq/src/pub.cpp.o
+.PHONY : home/pi/zeromq/src/pub.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/proxy.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/proxy.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/proxy.cpp.o
+home/pi/zeromq/src/pub.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pub.cpp.o
+.PHONY : home/pi/zeromq/src/pub.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/proxy.i: home/moe/workspace/zeromq-4.0.5/src/proxy.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/proxy.i
+home/pi/zeromq/src/pub.i: home/pi/zeromq/src/pub.cpp.i
+.PHONY : home/pi/zeromq/src/pub.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/proxy.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/proxy.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/proxy.cpp.i
+home/pi/zeromq/src/pub.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pub.cpp.i
+.PHONY : home/pi/zeromq/src/pub.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/proxy.s: home/moe/workspace/zeromq-4.0.5/src/proxy.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/proxy.s
+home/pi/zeromq/src/pub.s: home/pi/zeromq/src/pub.cpp.s
+.PHONY : home/pi/zeromq/src/pub.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/proxy.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/proxy.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/proxy.cpp.s
+home/pi/zeromq/src/pub.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pub.cpp.s
+.PHONY : home/pi/zeromq/src/pub.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/pub.o: home/moe/workspace/zeromq-4.0.5/src/pub.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pub.o
+home/pi/zeromq/src/pull.o: home/pi/zeromq/src/pull.cpp.o
+.PHONY : home/pi/zeromq/src/pull.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/pub.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pub.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pub.cpp.o
+home/pi/zeromq/src/pull.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pull.cpp.o
+.PHONY : home/pi/zeromq/src/pull.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/pub.i: home/moe/workspace/zeromq-4.0.5/src/pub.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pub.i
+home/pi/zeromq/src/pull.i: home/pi/zeromq/src/pull.cpp.i
+.PHONY : home/pi/zeromq/src/pull.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/pub.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pub.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pub.cpp.i
+home/pi/zeromq/src/pull.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pull.cpp.i
+.PHONY : home/pi/zeromq/src/pull.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/pub.s: home/moe/workspace/zeromq-4.0.5/src/pub.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pub.s
+home/pi/zeromq/src/pull.s: home/pi/zeromq/src/pull.cpp.s
+.PHONY : home/pi/zeromq/src/pull.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/pub.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pub.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pub.cpp.s
+home/pi/zeromq/src/pull.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/pull.cpp.s
+.PHONY : home/pi/zeromq/src/pull.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/pull.o: home/moe/workspace/zeromq-4.0.5/src/pull.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pull.o
+home/pi/zeromq/src/push.o: home/pi/zeromq/src/push.cpp.o
+.PHONY : home/pi/zeromq/src/push.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/pull.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pull.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pull.cpp.o
+home/pi/zeromq/src/push.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/push.cpp.o
+.PHONY : home/pi/zeromq/src/push.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/pull.i: home/moe/workspace/zeromq-4.0.5/src/pull.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pull.i
+home/pi/zeromq/src/push.i: home/pi/zeromq/src/push.cpp.i
+.PHONY : home/pi/zeromq/src/push.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/pull.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pull.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pull.cpp.i
+home/pi/zeromq/src/push.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/push.cpp.i
+.PHONY : home/pi/zeromq/src/push.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/pull.s: home/moe/workspace/zeromq-4.0.5/src/pull.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pull.s
+home/pi/zeromq/src/push.s: home/pi/zeromq/src/push.cpp.s
+.PHONY : home/pi/zeromq/src/push.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/pull.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/pull.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/pull.cpp.s
+home/pi/zeromq/src/push.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/push.cpp.s
+.PHONY : home/pi/zeromq/src/push.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/push.o: home/moe/workspace/zeromq-4.0.5/src/push.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/push.o
+home/pi/zeromq/src/random.o: home/pi/zeromq/src/random.cpp.o
+.PHONY : home/pi/zeromq/src/random.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/push.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/push.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/push.cpp.o
+home/pi/zeromq/src/random.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/random.cpp.o
+.PHONY : home/pi/zeromq/src/random.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/push.i: home/moe/workspace/zeromq-4.0.5/src/push.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/push.i
+home/pi/zeromq/src/random.i: home/pi/zeromq/src/random.cpp.i
+.PHONY : home/pi/zeromq/src/random.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/push.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/push.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/push.cpp.i
+home/pi/zeromq/src/random.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/random.cpp.i
+.PHONY : home/pi/zeromq/src/random.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/push.s: home/moe/workspace/zeromq-4.0.5/src/push.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/push.s
+home/pi/zeromq/src/random.s: home/pi/zeromq/src/random.cpp.s
+.PHONY : home/pi/zeromq/src/random.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/push.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/push.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/push.cpp.s
+home/pi/zeromq/src/random.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/random.cpp.s
+.PHONY : home/pi/zeromq/src/random.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/random.o: home/moe/workspace/zeromq-4.0.5/src/random.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/random.o
+home/pi/zeromq/src/raw_decoder.o: home/pi/zeromq/src/raw_decoder.cpp.o
+.PHONY : home/pi/zeromq/src/raw_decoder.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/random.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/random.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/random.cpp.o
+home/pi/zeromq/src/raw_decoder.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/raw_decoder.cpp.o
+.PHONY : home/pi/zeromq/src/raw_decoder.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/random.i: home/moe/workspace/zeromq-4.0.5/src/random.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/random.i
+home/pi/zeromq/src/raw_decoder.i: home/pi/zeromq/src/raw_decoder.cpp.i
+.PHONY : home/pi/zeromq/src/raw_decoder.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/random.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/random.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/random.cpp.i
+home/pi/zeromq/src/raw_decoder.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/raw_decoder.cpp.i
+.PHONY : home/pi/zeromq/src/raw_decoder.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/random.s: home/moe/workspace/zeromq-4.0.5/src/random.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/random.s
+home/pi/zeromq/src/raw_decoder.s: home/pi/zeromq/src/raw_decoder.cpp.s
+.PHONY : home/pi/zeromq/src/raw_decoder.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/random.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/random.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/random.cpp.s
+home/pi/zeromq/src/raw_decoder.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/raw_decoder.cpp.s
+.PHONY : home/pi/zeromq/src/raw_decoder.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/raw_decoder.o: home/moe/workspace/zeromq-4.0.5/src/raw_decoder.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/raw_decoder.o
+home/pi/zeromq/src/raw_encoder.o: home/pi/zeromq/src/raw_encoder.cpp.o
+.PHONY : home/pi/zeromq/src/raw_encoder.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/raw_decoder.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/raw_decoder.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/raw_decoder.cpp.o
+home/pi/zeromq/src/raw_encoder.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/raw_encoder.cpp.o
+.PHONY : home/pi/zeromq/src/raw_encoder.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/raw_decoder.i: home/moe/workspace/zeromq-4.0.5/src/raw_decoder.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/raw_decoder.i
+home/pi/zeromq/src/raw_encoder.i: home/pi/zeromq/src/raw_encoder.cpp.i
+.PHONY : home/pi/zeromq/src/raw_encoder.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/raw_decoder.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/raw_decoder.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/raw_decoder.cpp.i
+home/pi/zeromq/src/raw_encoder.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/raw_encoder.cpp.i
+.PHONY : home/pi/zeromq/src/raw_encoder.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/raw_decoder.s: home/moe/workspace/zeromq-4.0.5/src/raw_decoder.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/raw_decoder.s
+home/pi/zeromq/src/raw_encoder.s: home/pi/zeromq/src/raw_encoder.cpp.s
+.PHONY : home/pi/zeromq/src/raw_encoder.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/raw_decoder.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/raw_decoder.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/raw_decoder.cpp.s
+home/pi/zeromq/src/raw_encoder.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/raw_encoder.cpp.s
+.PHONY : home/pi/zeromq/src/raw_encoder.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/raw_encoder.o: home/moe/workspace/zeromq-4.0.5/src/raw_encoder.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/raw_encoder.o
+home/pi/zeromq/src/reaper.o: home/pi/zeromq/src/reaper.cpp.o
+.PHONY : home/pi/zeromq/src/reaper.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/raw_encoder.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/raw_encoder.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/raw_encoder.cpp.o
+home/pi/zeromq/src/reaper.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/reaper.cpp.o
+.PHONY : home/pi/zeromq/src/reaper.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/raw_encoder.i: home/moe/workspace/zeromq-4.0.5/src/raw_encoder.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/raw_encoder.i
+home/pi/zeromq/src/reaper.i: home/pi/zeromq/src/reaper.cpp.i
+.PHONY : home/pi/zeromq/src/reaper.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/raw_encoder.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/raw_encoder.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/raw_encoder.cpp.i
+home/pi/zeromq/src/reaper.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/reaper.cpp.i
+.PHONY : home/pi/zeromq/src/reaper.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/raw_encoder.s: home/moe/workspace/zeromq-4.0.5/src/raw_encoder.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/raw_encoder.s
+home/pi/zeromq/src/reaper.s: home/pi/zeromq/src/reaper.cpp.s
+.PHONY : home/pi/zeromq/src/reaper.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/raw_encoder.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/raw_encoder.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/raw_encoder.cpp.s
+home/pi/zeromq/src/reaper.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/reaper.cpp.s
+.PHONY : home/pi/zeromq/src/reaper.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/reaper.o: home/moe/workspace/zeromq-4.0.5/src/reaper.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/reaper.o
+home/pi/zeromq/src/rep.o: home/pi/zeromq/src/rep.cpp.o
+.PHONY : home/pi/zeromq/src/rep.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/reaper.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/reaper.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/reaper.cpp.o
+home/pi/zeromq/src/rep.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/rep.cpp.o
+.PHONY : home/pi/zeromq/src/rep.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/reaper.i: home/moe/workspace/zeromq-4.0.5/src/reaper.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/reaper.i
+home/pi/zeromq/src/rep.i: home/pi/zeromq/src/rep.cpp.i
+.PHONY : home/pi/zeromq/src/rep.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/reaper.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/reaper.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/reaper.cpp.i
+home/pi/zeromq/src/rep.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/rep.cpp.i
+.PHONY : home/pi/zeromq/src/rep.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/reaper.s: home/moe/workspace/zeromq-4.0.5/src/reaper.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/reaper.s
+home/pi/zeromq/src/rep.s: home/pi/zeromq/src/rep.cpp.s
+.PHONY : home/pi/zeromq/src/rep.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/reaper.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/reaper.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/reaper.cpp.s
+home/pi/zeromq/src/rep.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/rep.cpp.s
+.PHONY : home/pi/zeromq/src/rep.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/rep.o: home/moe/workspace/zeromq-4.0.5/src/rep.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/rep.o
+home/pi/zeromq/src/req.o: home/pi/zeromq/src/req.cpp.o
+.PHONY : home/pi/zeromq/src/req.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/rep.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/rep.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/rep.cpp.o
+home/pi/zeromq/src/req.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/req.cpp.o
+.PHONY : home/pi/zeromq/src/req.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/rep.i: home/moe/workspace/zeromq-4.0.5/src/rep.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/rep.i
+home/pi/zeromq/src/req.i: home/pi/zeromq/src/req.cpp.i
+.PHONY : home/pi/zeromq/src/req.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/rep.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/rep.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/rep.cpp.i
+home/pi/zeromq/src/req.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/req.cpp.i
+.PHONY : home/pi/zeromq/src/req.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/rep.s: home/moe/workspace/zeromq-4.0.5/src/rep.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/rep.s
+home/pi/zeromq/src/req.s: home/pi/zeromq/src/req.cpp.s
+.PHONY : home/pi/zeromq/src/req.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/rep.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/rep.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/rep.cpp.s
+home/pi/zeromq/src/req.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/req.cpp.s
+.PHONY : home/pi/zeromq/src/req.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/req.o: home/moe/workspace/zeromq-4.0.5/src/req.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/req.o
+home/pi/zeromq/src/router.o: home/pi/zeromq/src/router.cpp.o
+.PHONY : home/pi/zeromq/src/router.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/req.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/req.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/req.cpp.o
+home/pi/zeromq/src/router.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/router.cpp.o
+.PHONY : home/pi/zeromq/src/router.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/req.i: home/moe/workspace/zeromq-4.0.5/src/req.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/req.i
+home/pi/zeromq/src/router.i: home/pi/zeromq/src/router.cpp.i
+.PHONY : home/pi/zeromq/src/router.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/req.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/req.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/req.cpp.i
+home/pi/zeromq/src/router.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/router.cpp.i
+.PHONY : home/pi/zeromq/src/router.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/req.s: home/moe/workspace/zeromq-4.0.5/src/req.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/req.s
+home/pi/zeromq/src/router.s: home/pi/zeromq/src/router.cpp.s
+.PHONY : home/pi/zeromq/src/router.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/req.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/req.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/req.cpp.s
+home/pi/zeromq/src/router.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/router.cpp.s
+.PHONY : home/pi/zeromq/src/router.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/router.o: home/moe/workspace/zeromq-4.0.5/src/router.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/router.o
+home/pi/zeromq/src/select.o: home/pi/zeromq/src/select.cpp.o
+.PHONY : home/pi/zeromq/src/select.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/router.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/router.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/router.cpp.o
+home/pi/zeromq/src/select.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/select.cpp.o
+.PHONY : home/pi/zeromq/src/select.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/router.i: home/moe/workspace/zeromq-4.0.5/src/router.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/router.i
+home/pi/zeromq/src/select.i: home/pi/zeromq/src/select.cpp.i
+.PHONY : home/pi/zeromq/src/select.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/router.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/router.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/router.cpp.i
+home/pi/zeromq/src/select.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/select.cpp.i
+.PHONY : home/pi/zeromq/src/select.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/router.s: home/moe/workspace/zeromq-4.0.5/src/router.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/router.s
+home/pi/zeromq/src/select.s: home/pi/zeromq/src/select.cpp.s
+.PHONY : home/pi/zeromq/src/select.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/router.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/router.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/router.cpp.s
+home/pi/zeromq/src/select.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/select.cpp.s
+.PHONY : home/pi/zeromq/src/select.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/select.o: home/moe/workspace/zeromq-4.0.5/src/select.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/select.o
+home/pi/zeromq/src/session_base.o: home/pi/zeromq/src/session_base.cpp.o
+.PHONY : home/pi/zeromq/src/session_base.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/select.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/select.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/select.cpp.o
+home/pi/zeromq/src/session_base.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/session_base.cpp.o
+.PHONY : home/pi/zeromq/src/session_base.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/select.i: home/moe/workspace/zeromq-4.0.5/src/select.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/select.i
+home/pi/zeromq/src/session_base.i: home/pi/zeromq/src/session_base.cpp.i
+.PHONY : home/pi/zeromq/src/session_base.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/select.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/select.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/select.cpp.i
+home/pi/zeromq/src/session_base.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/session_base.cpp.i
+.PHONY : home/pi/zeromq/src/session_base.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/select.s: home/moe/workspace/zeromq-4.0.5/src/select.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/select.s
+home/pi/zeromq/src/session_base.s: home/pi/zeromq/src/session_base.cpp.s
+.PHONY : home/pi/zeromq/src/session_base.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/select.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/select.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/select.cpp.s
+home/pi/zeromq/src/session_base.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/session_base.cpp.s
+.PHONY : home/pi/zeromq/src/session_base.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/session_base.o: home/moe/workspace/zeromq-4.0.5/src/session_base.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/session_base.o
+home/pi/zeromq/src/signaler.o: home/pi/zeromq/src/signaler.cpp.o
+.PHONY : home/pi/zeromq/src/signaler.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/session_base.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/session_base.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/session_base.cpp.o
+home/pi/zeromq/src/signaler.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/signaler.cpp.o
+.PHONY : home/pi/zeromq/src/signaler.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/session_base.i: home/moe/workspace/zeromq-4.0.5/src/session_base.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/session_base.i
+home/pi/zeromq/src/signaler.i: home/pi/zeromq/src/signaler.cpp.i
+.PHONY : home/pi/zeromq/src/signaler.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/session_base.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/session_base.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/session_base.cpp.i
+home/pi/zeromq/src/signaler.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/signaler.cpp.i
+.PHONY : home/pi/zeromq/src/signaler.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/session_base.s: home/moe/workspace/zeromq-4.0.5/src/session_base.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/session_base.s
+home/pi/zeromq/src/signaler.s: home/pi/zeromq/src/signaler.cpp.s
+.PHONY : home/pi/zeromq/src/signaler.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/session_base.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/session_base.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/session_base.cpp.s
+home/pi/zeromq/src/signaler.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/signaler.cpp.s
+.PHONY : home/pi/zeromq/src/signaler.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/signaler.o: home/moe/workspace/zeromq-4.0.5/src/signaler.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/signaler.o
+home/pi/zeromq/src/socket_base.o: home/pi/zeromq/src/socket_base.cpp.o
+.PHONY : home/pi/zeromq/src/socket_base.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/signaler.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/signaler.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/signaler.cpp.o
+home/pi/zeromq/src/socket_base.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/socket_base.cpp.o
+.PHONY : home/pi/zeromq/src/socket_base.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/signaler.i: home/moe/workspace/zeromq-4.0.5/src/signaler.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/signaler.i
+home/pi/zeromq/src/socket_base.i: home/pi/zeromq/src/socket_base.cpp.i
+.PHONY : home/pi/zeromq/src/socket_base.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/signaler.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/signaler.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/signaler.cpp.i
+home/pi/zeromq/src/socket_base.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/socket_base.cpp.i
+.PHONY : home/pi/zeromq/src/socket_base.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/signaler.s: home/moe/workspace/zeromq-4.0.5/src/signaler.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/signaler.s
+home/pi/zeromq/src/socket_base.s: home/pi/zeromq/src/socket_base.cpp.s
+.PHONY : home/pi/zeromq/src/socket_base.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/signaler.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/signaler.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/signaler.cpp.s
+home/pi/zeromq/src/socket_base.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/socket_base.cpp.s
+.PHONY : home/pi/zeromq/src/socket_base.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/socket_base.o: home/moe/workspace/zeromq-4.0.5/src/socket_base.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/socket_base.o
+home/pi/zeromq/src/stream.o: home/pi/zeromq/src/stream.cpp.o
+.PHONY : home/pi/zeromq/src/stream.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/socket_base.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/socket_base.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/socket_base.cpp.o
+home/pi/zeromq/src/stream.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/stream.cpp.o
+.PHONY : home/pi/zeromq/src/stream.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/socket_base.i: home/moe/workspace/zeromq-4.0.5/src/socket_base.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/socket_base.i
+home/pi/zeromq/src/stream.i: home/pi/zeromq/src/stream.cpp.i
+.PHONY : home/pi/zeromq/src/stream.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/socket_base.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/socket_base.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/socket_base.cpp.i
+home/pi/zeromq/src/stream.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/stream.cpp.i
+.PHONY : home/pi/zeromq/src/stream.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/socket_base.s: home/moe/workspace/zeromq-4.0.5/src/socket_base.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/socket_base.s
+home/pi/zeromq/src/stream.s: home/pi/zeromq/src/stream.cpp.s
+.PHONY : home/pi/zeromq/src/stream.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/socket_base.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/socket_base.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/socket_base.cpp.s
+home/pi/zeromq/src/stream.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/stream.cpp.s
+.PHONY : home/pi/zeromq/src/stream.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/stream.o: home/moe/workspace/zeromq-4.0.5/src/stream.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/stream.o
+home/pi/zeromq/src/stream_engine.o: home/pi/zeromq/src/stream_engine.cpp.o
+.PHONY : home/pi/zeromq/src/stream_engine.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/stream.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/stream.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/stream.cpp.o
+home/pi/zeromq/src/stream_engine.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/stream_engine.cpp.o
+.PHONY : home/pi/zeromq/src/stream_engine.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/stream.i: home/moe/workspace/zeromq-4.0.5/src/stream.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/stream.i
+home/pi/zeromq/src/stream_engine.i: home/pi/zeromq/src/stream_engine.cpp.i
+.PHONY : home/pi/zeromq/src/stream_engine.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/stream.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/stream.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/stream.cpp.i
+home/pi/zeromq/src/stream_engine.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/stream_engine.cpp.i
+.PHONY : home/pi/zeromq/src/stream_engine.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/stream.s: home/moe/workspace/zeromq-4.0.5/src/stream.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/stream.s
+home/pi/zeromq/src/stream_engine.s: home/pi/zeromq/src/stream_engine.cpp.s
+.PHONY : home/pi/zeromq/src/stream_engine.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/stream.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/stream.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/stream.cpp.s
+home/pi/zeromq/src/stream_engine.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/stream_engine.cpp.s
+.PHONY : home/pi/zeromq/src/stream_engine.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/stream_engine.o: home/moe/workspace/zeromq-4.0.5/src/stream_engine.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/stream_engine.o
+home/pi/zeromq/src/sub.o: home/pi/zeromq/src/sub.cpp.o
+.PHONY : home/pi/zeromq/src/sub.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/stream_engine.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/stream_engine.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/stream_engine.cpp.o
+home/pi/zeromq/src/sub.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/sub.cpp.o
+.PHONY : home/pi/zeromq/src/sub.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/stream_engine.i: home/moe/workspace/zeromq-4.0.5/src/stream_engine.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/stream_engine.i
+home/pi/zeromq/src/sub.i: home/pi/zeromq/src/sub.cpp.i
+.PHONY : home/pi/zeromq/src/sub.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/stream_engine.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/stream_engine.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/stream_engine.cpp.i
+home/pi/zeromq/src/sub.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/sub.cpp.i
+.PHONY : home/pi/zeromq/src/sub.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/stream_engine.s: home/moe/workspace/zeromq-4.0.5/src/stream_engine.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/stream_engine.s
+home/pi/zeromq/src/sub.s: home/pi/zeromq/src/sub.cpp.s
+.PHONY : home/pi/zeromq/src/sub.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/stream_engine.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/stream_engine.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/stream_engine.cpp.s
+home/pi/zeromq/src/sub.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/sub.cpp.s
+.PHONY : home/pi/zeromq/src/sub.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/sub.o: home/moe/workspace/zeromq-4.0.5/src/sub.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/sub.o
+home/pi/zeromq/src/tcp.o: home/pi/zeromq/src/tcp.cpp.o
+.PHONY : home/pi/zeromq/src/tcp.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/sub.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/sub.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/sub.cpp.o
+home/pi/zeromq/src/tcp.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/tcp.cpp.o
+.PHONY : home/pi/zeromq/src/tcp.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/sub.i: home/moe/workspace/zeromq-4.0.5/src/sub.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/sub.i
+home/pi/zeromq/src/tcp.i: home/pi/zeromq/src/tcp.cpp.i
+.PHONY : home/pi/zeromq/src/tcp.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/sub.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/sub.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/sub.cpp.i
+home/pi/zeromq/src/tcp.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/tcp.cpp.i
+.PHONY : home/pi/zeromq/src/tcp.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/sub.s: home/moe/workspace/zeromq-4.0.5/src/sub.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/sub.s
+home/pi/zeromq/src/tcp.s: home/pi/zeromq/src/tcp.cpp.s
+.PHONY : home/pi/zeromq/src/tcp.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/sub.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/sub.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/sub.cpp.s
+home/pi/zeromq/src/tcp.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/tcp.cpp.s
+.PHONY : home/pi/zeromq/src/tcp.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/tcp.o: home/moe/workspace/zeromq-4.0.5/src/tcp.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp.o
+home/pi/zeromq/src/tcp_address.o: home/pi/zeromq/src/tcp_address.cpp.o
+.PHONY : home/pi/zeromq/src/tcp_address.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/tcp.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp.cpp.o
+home/pi/zeromq/src/tcp_address.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/tcp_address.cpp.o
+.PHONY : home/pi/zeromq/src/tcp_address.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/tcp.i: home/moe/workspace/zeromq-4.0.5/src/tcp.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp.i
+home/pi/zeromq/src/tcp_address.i: home/pi/zeromq/src/tcp_address.cpp.i
+.PHONY : home/pi/zeromq/src/tcp_address.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/tcp.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp.cpp.i
+home/pi/zeromq/src/tcp_address.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/tcp_address.cpp.i
+.PHONY : home/pi/zeromq/src/tcp_address.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/tcp.s: home/moe/workspace/zeromq-4.0.5/src/tcp.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp.s
+home/pi/zeromq/src/tcp_address.s: home/pi/zeromq/src/tcp_address.cpp.s
+.PHONY : home/pi/zeromq/src/tcp_address.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/tcp.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp.cpp.s
+home/pi/zeromq/src/tcp_address.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/tcp_address.cpp.s
+.PHONY : home/pi/zeromq/src/tcp_address.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/tcp_address.o: home/moe/workspace/zeromq-4.0.5/src/tcp_address.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp_address.o
+home/pi/zeromq/src/tcp_connecter.o: home/pi/zeromq/src/tcp_connecter.cpp.o
+.PHONY : home/pi/zeromq/src/tcp_connecter.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/tcp_address.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_address.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp_address.cpp.o
+home/pi/zeromq/src/tcp_connecter.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/tcp_connecter.cpp.o
+.PHONY : home/pi/zeromq/src/tcp_connecter.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/tcp_address.i: home/moe/workspace/zeromq-4.0.5/src/tcp_address.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp_address.i
+home/pi/zeromq/src/tcp_connecter.i: home/pi/zeromq/src/tcp_connecter.cpp.i
+.PHONY : home/pi/zeromq/src/tcp_connecter.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/tcp_address.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_address.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp_address.cpp.i
+home/pi/zeromq/src/tcp_connecter.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/tcp_connecter.cpp.i
+.PHONY : home/pi/zeromq/src/tcp_connecter.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/tcp_address.s: home/moe/workspace/zeromq-4.0.5/src/tcp_address.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp_address.s
+home/pi/zeromq/src/tcp_connecter.s: home/pi/zeromq/src/tcp_connecter.cpp.s
+.PHONY : home/pi/zeromq/src/tcp_connecter.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/tcp_address.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_address.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp_address.cpp.s
+home/pi/zeromq/src/tcp_connecter.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/tcp_connecter.cpp.s
+.PHONY : home/pi/zeromq/src/tcp_connecter.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.o: home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.o
+home/pi/zeromq/src/tcp_listener.o: home/pi/zeromq/src/tcp_listener.cpp.o
+.PHONY : home/pi/zeromq/src/tcp_listener.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.cpp.o
+home/pi/zeromq/src/tcp_listener.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/tcp_listener.cpp.o
+.PHONY : home/pi/zeromq/src/tcp_listener.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.i: home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.i
+home/pi/zeromq/src/tcp_listener.i: home/pi/zeromq/src/tcp_listener.cpp.i
+.PHONY : home/pi/zeromq/src/tcp_listener.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.cpp.i
+home/pi/zeromq/src/tcp_listener.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/tcp_listener.cpp.i
+.PHONY : home/pi/zeromq/src/tcp_listener.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.s: home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.s
+home/pi/zeromq/src/tcp_listener.s: home/pi/zeromq/src/tcp_listener.cpp.s
+.PHONY : home/pi/zeromq/src/tcp_listener.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.cpp.s
+home/pi/zeromq/src/tcp_listener.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/tcp_listener.cpp.s
+.PHONY : home/pi/zeromq/src/tcp_listener.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/tcp_listener.o: home/moe/workspace/zeromq-4.0.5/src/tcp_listener.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp_listener.o
+home/pi/zeromq/src/thread.o: home/pi/zeromq/src/thread.cpp.o
+.PHONY : home/pi/zeromq/src/thread.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/tcp_listener.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_listener.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp_listener.cpp.o
+home/pi/zeromq/src/thread.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/thread.cpp.o
+.PHONY : home/pi/zeromq/src/thread.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/tcp_listener.i: home/moe/workspace/zeromq-4.0.5/src/tcp_listener.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp_listener.i
+home/pi/zeromq/src/thread.i: home/pi/zeromq/src/thread.cpp.i
+.PHONY : home/pi/zeromq/src/thread.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/tcp_listener.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_listener.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp_listener.cpp.i
+home/pi/zeromq/src/thread.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/thread.cpp.i
+.PHONY : home/pi/zeromq/src/thread.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/tcp_listener.s: home/moe/workspace/zeromq-4.0.5/src/tcp_listener.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp_listener.s
+home/pi/zeromq/src/thread.s: home/pi/zeromq/src/thread.cpp.s
+.PHONY : home/pi/zeromq/src/thread.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/tcp_listener.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/tcp_listener.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/tcp_listener.cpp.s
+home/pi/zeromq/src/thread.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/thread.cpp.s
+.PHONY : home/pi/zeromq/src/thread.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/thread.o: home/moe/workspace/zeromq-4.0.5/src/thread.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/thread.o
+home/pi/zeromq/src/trie.o: home/pi/zeromq/src/trie.cpp.o
+.PHONY : home/pi/zeromq/src/trie.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/thread.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/thread.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/thread.cpp.o
+home/pi/zeromq/src/trie.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/trie.cpp.o
+.PHONY : home/pi/zeromq/src/trie.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/thread.i: home/moe/workspace/zeromq-4.0.5/src/thread.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/thread.i
+home/pi/zeromq/src/trie.i: home/pi/zeromq/src/trie.cpp.i
+.PHONY : home/pi/zeromq/src/trie.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/thread.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/thread.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/thread.cpp.i
+home/pi/zeromq/src/trie.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/trie.cpp.i
+.PHONY : home/pi/zeromq/src/trie.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/thread.s: home/moe/workspace/zeromq-4.0.5/src/thread.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/thread.s
+home/pi/zeromq/src/trie.s: home/pi/zeromq/src/trie.cpp.s
+.PHONY : home/pi/zeromq/src/trie.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/thread.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/thread.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/thread.cpp.s
+home/pi/zeromq/src/trie.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/trie.cpp.s
+.PHONY : home/pi/zeromq/src/trie.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/trie.o: home/moe/workspace/zeromq-4.0.5/src/trie.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/trie.o
+home/pi/zeromq/src/v1_decoder.o: home/pi/zeromq/src/v1_decoder.cpp.o
+.PHONY : home/pi/zeromq/src/v1_decoder.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/trie.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/trie.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/trie.cpp.o
+home/pi/zeromq/src/v1_decoder.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/v1_decoder.cpp.o
+.PHONY : home/pi/zeromq/src/v1_decoder.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/trie.i: home/moe/workspace/zeromq-4.0.5/src/trie.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/trie.i
+home/pi/zeromq/src/v1_decoder.i: home/pi/zeromq/src/v1_decoder.cpp.i
+.PHONY : home/pi/zeromq/src/v1_decoder.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/trie.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/trie.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/trie.cpp.i
+home/pi/zeromq/src/v1_decoder.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/v1_decoder.cpp.i
+.PHONY : home/pi/zeromq/src/v1_decoder.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/trie.s: home/moe/workspace/zeromq-4.0.5/src/trie.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/trie.s
+home/pi/zeromq/src/v1_decoder.s: home/pi/zeromq/src/v1_decoder.cpp.s
+.PHONY : home/pi/zeromq/src/v1_decoder.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/trie.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/trie.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/trie.cpp.s
+home/pi/zeromq/src/v1_decoder.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/v1_decoder.cpp.s
+.PHONY : home/pi/zeromq/src/v1_decoder.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/v1_decoder.o: home/moe/workspace/zeromq-4.0.5/src/v1_decoder.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v1_decoder.o
+home/pi/zeromq/src/v1_encoder.o: home/pi/zeromq/src/v1_encoder.cpp.o
+.PHONY : home/pi/zeromq/src/v1_encoder.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/v1_decoder.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v1_decoder.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v1_decoder.cpp.o
+home/pi/zeromq/src/v1_encoder.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/v1_encoder.cpp.o
+.PHONY : home/pi/zeromq/src/v1_encoder.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/v1_decoder.i: home/moe/workspace/zeromq-4.0.5/src/v1_decoder.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v1_decoder.i
+home/pi/zeromq/src/v1_encoder.i: home/pi/zeromq/src/v1_encoder.cpp.i
+.PHONY : home/pi/zeromq/src/v1_encoder.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/v1_decoder.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v1_decoder.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v1_decoder.cpp.i
+home/pi/zeromq/src/v1_encoder.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/v1_encoder.cpp.i
+.PHONY : home/pi/zeromq/src/v1_encoder.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/v1_decoder.s: home/moe/workspace/zeromq-4.0.5/src/v1_decoder.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v1_decoder.s
+home/pi/zeromq/src/v1_encoder.s: home/pi/zeromq/src/v1_encoder.cpp.s
+.PHONY : home/pi/zeromq/src/v1_encoder.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/v1_decoder.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v1_decoder.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v1_decoder.cpp.s
+home/pi/zeromq/src/v1_encoder.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/v1_encoder.cpp.s
+.PHONY : home/pi/zeromq/src/v1_encoder.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/v1_encoder.o: home/moe/workspace/zeromq-4.0.5/src/v1_encoder.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v1_encoder.o
+home/pi/zeromq/src/v2_decoder.o: home/pi/zeromq/src/v2_decoder.cpp.o
+.PHONY : home/pi/zeromq/src/v2_decoder.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/v1_encoder.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v1_encoder.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v1_encoder.cpp.o
+home/pi/zeromq/src/v2_decoder.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/v2_decoder.cpp.o
+.PHONY : home/pi/zeromq/src/v2_decoder.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/v1_encoder.i: home/moe/workspace/zeromq-4.0.5/src/v1_encoder.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v1_encoder.i
+home/pi/zeromq/src/v2_decoder.i: home/pi/zeromq/src/v2_decoder.cpp.i
+.PHONY : home/pi/zeromq/src/v2_decoder.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/v1_encoder.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v1_encoder.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v1_encoder.cpp.i
+home/pi/zeromq/src/v2_decoder.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/v2_decoder.cpp.i
+.PHONY : home/pi/zeromq/src/v2_decoder.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/v1_encoder.s: home/moe/workspace/zeromq-4.0.5/src/v1_encoder.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v1_encoder.s
+home/pi/zeromq/src/v2_decoder.s: home/pi/zeromq/src/v2_decoder.cpp.s
+.PHONY : home/pi/zeromq/src/v2_decoder.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/v1_encoder.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v1_encoder.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v1_encoder.cpp.s
+home/pi/zeromq/src/v2_decoder.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/v2_decoder.cpp.s
+.PHONY : home/pi/zeromq/src/v2_decoder.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/v2_decoder.o: home/moe/workspace/zeromq-4.0.5/src/v2_decoder.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v2_decoder.o
+home/pi/zeromq/src/v2_encoder.o: home/pi/zeromq/src/v2_encoder.cpp.o
+.PHONY : home/pi/zeromq/src/v2_encoder.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/v2_decoder.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v2_decoder.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v2_decoder.cpp.o
+home/pi/zeromq/src/v2_encoder.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/v2_encoder.cpp.o
+.PHONY : home/pi/zeromq/src/v2_encoder.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/v2_decoder.i: home/moe/workspace/zeromq-4.0.5/src/v2_decoder.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v2_decoder.i
+home/pi/zeromq/src/v2_encoder.i: home/pi/zeromq/src/v2_encoder.cpp.i
+.PHONY : home/pi/zeromq/src/v2_encoder.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/v2_decoder.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v2_decoder.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v2_decoder.cpp.i
+home/pi/zeromq/src/v2_encoder.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/v2_encoder.cpp.i
+.PHONY : home/pi/zeromq/src/v2_encoder.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/v2_decoder.s: home/moe/workspace/zeromq-4.0.5/src/v2_decoder.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v2_decoder.s
+home/pi/zeromq/src/v2_encoder.s: home/pi/zeromq/src/v2_encoder.cpp.s
+.PHONY : home/pi/zeromq/src/v2_encoder.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/v2_decoder.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v2_decoder.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v2_decoder.cpp.s
+home/pi/zeromq/src/v2_encoder.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/v2_encoder.cpp.s
+.PHONY : home/pi/zeromq/src/v2_encoder.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/v2_encoder.o: home/moe/workspace/zeromq-4.0.5/src/v2_encoder.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v2_encoder.o
+home/pi/zeromq/src/xpub.o: home/pi/zeromq/src/xpub.cpp.o
+.PHONY : home/pi/zeromq/src/xpub.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/v2_encoder.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v2_encoder.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v2_encoder.cpp.o
+home/pi/zeromq/src/xpub.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/xpub.cpp.o
+.PHONY : home/pi/zeromq/src/xpub.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/v2_encoder.i: home/moe/workspace/zeromq-4.0.5/src/v2_encoder.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v2_encoder.i
+home/pi/zeromq/src/xpub.i: home/pi/zeromq/src/xpub.cpp.i
+.PHONY : home/pi/zeromq/src/xpub.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/v2_encoder.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v2_encoder.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v2_encoder.cpp.i
+home/pi/zeromq/src/xpub.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/xpub.cpp.i
+.PHONY : home/pi/zeromq/src/xpub.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/v2_encoder.s: home/moe/workspace/zeromq-4.0.5/src/v2_encoder.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v2_encoder.s
+home/pi/zeromq/src/xpub.s: home/pi/zeromq/src/xpub.cpp.s
+.PHONY : home/pi/zeromq/src/xpub.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/v2_encoder.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/v2_encoder.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/v2_encoder.cpp.s
+home/pi/zeromq/src/xpub.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/xpub.cpp.s
+.PHONY : home/pi/zeromq/src/xpub.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/xpub.o: home/moe/workspace/zeromq-4.0.5/src/xpub.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/xpub.o
+home/pi/zeromq/src/xsub.o: home/pi/zeromq/src/xsub.cpp.o
+.PHONY : home/pi/zeromq/src/xsub.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/xpub.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/xpub.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/xpub.cpp.o
+home/pi/zeromq/src/xsub.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/xsub.cpp.o
+.PHONY : home/pi/zeromq/src/xsub.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/xpub.i: home/moe/workspace/zeromq-4.0.5/src/xpub.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/xpub.i
+home/pi/zeromq/src/xsub.i: home/pi/zeromq/src/xsub.cpp.i
+.PHONY : home/pi/zeromq/src/xsub.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/xpub.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/xpub.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/xpub.cpp.i
+home/pi/zeromq/src/xsub.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/xsub.cpp.i
+.PHONY : home/pi/zeromq/src/xsub.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/xpub.s: home/moe/workspace/zeromq-4.0.5/src/xpub.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/xpub.s
+home/pi/zeromq/src/xsub.s: home/pi/zeromq/src/xsub.cpp.s
+.PHONY : home/pi/zeromq/src/xsub.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/xpub.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/xpub.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/xpub.cpp.s
+home/pi/zeromq/src/xsub.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/xsub.cpp.s
+.PHONY : home/pi/zeromq/src/xsub.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/xsub.o: home/moe/workspace/zeromq-4.0.5/src/xsub.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/xsub.o
+home/pi/zeromq/src/zmq.o: home/pi/zeromq/src/zmq.cpp.o
+.PHONY : home/pi/zeromq/src/zmq.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/xsub.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/xsub.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/xsub.cpp.o
+home/pi/zeromq/src/zmq.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/zmq.cpp.o
+.PHONY : home/pi/zeromq/src/zmq.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/xsub.i: home/moe/workspace/zeromq-4.0.5/src/xsub.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/xsub.i
+home/pi/zeromq/src/zmq.i: home/pi/zeromq/src/zmq.cpp.i
+.PHONY : home/pi/zeromq/src/zmq.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/xsub.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/xsub.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/xsub.cpp.i
+home/pi/zeromq/src/zmq.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/zmq.cpp.i
+.PHONY : home/pi/zeromq/src/zmq.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/xsub.s: home/moe/workspace/zeromq-4.0.5/src/xsub.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/xsub.s
+home/pi/zeromq/src/zmq.s: home/pi/zeromq/src/zmq.cpp.s
+.PHONY : home/pi/zeromq/src/zmq.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/xsub.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/xsub.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/xsub.cpp.s
+home/pi/zeromq/src/zmq.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/zmq.cpp.s
+.PHONY : home/pi/zeromq/src/zmq.cpp.s
 
-home/moe/workspace/zeromq-4.0.5/src/zmq.o: home/moe/workspace/zeromq-4.0.5/src/zmq.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/zmq.o
+home/pi/zeromq/src/zmq_utils.o: home/pi/zeromq/src/zmq_utils.cpp.o
+.PHONY : home/pi/zeromq/src/zmq_utils.o
 
 # target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/zmq.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/zmq.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/zmq.cpp.o
+home/pi/zeromq/src/zmq_utils.cpp.o:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/zmq_utils.cpp.o
+.PHONY : home/pi/zeromq/src/zmq_utils.cpp.o
 
-home/moe/workspace/zeromq-4.0.5/src/zmq.i: home/moe/workspace/zeromq-4.0.5/src/zmq.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/zmq.i
+home/pi/zeromq/src/zmq_utils.i: home/pi/zeromq/src/zmq_utils.cpp.i
+.PHONY : home/pi/zeromq/src/zmq_utils.i
 
 # target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/zmq.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/zmq.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/zmq.cpp.i
+home/pi/zeromq/src/zmq_utils.cpp.i:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/zmq_utils.cpp.i
+.PHONY : home/pi/zeromq/src/zmq_utils.cpp.i
 
-home/moe/workspace/zeromq-4.0.5/src/zmq.s: home/moe/workspace/zeromq-4.0.5/src/zmq.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/zmq.s
+home/pi/zeromq/src/zmq_utils.s: home/pi/zeromq/src/zmq_utils.cpp.s
+.PHONY : home/pi/zeromq/src/zmq_utils.s
 
 # target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/zmq.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/zmq.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/zmq.cpp.s
-
-home/moe/workspace/zeromq-4.0.5/src/zmq_utils.o: home/moe/workspace/zeromq-4.0.5/src/zmq_utils.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/zmq_utils.o
-
-# target to build an object file
-home/moe/workspace/zeromq-4.0.5/src/zmq_utils.cpp.o:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/zmq_utils.cpp.o
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/zmq_utils.cpp.o
-
-home/moe/workspace/zeromq-4.0.5/src/zmq_utils.i: home/moe/workspace/zeromq-4.0.5/src/zmq_utils.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/zmq_utils.i
-
-# target to preprocess a source file
-home/moe/workspace/zeromq-4.0.5/src/zmq_utils.cpp.i:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/zmq_utils.cpp.i
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/zmq_utils.cpp.i
-
-home/moe/workspace/zeromq-4.0.5/src/zmq_utils.s: home/moe/workspace/zeromq-4.0.5/src/zmq_utils.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/zmq_utils.s
-
-# target to generate assembly for a file
-home/moe/workspace/zeromq-4.0.5/src/zmq_utils.cpp.s:
-	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/moe/workspace/zeromq-4.0.5/src/zmq_utils.cpp.s
-.PHONY : home/moe/workspace/zeromq-4.0.5/src/zmq_utils.cpp.s
+home/pi/zeromq/src/zmq_utils.cpp.s:
+	$(MAKE) -f CMakeFiles/zeromq.dir/build.make CMakeFiles/zeromq.dir/home/pi/zeromq/src/zmq_utils.cpp.s
+.PHONY : home/pi/zeromq/src/zmq_utils.cpp.s
 
 # Help Target
 help:
@@ -1788,216 +1751,212 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... FP_2c"
 	@echo "... edit_cache"
 	@echo "... main_c"
 	@echo "... main_s"
 	@echo "... rebuild_cache"
 	@echo "... zeromq"
-	@echo "... FP_2c.o"
-	@echo "... FP_2c.i"
-	@echo "... FP_2c.s"
-	@echo "... home/moe/workspace/fp_github/flowerpower/db/main_c.o"
-	@echo "... home/moe/workspace/fp_github/flowerpower/db/main_c.i"
-	@echo "... home/moe/workspace/fp_github/flowerpower/db/main_c.s"
-	@echo "... home/moe/workspace/fp_github/flowerpower/db/main_s.o"
-	@echo "... home/moe/workspace/fp_github/flowerpower/db/main_s.i"
-	@echo "... home/moe/workspace/fp_github/flowerpower/db/main_s.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/address.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/address.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/address.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/clock.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/clock.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/clock.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/ctx.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/ctx.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/ctx.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/dealer.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/dealer.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/dealer.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/devpoll.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/devpoll.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/devpoll.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/dist.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/dist.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/dist.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/epoll.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/epoll.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/epoll.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/err.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/err.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/err.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/fq.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/fq.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/fq.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/io_object.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/io_object.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/io_object.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/io_thread.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/io_thread.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/io_thread.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/ip.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/ip.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/ip.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/ipc_address.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/ipc_address.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/ipc_address.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/ipc_connecter.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/ipc_listener.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/ipc_listener.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/ipc_listener.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/kqueue.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/kqueue.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/kqueue.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/lb.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/lb.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/lb.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/mailbox.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/mailbox.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/mailbox.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/mechanism.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/mechanism.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/mechanism.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/msg.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/msg.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/msg.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/mtrie.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/mtrie.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/mtrie.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/null_mechanism.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/null_mechanism.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/null_mechanism.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/object.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/object.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/object.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/options.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/options.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/options.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/own.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/own.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/own.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pair.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pair.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pair.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pgm_receiver.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pgm_sender.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pgm_sender.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pgm_sender.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pgm_socket.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pgm_socket.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pgm_socket.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pipe.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pipe.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pipe.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/plain_mechanism.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/poll.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/poll.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/poll.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/poller_base.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/poller_base.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/poller_base.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/proxy.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/proxy.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/proxy.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pub.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pub.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pub.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pull.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pull.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/pull.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/push.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/push.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/push.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/random.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/random.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/random.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/raw_decoder.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/raw_decoder.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/raw_decoder.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/raw_encoder.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/raw_encoder.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/raw_encoder.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/reaper.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/reaper.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/reaper.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/rep.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/rep.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/rep.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/req.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/req.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/req.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/router.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/router.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/router.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/select.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/select.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/select.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/session_base.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/session_base.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/session_base.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/signaler.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/signaler.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/signaler.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/socket_base.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/socket_base.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/socket_base.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/stream.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/stream.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/stream.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/stream_engine.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/stream_engine.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/stream_engine.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/sub.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/sub.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/sub.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/tcp.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/tcp.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/tcp.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/tcp_address.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/tcp_address.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/tcp_address.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/tcp_connecter.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/tcp_listener.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/tcp_listener.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/tcp_listener.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/thread.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/thread.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/thread.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/trie.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/trie.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/trie.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/v1_decoder.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/v1_decoder.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/v1_decoder.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/v1_encoder.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/v1_encoder.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/v1_encoder.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/v2_decoder.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/v2_decoder.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/v2_decoder.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/v2_encoder.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/v2_encoder.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/v2_encoder.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/xpub.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/xpub.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/xpub.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/xsub.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/xsub.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/xsub.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/zmq.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/zmq.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/zmq.s"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/zmq_utils.o"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/zmq_utils.i"
-	@echo "... home/moe/workspace/zeromq-4.0.5/src/zmq_utils.s"
+	@echo "... home/pi/flowerpower/db/main_c.o"
+	@echo "... home/pi/flowerpower/db/main_c.i"
+	@echo "... home/pi/flowerpower/db/main_c.s"
+	@echo "... home/pi/flowerpower/db/main_s.o"
+	@echo "... home/pi/flowerpower/db/main_s.i"
+	@echo "... home/pi/flowerpower/db/main_s.s"
+	@echo "... home/pi/zeromq/src/address.o"
+	@echo "... home/pi/zeromq/src/address.i"
+	@echo "... home/pi/zeromq/src/address.s"
+	@echo "... home/pi/zeromq/src/clock.o"
+	@echo "... home/pi/zeromq/src/clock.i"
+	@echo "... home/pi/zeromq/src/clock.s"
+	@echo "... home/pi/zeromq/src/ctx.o"
+	@echo "... home/pi/zeromq/src/ctx.i"
+	@echo "... home/pi/zeromq/src/ctx.s"
+	@echo "... home/pi/zeromq/src/dealer.o"
+	@echo "... home/pi/zeromq/src/dealer.i"
+	@echo "... home/pi/zeromq/src/dealer.s"
+	@echo "... home/pi/zeromq/src/devpoll.o"
+	@echo "... home/pi/zeromq/src/devpoll.i"
+	@echo "... home/pi/zeromq/src/devpoll.s"
+	@echo "... home/pi/zeromq/src/dist.o"
+	@echo "... home/pi/zeromq/src/dist.i"
+	@echo "... home/pi/zeromq/src/dist.s"
+	@echo "... home/pi/zeromq/src/epoll.o"
+	@echo "... home/pi/zeromq/src/epoll.i"
+	@echo "... home/pi/zeromq/src/epoll.s"
+	@echo "... home/pi/zeromq/src/err.o"
+	@echo "... home/pi/zeromq/src/err.i"
+	@echo "... home/pi/zeromq/src/err.s"
+	@echo "... home/pi/zeromq/src/fq.o"
+	@echo "... home/pi/zeromq/src/fq.i"
+	@echo "... home/pi/zeromq/src/fq.s"
+	@echo "... home/pi/zeromq/src/io_object.o"
+	@echo "... home/pi/zeromq/src/io_object.i"
+	@echo "... home/pi/zeromq/src/io_object.s"
+	@echo "... home/pi/zeromq/src/io_thread.o"
+	@echo "... home/pi/zeromq/src/io_thread.i"
+	@echo "... home/pi/zeromq/src/io_thread.s"
+	@echo "... home/pi/zeromq/src/ip.o"
+	@echo "... home/pi/zeromq/src/ip.i"
+	@echo "... home/pi/zeromq/src/ip.s"
+	@echo "... home/pi/zeromq/src/ipc_address.o"
+	@echo "... home/pi/zeromq/src/ipc_address.i"
+	@echo "... home/pi/zeromq/src/ipc_address.s"
+	@echo "... home/pi/zeromq/src/ipc_connecter.o"
+	@echo "... home/pi/zeromq/src/ipc_connecter.i"
+	@echo "... home/pi/zeromq/src/ipc_connecter.s"
+	@echo "... home/pi/zeromq/src/ipc_listener.o"
+	@echo "... home/pi/zeromq/src/ipc_listener.i"
+	@echo "... home/pi/zeromq/src/ipc_listener.s"
+	@echo "... home/pi/zeromq/src/kqueue.o"
+	@echo "... home/pi/zeromq/src/kqueue.i"
+	@echo "... home/pi/zeromq/src/kqueue.s"
+	@echo "... home/pi/zeromq/src/lb.o"
+	@echo "... home/pi/zeromq/src/lb.i"
+	@echo "... home/pi/zeromq/src/lb.s"
+	@echo "... home/pi/zeromq/src/mailbox.o"
+	@echo "... home/pi/zeromq/src/mailbox.i"
+	@echo "... home/pi/zeromq/src/mailbox.s"
+	@echo "... home/pi/zeromq/src/mechanism.o"
+	@echo "... home/pi/zeromq/src/mechanism.i"
+	@echo "... home/pi/zeromq/src/mechanism.s"
+	@echo "... home/pi/zeromq/src/msg.o"
+	@echo "... home/pi/zeromq/src/msg.i"
+	@echo "... home/pi/zeromq/src/msg.s"
+	@echo "... home/pi/zeromq/src/mtrie.o"
+	@echo "... home/pi/zeromq/src/mtrie.i"
+	@echo "... home/pi/zeromq/src/mtrie.s"
+	@echo "... home/pi/zeromq/src/null_mechanism.o"
+	@echo "... home/pi/zeromq/src/null_mechanism.i"
+	@echo "... home/pi/zeromq/src/null_mechanism.s"
+	@echo "... home/pi/zeromq/src/object.o"
+	@echo "... home/pi/zeromq/src/object.i"
+	@echo "... home/pi/zeromq/src/object.s"
+	@echo "... home/pi/zeromq/src/options.o"
+	@echo "... home/pi/zeromq/src/options.i"
+	@echo "... home/pi/zeromq/src/options.s"
+	@echo "... home/pi/zeromq/src/own.o"
+	@echo "... home/pi/zeromq/src/own.i"
+	@echo "... home/pi/zeromq/src/own.s"
+	@echo "... home/pi/zeromq/src/pair.o"
+	@echo "... home/pi/zeromq/src/pair.i"
+	@echo "... home/pi/zeromq/src/pair.s"
+	@echo "... home/pi/zeromq/src/pgm_receiver.o"
+	@echo "... home/pi/zeromq/src/pgm_receiver.i"
+	@echo "... home/pi/zeromq/src/pgm_receiver.s"
+	@echo "... home/pi/zeromq/src/pgm_sender.o"
+	@echo "... home/pi/zeromq/src/pgm_sender.i"
+	@echo "... home/pi/zeromq/src/pgm_sender.s"
+	@echo "... home/pi/zeromq/src/pgm_socket.o"
+	@echo "... home/pi/zeromq/src/pgm_socket.i"
+	@echo "... home/pi/zeromq/src/pgm_socket.s"
+	@echo "... home/pi/zeromq/src/pipe.o"
+	@echo "... home/pi/zeromq/src/pipe.i"
+	@echo "... home/pi/zeromq/src/pipe.s"
+	@echo "... home/pi/zeromq/src/plain_mechanism.o"
+	@echo "... home/pi/zeromq/src/plain_mechanism.i"
+	@echo "... home/pi/zeromq/src/plain_mechanism.s"
+	@echo "... home/pi/zeromq/src/poll.o"
+	@echo "... home/pi/zeromq/src/poll.i"
+	@echo "... home/pi/zeromq/src/poll.s"
+	@echo "... home/pi/zeromq/src/poller_base.o"
+	@echo "... home/pi/zeromq/src/poller_base.i"
+	@echo "... home/pi/zeromq/src/poller_base.s"
+	@echo "... home/pi/zeromq/src/proxy.o"
+	@echo "... home/pi/zeromq/src/proxy.i"
+	@echo "... home/pi/zeromq/src/proxy.s"
+	@echo "... home/pi/zeromq/src/pub.o"
+	@echo "... home/pi/zeromq/src/pub.i"
+	@echo "... home/pi/zeromq/src/pub.s"
+	@echo "... home/pi/zeromq/src/pull.o"
+	@echo "... home/pi/zeromq/src/pull.i"
+	@echo "... home/pi/zeromq/src/pull.s"
+	@echo "... home/pi/zeromq/src/push.o"
+	@echo "... home/pi/zeromq/src/push.i"
+	@echo "... home/pi/zeromq/src/push.s"
+	@echo "... home/pi/zeromq/src/random.o"
+	@echo "... home/pi/zeromq/src/random.i"
+	@echo "... home/pi/zeromq/src/random.s"
+	@echo "... home/pi/zeromq/src/raw_decoder.o"
+	@echo "... home/pi/zeromq/src/raw_decoder.i"
+	@echo "... home/pi/zeromq/src/raw_decoder.s"
+	@echo "... home/pi/zeromq/src/raw_encoder.o"
+	@echo "... home/pi/zeromq/src/raw_encoder.i"
+	@echo "... home/pi/zeromq/src/raw_encoder.s"
+	@echo "... home/pi/zeromq/src/reaper.o"
+	@echo "... home/pi/zeromq/src/reaper.i"
+	@echo "... home/pi/zeromq/src/reaper.s"
+	@echo "... home/pi/zeromq/src/rep.o"
+	@echo "... home/pi/zeromq/src/rep.i"
+	@echo "... home/pi/zeromq/src/rep.s"
+	@echo "... home/pi/zeromq/src/req.o"
+	@echo "... home/pi/zeromq/src/req.i"
+	@echo "... home/pi/zeromq/src/req.s"
+	@echo "... home/pi/zeromq/src/router.o"
+	@echo "... home/pi/zeromq/src/router.i"
+	@echo "... home/pi/zeromq/src/router.s"
+	@echo "... home/pi/zeromq/src/select.o"
+	@echo "... home/pi/zeromq/src/select.i"
+	@echo "... home/pi/zeromq/src/select.s"
+	@echo "... home/pi/zeromq/src/session_base.o"
+	@echo "... home/pi/zeromq/src/session_base.i"
+	@echo "... home/pi/zeromq/src/session_base.s"
+	@echo "... home/pi/zeromq/src/signaler.o"
+	@echo "... home/pi/zeromq/src/signaler.i"
+	@echo "... home/pi/zeromq/src/signaler.s"
+	@echo "... home/pi/zeromq/src/socket_base.o"
+	@echo "... home/pi/zeromq/src/socket_base.i"
+	@echo "... home/pi/zeromq/src/socket_base.s"
+	@echo "... home/pi/zeromq/src/stream.o"
+	@echo "... home/pi/zeromq/src/stream.i"
+	@echo "... home/pi/zeromq/src/stream.s"
+	@echo "... home/pi/zeromq/src/stream_engine.o"
+	@echo "... home/pi/zeromq/src/stream_engine.i"
+	@echo "... home/pi/zeromq/src/stream_engine.s"
+	@echo "... home/pi/zeromq/src/sub.o"
+	@echo "... home/pi/zeromq/src/sub.i"
+	@echo "... home/pi/zeromq/src/sub.s"
+	@echo "... home/pi/zeromq/src/tcp.o"
+	@echo "... home/pi/zeromq/src/tcp.i"
+	@echo "... home/pi/zeromq/src/tcp.s"
+	@echo "... home/pi/zeromq/src/tcp_address.o"
+	@echo "... home/pi/zeromq/src/tcp_address.i"
+	@echo "... home/pi/zeromq/src/tcp_address.s"
+	@echo "... home/pi/zeromq/src/tcp_connecter.o"
+	@echo "... home/pi/zeromq/src/tcp_connecter.i"
+	@echo "... home/pi/zeromq/src/tcp_connecter.s"
+	@echo "... home/pi/zeromq/src/tcp_listener.o"
+	@echo "... home/pi/zeromq/src/tcp_listener.i"
+	@echo "... home/pi/zeromq/src/tcp_listener.s"
+	@echo "... home/pi/zeromq/src/thread.o"
+	@echo "... home/pi/zeromq/src/thread.i"
+	@echo "... home/pi/zeromq/src/thread.s"
+	@echo "... home/pi/zeromq/src/trie.o"
+	@echo "... home/pi/zeromq/src/trie.i"
+	@echo "... home/pi/zeromq/src/trie.s"
+	@echo "... home/pi/zeromq/src/v1_decoder.o"
+	@echo "... home/pi/zeromq/src/v1_decoder.i"
+	@echo "... home/pi/zeromq/src/v1_decoder.s"
+	@echo "... home/pi/zeromq/src/v1_encoder.o"
+	@echo "... home/pi/zeromq/src/v1_encoder.i"
+	@echo "... home/pi/zeromq/src/v1_encoder.s"
+	@echo "... home/pi/zeromq/src/v2_decoder.o"
+	@echo "... home/pi/zeromq/src/v2_decoder.i"
+	@echo "... home/pi/zeromq/src/v2_decoder.s"
+	@echo "... home/pi/zeromq/src/v2_encoder.o"
+	@echo "... home/pi/zeromq/src/v2_encoder.i"
+	@echo "... home/pi/zeromq/src/v2_encoder.s"
+	@echo "... home/pi/zeromq/src/xpub.o"
+	@echo "... home/pi/zeromq/src/xpub.i"
+	@echo "... home/pi/zeromq/src/xpub.s"
+	@echo "... home/pi/zeromq/src/xsub.o"
+	@echo "... home/pi/zeromq/src/xsub.i"
+	@echo "... home/pi/zeromq/src/xsub.s"
+	@echo "... home/pi/zeromq/src/zmq.o"
+	@echo "... home/pi/zeromq/src/zmq.i"
+	@echo "... home/pi/zeromq/src/zmq.s"
+	@echo "... home/pi/zeromq/src/zmq_utils.o"
+	@echo "... home/pi/zeromq/src/zmq_utils.i"
+	@echo "... home/pi/zeromq/src/zmq_utils.s"
 .PHONY : help
 
 
