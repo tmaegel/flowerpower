@@ -59,6 +59,12 @@ void showHelp() {
 	exit(EXIT_FAILURE);
 }
 
+/**
+ * @brief get last timestamp
+ * @param char* pointer to table
+ * @param char* pointer to tiemstamp
+ * @return int error
+ */
 int getLastTimestamp(const char *table, char *timestamp) {
 	char query[256];
 	int num_fields, err = 0;
@@ -82,7 +88,6 @@ int getLastTimestamp(const char *table, char *timestamp) {
 	mysql_free_result(result);
 
 	return err;
-
 }
 
 /**
@@ -96,7 +101,7 @@ int readFromDatabase(const char *table, struct measurement *data, const char *da
 	int num_fields, num = 0;
 
 	if(datetime != NULL) {
-		snprintf(query, sizeof(query), "SELECT * FROM %s WHERE datetime >= '%s'", table, datetime);
+		snprintf(query, sizeof(query), "SELECT * FROM %s WHERE datetime > '%s'", table, datetime);
 	} else {
 		snprintf(query, sizeof(query), "SELECT * FROM %s", table);
 	}
