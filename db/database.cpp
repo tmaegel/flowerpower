@@ -83,8 +83,8 @@ int readFromDatabase(const char *table, struct measurement *data) {
 
 		/**< row[0] ignored, its index */
 		data[num].hw_id = atoi(row[1]);
-		data[num].temperature = atof(row[2]);
-		data[num].humidity = atof(row[3]);
+		data[num].humidity = atof(row[2]);
+		data[num].temperature = atof(row[3]);
 		data[num].brightness= atof(row[4]);
 		strcpy(data[num].timestamp, row[5]);
 
@@ -104,7 +104,7 @@ int readFromDatabase(const char *table, struct measurement *data) {
 void writeToDatabase(const char *table, struct measurement *data) {
 	char query[256];
 
-	snprintf(query, sizeof(query), "INSERT INTO %s VALUES (NULL, %d, %f, %f, %f, '%s')", table, data->hw_id, data->temperature, data->brightness, data->humidity, data->timestamp);
+	snprintf(query, sizeof(query), "INSERT INTO %s VALUES (NULL, %d, %f, %f, %f, '%s')", table, data->hw_id, data->humidity, data->temperature, data->brightness, data->timestamp);
 
 	printf("%s\n", query);
 	mysql_query(db, query);
