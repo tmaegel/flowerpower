@@ -5,6 +5,7 @@ set(CMAKE_CXX_COMPILER ${CMAKE_C_COMPILER})
 project(FP)
 include(src/zeromq.cmake)
 
+
 # include_directories(${ZYNQ_THEEND_SOURCE_DIR}/home/moe/workspace/install_zmq_arm) # moe arm dir install loc zmq
 # link_directories(${ZYNQ_THEEND_BINARY_DIR}/home/moe/workspace/install_zmq_arm) #arm moe
 # include_directories(/home/moe/workspace/install_zmq_arm/include) # arm moe
