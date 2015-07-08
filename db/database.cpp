@@ -59,16 +59,47 @@ void showHelp() {
 	exit(EXIT_FAILURE);
 }
 
+int getLastTimestamp(const char *table, char *timestamp) {
+	char query[256];
+	int num_fields, err = 0;
+
+	// Select last datetime
+	snprintf(query, sizeof(query), "SELECT datetime FROM %s ORDER BY id DESC LIMIT 1", table);
+
+	mysql_query(db, query);
+	result = mysql_store_result(db);
+
+	num_fields = mysql_num_fields(result);
+	printf("%d\n", num_fields);
+	if(num_fields > 0) {
+		err = 1;
+		row = mysql_fetch_row(result);
+		strcpy(timestamp, row[0]);
+	} else {
+		err = -1;
+	}
+
+	mysql_free_result(result);
+
+	return err;
+
+}
+
 /**
  * @brief select items
  * @param char* pointer to string
+ * @param datetime limit (select greater than datetime)
  * @return int number of read data
  */
-int readFromDatabase(const char *table, struct measurement *data) {
+int readFromDatabase(const char *table, struct measurement *data, const char *datetime = NULL) {
 	char query[256];
 	int num_fields, num = 0;
 
-	snprintf(query, sizeof(query), "SELECT * FROM %s", table);
+	if(datetime != NULL) {
+		snprintf(query, sizeof(query), "SELECT * FROM %s WHERE datetime >= '%s'", table, datetime);
+	} else {
+		snprintf(query, sizeof(query), "SELECT * FROM %s", table);
+	}
 
 	mysql_query(db, query);
 	result = mysql_store_result(db);
@@ -76,11 +107,6 @@ int readFromDatabase(const char *table, struct measurement *data) {
 	num_fields = mysql_num_fields(result);
 
 	while ((row = mysql_fetch_row(result))) {
-		/* for(int i = 0; i < num_fields; i++) {
-			printf("%s ", row[i] ? row[i] : "NULL");
-		} */
-		// printf("\n");
-
 		/**< row[0] ignored, its index */
 		data[num].hw_id = atoi(row[1]);
 		data[num].humidity = atof(row[2]);
@@ -133,6 +159,7 @@ void createTable(const char *table) {
 	char query[256];
 	snprintf(query, sizeof(query), "CREATE TABLE IF NOT EXISTS %s (id INT AUTO_INCREMENT PRIMARY KEY, hw_id INT, temp FLOAT, brightness FLOAT, humidity FLOAT, datetime DATETIME)", table);
 
+	printf("%s\n", query);
 	mysql_query(db, query);
 	checkError();
 	printf("create table '%s' success\n", table);
