@@ -38,6 +38,7 @@ void send_db(const char *table, int num = 100){
 	int err = getLastTimestamp(table, timestamp_tmp);
 
 	printf("Server Timestamp: %s\n", timestamp_tmp);
+	printf("Server Timestamp error: %d\n", err);
 	
 	struct measurement data;
 		char *hw_id = (char*)malloc(10);

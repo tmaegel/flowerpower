@@ -80,6 +80,7 @@ int getLastTimestamp(const char *table, char *timestamp) {
 	if(num > 0) {
 		err = 1;
 		row = mysql_fetch_row(result);
+		printf("%s\n", row[0]);
 		strcpy(timestamp, row[0]);
 	} else {
 		err = -1;
