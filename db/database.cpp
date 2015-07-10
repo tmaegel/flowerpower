@@ -76,7 +76,7 @@ int getLastTimestamp(const char *table, char *timestamp) {
 	result = mysql_store_result(db);
 
 	num = mysql_num_rows(result);
-	printf("%d\n", num_fields);
+	printf("%d\n", num);
 	if(num > 0) {
 		err = 1;
 		row = mysql_fetch_row(result);
