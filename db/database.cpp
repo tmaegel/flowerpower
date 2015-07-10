@@ -113,20 +113,21 @@ int readFromDatabase(const char *table, struct measurement *data, const char *da
 	num = mysql_num_rows(result);
 
 	if(num > 0) {
-		printf("Get %d blocks\n", num);
+		printf("get %d blocks\n", num);
 		while ((row = mysql_fetch_row(result))) {
 			/**< row[0] ignored, its index */
+			printf("get data %s %s %s %s %s", row[1], row[2], row[3], row[4], row[5]);
 			data[num].hw_id = atoi(row[1]);
 			data[num].humidity = atof(row[2]);
 			data[num].temperature = atof(row[3]);
 			data[num].brightness= atof(row[4]);
 			strcpy(data[num].timestamp, row[5]);
-
-			num++;
 		}
 	} else {
-		printf("No blocks\n");
+		printf("no blocks\n");
 	}
+
+	printf("return to transport\n");
 
 	mysql_free_result(result);
 
