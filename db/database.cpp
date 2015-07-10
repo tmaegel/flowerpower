@@ -116,7 +116,7 @@ int readFromDatabase(const char *table, struct measurement *data, const char *da
 		printf("get %d blocks\n", num);
 		while ((row = mysql_fetch_row(result))) {
 			/**< row[0] ignored, its index */
-			printf("get data %s %s %s %s %s", row[1], row[2], row[3], row[4], row[5]);
+			printf("get data %s %s %s %s %s\n", row[1], row[2], row[3], row[4], row[5]);
 			data[num].hw_id = atoi(row[1]);
 			data[num].humidity = atof(row[2]);
 			data[num].temperature = atof(row[3]);
