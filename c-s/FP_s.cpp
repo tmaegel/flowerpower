@@ -48,15 +48,16 @@ void send_db(const char *table, int num = 100){
         char *timestamp = (char*)malloc(20);
 	
 	if(err != -1) {
-		zmq_send (responder, timestamp_tmp, 255, 0);
+		zmq_send(responder, timestamp_tmp, 255, 0);
 	} else {
-		zmq_send (responder, "-1", 255, 0);
+		zmq_send(responder, "-1", 255, 0);
 	}
 
-	for(int i = 0; i < num; i++){	
-		strcpy(hw_id, s_recv(responder));
-		sscanf(hw_id, "%d", &data.hw_id);
-		zmq_send (responder, "hw", 255, 0);
+	if(strcmp(s_recv(responder), "ready")) {
+		for(int i = 0; i < num; i++) {
+			strcpy(hw_id, s_recv(responder));
+			sscanf(hw_id, "%d", &data.hw_id);
+			zmq_send (responder, "hw", 255, 0);
 		
 		strcpy(humidity, s_recv(responder));
 		sscanf(humidity, "%lf", &data.humidity);	
@@ -75,6 +76,7 @@ void send_db(const char *table, int num = 100){
 		zmq_send (responder, "time", 255, 0);
 
 		writeToDatabase(table, &data);
+	}
 	}
 }
 
