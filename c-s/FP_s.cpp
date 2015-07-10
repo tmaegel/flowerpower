@@ -46,37 +46,40 @@ void send_db(const char *table, int num = 100){
         char *humidity = (char*)malloc(256);
         char *brightness = (char*)malloc(256);
         char *timestamp = (char*)malloc(20);
-	
-	if(err != -1) {
-		zmq_send(responder, timestamp_tmp, 255, 0);
-	} else {
-		zmq_send(responder, "-1", 255, 0);
-	}
+	while(1) {
 
-	if(strcmp(s_recv(responder), "ready")) {
-		for(int i = 0; i < num; i++) {
-			strcpy(hw_id, s_recv(responder));
-			sscanf(hw_id, "%d", &data.hw_id);
-			zmq_send (responder, "hw", 255, 0);
-		
-		strcpy(humidity, s_recv(responder));
-		sscanf(humidity, "%lf", &data.humidity);	
-		zmq_send (responder, "hum", 255, 0);
-		
-		strcpy(temperature, s_recv(responder));
-		sscanf(temperature, "%lf", &data.temperature);	
-		zmq_send (responder, "temp", 255, 0);
-		
-		strcpy(brightness, s_recv(responder));
-		sscanf(brightness, "%lf", &data.brightness);	
-		zmq_send (responder, "bri", 255, 0);
-		
-		strcpy(timestamp, s_recv(responder));
-		strcpy(data.timestamp, timestamp);
-		zmq_send (responder, "time", 255, 0);
+		if(err != -1) {
+			zmq_send(responder, timestamp_tmp, 255, 0);
+		} else {
+			zmq_send(responder, "-1", 255, 0);
+		}
 
-		writeToDatabase(table, &data);
-	}
+		if(strcmp(s_recv(responder), "ready")) {
+			for(int i = 0; i < num; i++) {
+				strcpy(hw_id, s_recv(responder));
+				sscanf(hw_id, "%d", &data.hw_id);
+				zmq_send (responder, "hw", 255, 0);
+			
+				strcpy(humidity, s_recv(responder));
+				sscanf(humidity, "%lf", &data.humidity);	
+				zmq_send (responder, "hum", 255, 0);
+			
+				strcpy(temperature, s_recv(responder));
+				sscanf(temperature, "%lf", &data.temperature);	
+				zmq_send (responder, "temp", 255, 0);
+		
+				strcpy(brightness, s_recv(responder));
+				sscanf(brightness, "%lf", &data.brightness);	
+				zmq_send (responder, "bri", 255, 0);
+		
+				strcpy(timestamp, s_recv(responder));
+				strcpy(data.timestamp, timestamp);
+				zmq_send (responder, "time", 255, 0);
+
+				writeToDatabase(table, &data);
+			}
+		}
+
 	}
 }
 
