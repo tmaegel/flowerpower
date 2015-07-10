@@ -125,6 +125,7 @@ int readFromDatabase(const char *table, struct measurement *data, const char *da
 		}
 	} else {
 		printf("no blocks\n");
+		num = -1;
 	}
 
 	printf("return to transport\n");
