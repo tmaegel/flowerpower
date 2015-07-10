@@ -98,7 +98,7 @@ int getLastTimestamp(const char *table, char *timestamp) {
  */
 int readFromDatabase(const char *table, struct measurement *data, const char *datetime = NULL) {
 	char query[256];
-	int num_fields, num = 0;
+	int num = 0;
 
 	if(datetime != NULL) {
 		snprintf(query, sizeof(query), "SELECT * FROM %s WHERE datetime > '%s'", table, datetime);
@@ -109,17 +109,22 @@ int readFromDatabase(const char *table, struct measurement *data, const char *da
 	mysql_query(db, query);
 	result = mysql_store_result(db);
 
-	num_fields = mysql_num_fields(result);
+	num = mysql_num_fields(result);
 
-	while ((row = mysql_fetch_row(result))) {
-		/**< row[0] ignored, its index */
-		data[num].hw_id = atoi(row[1]);
-		data[num].humidity = atof(row[2]);
-		data[num].temperature = atof(row[3]);
-		data[num].brightness= atof(row[4]);
-		strcpy(data[num].timestamp, row[5]);
+	if(num > 0) {
+		printf("Get %d blocks\n", num);
+		while ((row = mysql_fetch_row(result))) {
+			/**< row[0] ignored, its index */
+			data[num].hw_id = atoi(row[1]);
+			data[num].humidity = atof(row[2]);
+			data[num].temperature = atof(row[3]);
+			data[num].brightness= atof(row[4]);
+			strcpy(data[num].timestamp, row[5]);
 
-		num++;
+			num++;
+		}
+	} else {
+		printf("No blocks\n");
 	}
 
 	mysql_free_result(result);
