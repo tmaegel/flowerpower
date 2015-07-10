@@ -109,7 +109,7 @@ int readFromDatabase(const char *table, struct measurement *data, const char *da
 	mysql_query(db, query);
 	result = mysql_store_result(db);
 
-	num = mysql_num_fields(result);
+	num = mysql_num_rows(result);
 
 	if(num > 0) {
 		printf("Get %d blocks\n", num);
