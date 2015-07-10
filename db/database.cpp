@@ -67,7 +67,7 @@ void showHelp() {
  */
 int getLastTimestamp(const char *table, char *timestamp) {
 	char query[256];
-	int num_fields, err = 0;
+	int num, err = 0;
 
 	// Select last datetime
 	snprintf(query, sizeof(query), "SELECT datetime FROM %s ORDER BY id DESC LIMIT 1", table);
@@ -75,9 +75,9 @@ int getLastTimestamp(const char *table, char *timestamp) {
 	mysql_query(db, query);
 	result = mysql_store_result(db);
 
-	num_fields = mysql_num_fields(result);
+	num = mysql_num_rows(result);
 	printf("%d\n", num_fields);
-	if(num_fields > 0) {
+	if(num > 0) {
 		err = 1;
 		row = mysql_fetch_row(result);
 		strcpy(timestamp, row[0]);
