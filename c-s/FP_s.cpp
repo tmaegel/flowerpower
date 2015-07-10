@@ -34,6 +34,9 @@ static char *s_recv (void *responder) {
 
 void send_db(const char *table, int num = 100){
 	
+	char *timestamp_tmp = (char*)malloc(20);
+	getLastTimestamp(table, timestamp_tmp);
+	
 	struct measurement data;
 		char *hw_id = (char*)malloc(10);
 		char *temperature = (char*)malloc(256);
@@ -41,8 +44,10 @@ void send_db(const char *table, int num = 100){
         char *brightness = (char*)malloc(256);
         char *timestamp = (char*)malloc(20);
 	
-	for(int i = 0; i < num; i++){
-		
+	
+	zmq_send (responder, timestamp_tmp, 255, 0);
+	
+	for(int i = 0; i < num; i++){	
 		strcpy(hw_id, s_recv(responder));
 		sscanf(hw_id, "%d", &data.hw_id);
 		zmq_send (responder, "hw", 255, 0);
@@ -65,7 +70,6 @@ void send_db(const char *table, int num = 100){
 
 		writeToDatabase(table, &data);
 	}
-	
 }
 
 
