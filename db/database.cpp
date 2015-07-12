@@ -67,7 +67,7 @@ void showHelp() {
  */
 int getLastTimestamp(const char *table, char *timestamp) {
 	char query[256];
-	int num_fields, err = 0;
+	int num, err = 0;
 
 	// Select last datetime
 	snprintf(query, sizeof(query), "SELECT datetime FROM %s ORDER BY id DESC LIMIT 1", table);
@@ -75,11 +75,12 @@ int getLastTimestamp(const char *table, char *timestamp) {
 	mysql_query(db, query);
 	result = mysql_store_result(db);
 
-	num_fields = mysql_num_fields(result);
-	printf("%d\n", num_fields);
-	if(num_fields > 0) {
+	num = mysql_num_rows(result);
+	printf("%d\n", num);
+	if(num > 0) {
 		err = 1;
 		row = mysql_fetch_row(result);
+		printf("%s\n", row[0]);
 		strcpy(timestamp, row[0]);
 	} else {
 		err = -1;
@@ -98,7 +99,7 @@ int getLastTimestamp(const char *table, char *timestamp) {
  */
 int readFromDatabase(const char *table, struct measurement *data, const char *datetime = NULL) {
 	char query[256];
-	int num_fields, num = 0;
+	int num = 0;
 
 	if(datetime != NULL) {
 		snprintf(query, sizeof(query), "SELECT * FROM %s WHERE datetime > '%s'", table, datetime);
@@ -109,18 +110,25 @@ int readFromDatabase(const char *table, struct measurement *data, const char *da
 	mysql_query(db, query);
 	result = mysql_store_result(db);
 
-	num_fields = mysql_num_fields(result);
+	num = mysql_num_rows(result);
 
-	while ((row = mysql_fetch_row(result))) {
-		/**< row[0] ignored, its index */
-		data[num].hw_id = atoi(row[1]);
-		data[num].humidity = atof(row[2]);
-		data[num].temperature = atof(row[3]);
-		data[num].brightness= atof(row[4]);
-		strcpy(data[num].timestamp, row[5]);
-
-		num++;
+	if(num > 0) {
+		printf("get %d blocks\n", num);
+		while ((row = mysql_fetch_row(result))) {
+			/**< row[0] ignored, its index */
+			data[num].hw_id = atoi(row[1]);
+			data[num].humidity = atof(row[2]);
+			data[num].temperature = atof(row[3]);
+			data[num].brightness= atof(row[4]);
+			strcpy(data[num].timestamp, row[5]);
+			printf("get data %d %lf ... %s\n", data[num].hw_id, data[num].humidity, data[num].timestamp);
+		}
+	} else {
+		printf("no blocks\n");
+		num = -1;
 	}
+
+	printf("return to transport\n");
 
 	mysql_free_result(result);
 
