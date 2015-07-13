@@ -25,6 +25,7 @@ char str[64];
 int i = 0;
 int count_raute = 0;
 int part = 0;
+bool TRUE = true;
 
 char *hw_id = (char*)malloc(10);
 char *temperature = (char*)malloc(256);
@@ -33,7 +34,8 @@ char *brightness = (char*)malloc(256);
 char timestamp[20];
 
 extern pthread_cond_t notready;
-extern pthread_mutex_t lock;
+extern pthread_cond_t ready;
+extern pthread_mutex_t lock_con;
 
 void command(const char cmd[]) {
 	if(strcmp(cmd, "rd!") == 0) {
@@ -74,7 +76,9 @@ void setup() {
 }
  
 int loop(const char *table){
+	
 	// Pong every 3 seconds
+	//printf("siehste\n");
 	if(millis()-t >= 5000){
 		// you can also write data from 0-255
 		command("rd!");
@@ -91,13 +95,26 @@ int loop(const char *table){
 
 	if(serialDataAvail(fd)){
 		char c = serialGetchar(fd);
-		//printf("XX: %c\n", c);
+	//printf("siehste1\n");
+	//	printf("XX: %c\n", c);
 		if(c == '#') {
-			str_to_struct(str, table);
+
+		printf("sensor data received:%d\n", count_raute);
+		
+			if(count_raute >= 1){
+				pthread_mutex_lock(&lock_con);
+				//while(ready != true){
+					pthread_cond_wait(&ready, &lock_con);
+					str_to_struct(str, table);
+				//}	
+				pthread_mutex_unlock(&lock_con);
+			}
+
+			if(count_raute == 0){
+				str_to_struct(str, table);
+			}
 			i = 1;
-			count_raute++;
-			pthread_cond_signal(&notready);
-			pthread_mutex_unlock(&lock);
+		
 		}else{
 			str[i]  = c;
 			i++;
@@ -118,6 +135,11 @@ int str_to_struct(char *str, const char *table){
    	
 	
 
+
+	//printf("sensor data received2\n");
+	count_raute++;
+
+	//printf("sensor data received3\n");
 	ptr = strtok(str, delimiter);
 
 	while(ptr != NULL) {
@@ -137,11 +159,10 @@ int str_to_struct(char *str, const char *table){
 		}
 		if(part == 7){
 		//	sscanf(ptr, "%s", data.timestamp);
-		
-		time(&t1);
-		tm_info = localtime(&t1);
-		strftime(str_time, 26, "%Y-%m-%d %H:%M:%S", tm_info);
-		strcpy(data.timestamp, str_time);
+			time(&t1);
+			tm_info = localtime(&t1);
+			strftime(str_time, 26, "%Y-%m-%d %H:%M:%S", tm_info);
+			strcpy(data.timestamp, str_time);
 		}
 
 
@@ -149,7 +170,9 @@ int str_to_struct(char *str, const char *table){
 	}
 
 	writeToDatabase(table, &data);
-	printf("\n\n");
+	printf("Data writtin to Database:%d\n", count_raute);
+	part = 0;
+	pthread_cond_signal(&notready);
 }
 
 void *init_ctl(void *ptr_ic){//(const char *table) {
