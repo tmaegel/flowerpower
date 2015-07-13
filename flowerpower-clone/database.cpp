@@ -1,3 +1,4 @@
+/** INCLUDE */
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
@@ -5,10 +6,11 @@
 #include <mysql/mysql.h>
 #include <mysql/mysqld_error.h>
 #include <mysql/errmsg.h>
-
 #include <time.h>
 
-#include "../struct.h"
+/** HEADER */
+#include "header/database.h"
+#include "header/struct.h"
 
 #define HOST "localhost"
 #define USER "flowerpower"
@@ -29,7 +31,7 @@ char str_time[26];
  * @param char* option
  * @return int exists option, true or false
  */
-int getOption(const char *arg, const char *opt) {
+int get_option(const char *arg, const char *opt) {
 	if(arg[0] == '-' && arg[1] == opt[0]) {
 		return true;
 	}
@@ -39,7 +41,7 @@ int getOption(const char *arg, const char *opt) {
 /**
  * @brief check for errors
  */
-void checkError(void) {
+void check_error(void) {
 	if(mysql_errno(db) != 0) {
 		fprintf(stderr, "Error: %u (%s) \n", mysql_errno(db), mysql_error(db));
 		exit(EXIT_FAILURE);
@@ -49,7 +51,7 @@ void checkError(void) {
 /**
  * @brief show helping text
  */
-void showHelp() {
+void show_help() {
 	printf("\nProgrammaufruf: database [OPT_1] [STRING_1] ...\n"\
 	"./database -d [DB_NAME] -t [TABLE_NAME]\n"\
 	"\t-h\t\thelp\n"\
@@ -65,7 +67,7 @@ void showHelp() {
  * @param char* pointer to tiemstamp
  * @return int error
  */
-int getLastTimestamp(const char *table, char *timestamp) {
+int get_last_timestamp(const char *table, char *timestamp) {
 	char query[256];
 	int num, err = 0;
 
@@ -76,13 +78,12 @@ int getLastTimestamp(const char *table, char *timestamp) {
 	result = mysql_store_result(db);
 
 	num = mysql_num_rows(result);
-	printf("%d\n", num);
 	if(num > 0) {
 		err = 1;
 		row = mysql_fetch_row(result);
-		printf("%s\n", row[0]);
 		strcpy(timestamp, row[0]);
 	} else {
+		strcpy(timestamp, "none");
 		err = -1;
 	}
 
@@ -94,12 +95,13 @@ int getLastTimestamp(const char *table, char *timestamp) {
 /**
  * @brief select items
  * @param char* pointer to string
+ * @param int size of array
  * @param datetime limit (select greater than datetime)
  * @return int number of read data
  */
-int readFromDatabase(const char *table, struct measurement *data, const char *datetime = NULL) {
+int read_from_database(const char *table, struct measurement *data, int size, const char *datetime = NULL) {
 	char query[256];
-	int num = 0;
+	int i = 0, num = 0;
 
 	if(datetime != NULL) {
 		snprintf(query, sizeof(query), "SELECT * FROM %s WHERE datetime > '%s'", table, datetime);
@@ -107,28 +109,27 @@ int readFromDatabase(const char *table, struct measurement *data, const char *da
 		snprintf(query, sizeof(query), "SELECT * FROM %s", table);
 	}
 
+	printf("%s\n", query);
 	mysql_query(db, query);
 	result = mysql_store_result(db);
 
 	num = mysql_num_rows(result);
 
-	if(num > 0) {
-		printf("get %d blocks\n", num);
-		while ((row = mysql_fetch_row(result))) {
+	while((row = mysql_fetch_row(result))) {
+		if(i < size) {
 			/**< row[0] ignored, its index */
-			data[num].hw_id = atoi(row[1]);
-			data[num].humidity = atof(row[2]);
-			data[num].temperature = atof(row[3]);
-			data[num].brightness= atof(row[4]);
-			strcpy(data[num].timestamp, row[5]);
-			printf("get data %d %lf ... %s\n", data[num].hw_id, data[num].humidity, data[num].timestamp);
+			data[i].hw_id = atoi(row[1]);
+			data[i].hw_id = atoi(row[1]);
+			data[i].humidity = atof(row[2]);
+			data[i].temperature = atof(row[3]);
+			data[i].brightness= atof(row[4]);
+			strncpy(data[i].timestamp, row[5], 20);
+		} else {
+			return i;
 		}
-	} else {
-		printf("no blocks\n");
-		num = -1;
-	}
 
-	printf("return to transport\n");
+		i++;
+	}
 
 	mysql_free_result(result);
 
@@ -140,27 +141,26 @@ int readFromDatabase(const char *table, struct measurement *data, const char *da
  * @param char* pointer to data
  * @todo return int for number of written data
  */
-void writeToDatabase(const char *table, struct measurement *data) {
+void write_to_database(const char *table, struct measurement *data) {
 	char query[256];
 
 	snprintf(query, sizeof(query), "INSERT INTO %s VALUES (NULL, %d, %f, %f, %f, '%s')", table, data->hw_id, data->humidity, data->temperature, data->brightness, data->timestamp);
 
 	printf("%s\n", query);
 	mysql_query(db, query);
-	checkError();
+	check_error();
 }
 
 /**
  * @brief create database
  * @param char* database name
  */
-void createDatabase(const char *database) {
+void create_database(const char *database) {
 	char query[128];
 	snprintf(query, sizeof(query), "CREATE DATABASE IF NOT EXISTS %s", database);
 
-	printf("%s\n", query);
 	mysql_query(db, query);
-	checkError();
+	check_error();
 	printf("create database '%s' success\n", database);
 }
 
@@ -168,20 +168,19 @@ void createDatabase(const char *database) {
  * @brief create table
  * @param char* table name
  */
-void createTable(const char *table) {
+void create_table(const char *table) {
 	char query[256];
 	snprintf(query, sizeof(query), "CREATE TABLE IF NOT EXISTS %s (id INT AUTO_INCREMENT PRIMARY KEY, hw_id INT, temp FLOAT, brightness FLOAT, humidity FLOAT, datetime DATETIME)", table);
 
-	printf("%s\n", query);
 	mysql_query(db, query);
-	checkError();
+	check_error();
 	printf("create table '%s' success\n", table);
 }
 
 /**
  * @brief Insert simulation data
  */
-void insertSimData(const char *table, int num = 100) {
+void insert_sim_data(const char *table, int num = 10) {
 	struct measurement data;
 
 	time(&t1);
@@ -200,7 +199,7 @@ void insertSimData(const char *table, int num = 100) {
 		data.humidity = rand() % 80;
 		strcpy(data.timestamp, str_time);
 
-		writeToDatabase(table, &data);
+		write_to_database(table, &data);
 	}
 }
 
@@ -210,37 +209,37 @@ void insertSimData(const char *table, int num = 100) {
  * @param char* table name
  * @param bool simulate date
  */
-void init(const char *database, const char *table, bool simulate = false) {
+void init_database(const char *database, const char *table, bool simulate = false) {
 	char data[256];							/**< pointer to data  */
 
 	// init and reserve memory
 	db = mysql_init(NULL);
-	checkError();
+	check_error();
 	printf("initialize...\n");
 
 	// database connect
 	mysql_real_connect(db, HOST, USER, PASSWORD, NULL, 0, NULL, 0);
-	checkError();
+	check_error();
 	printf("connect  success\n");
 
-	createDatabase(database);
+	create_database(database);
 
 	// selectt db
 	mysql_select_db(db, database);
-	checkError();
+	check_error();
 	printf("select success\n");
 
 	// create table
-	createTable(table);
+	create_table(table);
 
 	if(simulate) {
-		insertSimData(table);
+		insert_sim_data(table);
 	}
 }
 
 /**
  * @brief close database
  */
-void closeDatabase() {
+void close_database() {
 	mysql_close(db);
 }

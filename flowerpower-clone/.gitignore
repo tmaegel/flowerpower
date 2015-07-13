@@ -1,0 +1,46 @@
+# Object files
+*.ko
+*.obj
+*.elf
+*.txt
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+
+# tmp files
+*.swp
+*.*~
+
+# ignore build
+CMakeLists.txt
+c-s/src/zeromq.cmake
+c-s/build/
+c-s/build-arm/
+c-s/src/
+
+# backup files
+*.bak
