@@ -9,7 +9,9 @@ void *send_client (void *ptr_sc);
 void *init_ctl (void *ptr_ic);
 
 pthread_cond_t notready;
-pthread_mutex_t lock;
+pthread_cond_t ready;
+pthread_mutex_t lock_c;
+pthread_mutex_t lock_con;
 
 int main(int argc, char* argv[])  {
 	// int database = -1, table = -1;				/**< parameter index for arguments */
@@ -56,7 +58,9 @@ int main(int argc, char* argv[])  {
 	int ith2 ;
 	
 	pthread_cond_init(&notready, NULL);
-	pthread_mutex_init(&lock, NULL);
+	pthread_cond_init(&ready, NULL);
+	pthread_mutex_init(&lock_c, NULL);
+	pthread_mutex_init(&lock_con, NULL);
 	pthread_t thread1, thread2;
 	
 	init_client(argc, argv);
