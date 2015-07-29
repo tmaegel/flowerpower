@@ -1,1 +1,0 @@
-/usr/bin/gcc    -O2    CMakeFiles/main_c.dir/home/pi/flowerpower/db/main_c.cpp.o  -o main_c -rdynamic -L/home/pi/zeromq /lib/arm-linux-gnueabihf/libm.so.6 -Wl,-Bstatic -lmysqlclient -Wl,-Bdynamic -lwiringPi -lrt -ldl -lz -lm libzeromq.a -lpthread -lstdc++ -Wl,-rpath,/home/pi/zeromq 

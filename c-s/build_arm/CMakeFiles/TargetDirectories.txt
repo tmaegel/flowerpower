@@ -1,3 +1,0 @@
-/home/pi/flowerpower/c-s/build_arm/CMakeFiles/main_c.dir
-/home/pi/flowerpower/c-s/build_arm/CMakeFiles/main_s.dir
-/home/pi/flowerpower/c-s/build_arm/CMakeFiles/zeromq.dir
